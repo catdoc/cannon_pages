@@ -2,7 +2,7 @@ var class_split_solver =
 [
     [ "Node", "struct_split_solver_1_1_node.html", "struct_split_solver_1_1_node" ],
     [ "VisitFunc", "class_split_solver.html#accb556b154c9cd0537cd09aa98102eca", null ],
-    [ "SplitSolver", "class_split_solver.html#a29d3723e351e66da672283d65faf9035", null ],
+    [ "SplitSolver", "class_split_solver.html#a0649575c2345958caadeadf18352189e", null ],
     [ "~SplitSolver", "class_split_solver.html#a0d32b0dea10b7fafc2ff2b032dd4a0ef", null ],
     [ "bfs", "class_split_solver.html#aabaa5f5c1e3ccd4a06f1bcb9a9a4efa3", null ],
     [ "createNode", "class_split_solver.html#aed6678c6f95f654269da061c57d03ed5", null ],

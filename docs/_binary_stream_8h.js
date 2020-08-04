@@ -1,4 +1,4 @@
 var _binary_stream_8h =
 [
-    [ "byte", "_binary_stream_8h.html#a357ea714193423e742d52d0d1420d6ea", null ]
+    [ "byte", "_binary_stream_8h.html#a0c8186d9b9b7880309c27230bbb5e69d", null ]
 ];

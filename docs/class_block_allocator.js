@@ -15,5 +15,5 @@ var class_block_allocator =
     [ "MAX_BLOCK_SIZE", "class_block_allocator.html#a566042111dc74e59b4f7baf6616767d0", null ],
     [ "s_blockSizeLookup", "class_block_allocator.html#a62a0e2adaafe30fee78f3380c5f6e3c4", null ],
     [ "s_blockSizeLookupInitialized", "class_block_allocator.html#abd8648902e3e06fa8181f71c1f92c55c", null ],
-    [ "s_blockSizes", "class_block_allocator.html#a4c0e840b2f50e51df51b6d63a97b144e", null ]
+    [ "s_blockSizes", "class_block_allocator.html#a477e4aabb39b701996565b382b012393", null ]
 ];

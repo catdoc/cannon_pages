@@ -2,7 +2,7 @@ var class_tuple_dictionary =
 [
     [ "TupleDictionary", "class_tuple_dictionary.html#a49797c9aa7256e8d1a23fb9bb8d7cbf3", null ],
     [ "~TupleDictionary", "class_tuple_dictionary.html#a0927123b0fced776cb54bdbce1ac77d5", null ],
-    [ "data", "class_tuple_dictionary.html#a58aea99f740f1272b3c0a58a44ddb877", null ],
+    [ "data", "class_tuple_dictionary.html#a4e6e89fe76f0bca3884bbcee97c1148b", null ],
     [ "del", "class_tuple_dictionary.html#a031e3726ae3f9c3c1fc76214595a90c4", null ],
     [ "get", "class_tuple_dictionary.html#ac48fe536c7d42452001dee4534e53c85", null ],
     [ "getDataByKey", "class_tuple_dictionary.html#aeba15084bbf9187d9209de91ad2646a9", null ],

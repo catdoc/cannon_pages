@@ -1,14 +1,14 @@
 var class_rigid_vehicle =
 [
-    [ "RigidVehicle", "class_rigid_vehicle.html#a0464dd9cb20dbf261da1512f4803a2f1", null ],
+    [ "RigidVehicle", "class_rigid_vehicle.html#a3ea646b2f8934647d39fa4d1aeda1a11", null ],
     [ "~RigidVehicle", "class_rigid_vehicle.html#a1a3f2d91669c054e07d72ef3b1e3b722", null ],
     [ "_update", "class_rigid_vehicle.html#ab7665e453e2db529b58fd25ee52595e6", null ],
     [ "addToWorld", "class_rigid_vehicle.html#a710c8cc8f56cda69f27fea146b581cb4", null ],
     [ "addWheel", "class_rigid_vehicle.html#a33454189996825e2b917382f59e4c1b6", null ],
     [ "applyWheelForce", "class_rigid_vehicle.html#a95323639e592e8fc20545f8505c511ec", null ],
-    [ "chassisBody", "class_rigid_vehicle.html#a57954480a2fc20db96324b70514157df", null ],
+    [ "chassisBody", "class_rigid_vehicle.html#ad0a43296369627112cd79507413aff0e", null ],
     [ "disableMotor", "class_rigid_vehicle.html#acd0240fa951f1645741cefbe17a64d8d", null ],
-    [ "get_wheelBodies", "class_rigid_vehicle.html#a50b40cfef037ec8b7ed3ae3dcbc88950", null ],
+    [ "get_wheelBodies", "class_rigid_vehicle.html#a48e01e63178d44e225e15a54fb237984", null ],
     [ "getWheelSpeed", "class_rigid_vehicle.html#a5ac8f1828dd08a1c72a24852ce780b5b", null ],
     [ "notify", "class_rigid_vehicle.html#a5754bcd4775774e93ad80031a6462086", null ],
     [ "removeFromWorld", "class_rigid_vehicle.html#a3a80655d0c63ee48b4496e12523afac9", null ],

@@ -130,10 +130,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a58b7a7fc108dd2e557d705854c59fd49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#a58b7a7fc108dd2e557d705854c59fd49">intersectWorld</a> (<a class="el" href="class_world.html">World</a> *world, const <a class="el" href="class_ray_1_1_ray_options.html">RayOptions</a> &amp;options)</td></tr>
 <tr class="memdesc:a58b7a7fc108dd2e557d705854c59fd49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do itersection against all bodies in the given <a class="el" href="class_world.html" title="Represents the entire physical world.">World</a>.  <a href="class_ray.html#a58b7a7fc108dd2e557d705854c59fd49">More...</a><br /></td></tr>
 <tr class="separator:a58b7a7fc108dd2e557d705854c59fd49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b12444da5843f516e3af6eec24abd12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#a9b12444da5843f516e3af6eec24abd12">intersectBody</a> (<a class="el" href="class_body.html">Body</a> *body, <a class="el" href="class_raycast_result.html">RaycastResult</a> *<a class="el" href="class_ray.html#ad1e11da2bad5e9faa7ef7a9434c359ca">result</a>)</td></tr>
+<tr class="memitem:a9b12444da5843f516e3af6eec24abd12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#a9b12444da5843f516e3af6eec24abd12">intersectBody</a> (<a class="el" href="class_body.html">Body</a> *body, <a class="el" href="class_raycast_result.html">RaycastResult</a> *<a class="el" href="class_ray.html#a6158a59fd8b8fba2b85af77f510c69ae">result</a>)</td></tr>
 <tr class="memdesc:a9b12444da5843f516e3af6eec24abd12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shoot a ray at a body, get back information about the hit.  <a href="class_ray.html#a9b12444da5843f516e3af6eec24abd12">More...</a><br /></td></tr>
 <tr class="separator:a9b12444da5843f516e3af6eec24abd12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cf8dc33507cc703d5915353532e2193"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#a9cf8dc33507cc703d5915353532e2193">intersectBodies</a> (const std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;bodies, <a class="el" href="class_raycast_result.html">RaycastResult</a> *<a class="el" href="class_ray.html#ad1e11da2bad5e9faa7ef7a9434c359ca">result</a>=nullptr)</td></tr>
+<tr class="memitem:a9cf8dc33507cc703d5915353532e2193"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#a9cf8dc33507cc703d5915353532e2193">intersectBodies</a> (const std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;bodies, <a class="el" href="class_raycast_result.html">RaycastResult</a> *<a class="el" href="class_ray.html#a6158a59fd8b8fba2b85af77f510c69ae">result</a>=nullptr)</td></tr>
 <tr class="memdesc:a9cf8dc33507cc703d5915353532e2193"><td class="mdescLeft">&#160;</td><td class="mdescRight">intersect Bodies by this ray  <a href="class_ray.html#a9cf8dc33507cc703d5915353532e2193">More...</a><br /></td></tr>
 <tr class="separator:a9cf8dc33507cc703d5915353532e2193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94c1f8def72278fd673cdb1f96eace94"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#a94c1f8def72278fd673cdb1f96eace94">updateDirection</a> ()</td></tr>
@@ -160,7 +160,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad38291fc47fffb9b2f4934668cc0004d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#ad38291fc47fffb9b2f4934668cc0004d">intersectTrimesh</a> (<a class="el" href="class_shape.html">Shape</a> *shape, const <a class="el" href="class_quaternion.html">Quaternion</a> &amp;quat, const <a class="el" href="class_vec3.html">Vec3</a> &amp;position, <a class="el" href="class_body.html">Body</a> *body, <a class="el" href="class_shape.html">Shape</a> *reportedShape)</td></tr>
 <tr class="memdesc:ad38291fc47fffb9b2f4934668cc0004d"><td class="mdescLeft">&#160;</td><td class="mdescRight">intersectTrimesh  <a href="class_ray.html#ad38291fc47fffb9b2f4934668cc0004d">More...</a><br /></td></tr>
 <tr class="separator:ad38291fc47fffb9b2f4934668cc0004d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af850daf3992f1d95564b03736bfd6953"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#af850daf3992f1d95564b03736bfd6953">getAABB</a> (<a class="el" href="class_a_a_b_b.html">AABB</a> *<a class="el" href="class_ray.html#ad1e11da2bad5e9faa7ef7a9434c359ca">result</a>)</td></tr>
+<tr class="memitem:af850daf3992f1d95564b03736bfd6953"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#af850daf3992f1d95564b03736bfd6953">getAABB</a> (<a class="el" href="class_a_a_b_b.html">AABB</a> *<a class="el" href="class_ray.html#a6158a59fd8b8fba2b85af77f510c69ae">result</a>)</td></tr>
 <tr class="memdesc:af850daf3992f1d95564b03736bfd6953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the world <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a> of the ray.  <a href="class_ray.html#af850daf3992f1d95564b03736bfd6953">More...</a><br /></td></tr>
 <tr class="separator:af850daf3992f1d95564b03736bfd6953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea73830e3b86463a43bbf312541fa68f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#aea73830e3b86463a43bbf312541fa68f">reportIntersection</a> (const <a class="el" href="class_vec3.html">Vec3</a> &amp;normal, const <a class="el" href="class_vec3.html">Vec3</a> &amp;hitPointWorld, <a class="el" href="class_shape.html">Shape</a> *shape, <a class="el" href="class_body.html">Body</a> *body, int hitFaceIndex=-1)</td></tr>
@@ -178,12 +178,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af484e4f7e3686492531bde0a92f33b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95d3feab454503e98ca3bfbb44a146e6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_vec3.html">Vec3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#a95d3feab454503e98ca3bfbb44a146e6">direction</a> () const</td></tr>
 <tr class="separator:a95d3feab454503e98ca3bfbb44a146e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3d48b1a4b9214679e4ebffc95e1dee0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#ad3d48b1a4b9214679e4ebffc95e1dee0">skipBackfaces</a> () const</td></tr>
-<tr class="separator:ad3d48b1a4b9214679e4ebffc95e1dee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa21baf18ae2731f176fe4173b1b50338"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#aa21baf18ae2731f176fe4173b1b50338">setSkipBackfaces</a> (bool value)</td></tr>
-<tr class="separator:aa21baf18ae2731f176fe4173b1b50338"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1e11da2bad5e9faa7ef7a9434c359ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> const <a class="el" href="class_raycast_result.html">RaycastResult</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#ad1e11da2bad5e9faa7ef7a9434c359ca">result</a> () const</td></tr>
-<tr class="separator:ad1e11da2bad5e9faa7ef7a9434c359ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57aabf96637deae8438e896f858d9362"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#a57aabf96637deae8438e896f858d9362">skipBackfaces</a> () const</td></tr>
+<tr class="separator:a57aabf96637deae8438e896f858d9362"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c49d77c8d9348f53c2051c4d8f3c07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#a34c49d77c8d9348f53c2051c4d8f3c07">setSkipBackfaces</a> (bool value)</td></tr>
+<tr class="separator:a34c49d77c8d9348f53c2051c4d8f3c07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6158a59fd8b8fba2b85af77f510c69ae"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_raycast_result.html">RaycastResult</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#a6158a59fd8b8fba2b85af77f510c69ae">result</a> () const</td></tr>
+<tr class="separator:a6158a59fd8b8fba2b85af77f510c69ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3867734321296f48b8c14e6679e0df19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ray.html">Ray</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#a3867734321296f48b8c14e6679e0df19">operator=</a> (const <a class="el" href="class_ray.html">Ray</a> &amp;other)</td></tr>
 <tr class="separator:a3867734321296f48b8c14e6679e0df19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1126,8 +1126,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad1e11da2bad5e9faa7ef7a9434c359ca"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1e11da2bad5e9faa7ef7a9434c359ca">&#9670;&nbsp;</a></span>result()</h2>
+<a id="a6158a59fd8b8fba2b85af77f510c69ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6158a59fd8b8fba2b85af77f510c69ae">&#9670;&nbsp;</a></span>result()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1136,7 +1136,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> const <a class="el" href="class_raycast_result.html">RaycastResult</a>&amp; Ray::result </td>
+          <td class="memname">const <a class="el" href="class_raycast_result.html">RaycastResult</a>&amp; Ray::result </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -1177,8 +1177,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aa21baf18ae2731f176fe4173b1b50338"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa21baf18ae2731f176fe4173b1b50338">&#9670;&nbsp;</a></span>setSkipBackfaces()</h2>
+<a id="a34c49d77c8d9348f53c2051c4d8f3c07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34c49d77c8d9348f53c2051c4d8f3c07">&#9670;&nbsp;</a></span>setSkipBackfaces()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1187,7 +1187,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> void Ray::setSkipBackfaces </td>
+          <td class="memname">void Ray::setSkipBackfaces </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
@@ -1229,8 +1229,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="ad3d48b1a4b9214679e4ebffc95e1dee0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3d48b1a4b9214679e4ebffc95e1dee0">&#9670;&nbsp;</a></span>skipBackfaces()</h2>
+<a id="a57aabf96637deae8438e896f858d9362"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57aabf96637deae8438e896f858d9362">&#9670;&nbsp;</a></span>skipBackfaces()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1239,7 +1239,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> bool Ray::skipBackfaces </td>
+          <td class="memname">bool Ray::skipBackfaces </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

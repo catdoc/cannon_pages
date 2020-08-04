@@ -2,7 +2,7 @@ var class_event_target =
 [
     [ "ListenerMap", "class_event_target.html#acebc55589fa56bbc54d26e2121a1610a", null ],
     [ "TargetMap", "class_event_target.html#a7bb08ed319eb857d89284c104363aad1", null ],
-    [ "EventTarget", "class_event_target.html#ad28ff5289f78de7a4771b69207ea019c", null ],
+    [ "EventTarget", "class_event_target.html#aa4526be9da6fedb0f691083761d09bf9", null ],
     [ "~EventTarget", "class_event_target.html#a85a191a259bb5a812de95583c5df2808", null ],
     [ "addEventListener", "class_event_target.html#a91e5a40a04b2e3d7b9522e9e7d45624e", null ],
     [ "createRef", "class_event_target.html#aeacff40da2a4af6e1c506ee0e2f3939f", null ],

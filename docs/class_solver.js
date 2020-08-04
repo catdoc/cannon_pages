@@ -1,6 +1,6 @@
 var class_solver =
 [
-    [ "Solver", "class_solver.html#a28a8d9e8c460edbd197089ee430854f0", null ],
+    [ "Solver", "class_solver.html#a9dfe7ae9ce617e8a6398be34284c907a", null ],
     [ "~Solver", "class_solver.html#aba52d3c92fafceb6fe39f937f2d73db3", null ],
     [ "addEquation", "class_solver.html#ad751b9698024281b6b4b9fb81f2abeff", null ],
     [ "removeAllEquation", "class_solver.html#a8ba585313f2a0ac48810d2664ed71cc2", null ],

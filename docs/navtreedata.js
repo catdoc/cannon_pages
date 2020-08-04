@@ -73,11 +73,11 @@ var NAVTREEINDEX =
 [
 "_a_a_b_b_8cpp.html",
 "_rigid_vehicle_8h.html",
-"class_body.html#adcb93f95c80c12ced46111d648cddbe3",
+"class_body.html#adbc4de1813a6f0029fc63574df5b00d7",
 "class_equation.html#a3fe08aabff1ada58a94272c420efab14",
 "class_narrowphase.html#abbebfdcac0af461b088088a51f7a20b4",
 "class_rigid_vehicle.html#aeee7f262648a1216698995d07e94b1ea",
-"class_vec3.html#a17e6844b443af91dab9b9e04613346f7",
+"class_vec3.html#a13cb4503ed03dfb0b611adfdecac2453",
 "class_world.html#aff0586446dcba7914dd24e00f55085b9",
 "struct_world_1_1_profile.html#a858bf65b72535a5d83fbd2ad18f37fdd"
 ];

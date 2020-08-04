@@ -1,6 +1,6 @@
 var class_stack_allocator =
 [
-    [ "StackAllocator", "class_stack_allocator.html#ab3c042f8f4a64bb05a7898eb389c5faf", null ],
+    [ "StackAllocator", "class_stack_allocator.html#aa23513f7c29f3371d187ce94c1bfbd4c", null ],
     [ "~StackAllocator", "class_stack_allocator.html#a063ce9b29589c8269814c22275c884e4", null ],
     [ "allocateMem", "class_stack_allocator.html#a02c9b9304c695f5e624db56a4eccc56e", null ],
     [ "freeMem", "class_stack_allocator.html#a63271130ed25aeddbf736e8a701ef521", null ],

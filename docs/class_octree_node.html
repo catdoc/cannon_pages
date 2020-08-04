@@ -111,13 +111,13 @@ Inheritance diagram for OctreeNode:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a44f5b50ff26c8f6460fb77c367ee0a73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#a44f5b50ff26c8f6460fb77c367ee0a73">reset</a> ()</td></tr>
 <tr class="separator:a44f5b50ff26c8f6460fb77c367ee0a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fa620202ae11e78040410e7d20af009"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#a0fa620202ae11e78040410e7d20af009">insert</a> (const <a class="el" href="class_a_a_b_b.html">AABB</a> &amp;<a class="el" href="class_octree_node.html#ab9be17b6052c3476979d76f5632a55fb">aabb</a>, int elementData, int level=0)</td></tr>
+<tr class="memitem:a0fa620202ae11e78040410e7d20af009"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#a0fa620202ae11e78040410e7d20af009">insert</a> (const <a class="el" href="class_a_a_b_b.html">AABB</a> &amp;<a class="el" href="class_octree_node.html#a7494d417aeb9e0c875e7e3213b8d5a24">aabb</a>, int elementData, int level=0)</td></tr>
 <tr class="memdesc:a0fa620202ae11e78040410e7d20af009"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert data into this node.  <a href="class_octree_node.html#a0fa620202ae11e78040410e7d20af009">More...</a><br /></td></tr>
 <tr class="separator:a0fa620202ae11e78040410e7d20af009"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38938431f0a3838730ca7ecc2f2521c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#a38938431f0a3838730ca7ecc2f2521c6">subdivide</a> ()</td></tr>
 <tr class="memdesc:a38938431f0a3838730ca7ecc2f2521c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create 8 equally sized children nodes and put them in the .children array.  <a href="class_octree_node.html#a38938431f0a3838730ca7ecc2f2521c6">More...</a><br /></td></tr>
 <tr class="separator:a38938431f0a3838730ca7ecc2f2521c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0677f6b2ffd0fa53c8838c3dda558e2d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#a0677f6b2ffd0fa53c8838c3dda558e2d">aabbQuery</a> (const <a class="el" href="class_a_a_b_b.html">AABB</a> &amp;<a class="el" href="class_octree_node.html#ab9be17b6052c3476979d76f5632a55fb">aabb</a>, std::vector&lt; int &gt; &amp;result)</td></tr>
+<tr class="memitem:a0677f6b2ffd0fa53c8838c3dda558e2d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#a0677f6b2ffd0fa53c8838c3dda558e2d">aabbQuery</a> (const <a class="el" href="class_a_a_b_b.html">AABB</a> &amp;<a class="el" href="class_octree_node.html#a7494d417aeb9e0c875e7e3213b8d5a24">aabb</a>, std::vector&lt; int &gt; &amp;result)</td></tr>
 <tr class="memdesc:a0677f6b2ffd0fa53c8838c3dda558e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all data, potentially within an <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a>.  <a href="class_octree_node.html#a0677f6b2ffd0fa53c8838c3dda558e2d">More...</a><br /></td></tr>
 <tr class="separator:a0677f6b2ffd0fa53c8838c3dda558e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4a2399fd053c01c3453187b5dc317dd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#ae4a2399fd053c01c3453187b5dc317dd">rayQuery</a> (<a class="el" href="class_ray.html">Ray</a> *ray, const <a class="el" href="class_transform.html">Transform</a> &amp;treeTransform, std::vector&lt; int &gt; &amp;result)</td></tr>
@@ -126,19 +126,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9819a6f690ba96d26010111527f51fcb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#a9819a6f690ba96d26010111527f51fcb">removeEmptyNodes</a> ()</td></tr>
 <tr class="memdesc:a9819a6f690ba96d26010111527f51fcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">removeEmptyNodes  <a href="class_octree_node.html#a9819a6f690ba96d26010111527f51fcb">More...</a><br /></td></tr>
 <tr class="separator:a9819a6f690ba96d26010111527f51fcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9be17b6052c3476979d76f5632a55fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> const <a class="el" href="class_a_a_b_b.html">AABB</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#ab9be17b6052c3476979d76f5632a55fb">aabb</a> () const</td></tr>
-<tr class="separator:ab9be17b6052c3476979d76f5632a55fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80e78ff9473e5ef89fb3395086083899"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#a80e78ff9473e5ef89fb3395086083899">setAabb</a> (<a class="el" href="class_a_a_b_b.html">AABB</a> value)</td></tr>
-<tr class="separator:a80e78ff9473e5ef89fb3395086083899"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a166ff0c9953120778c4b1094a922c7d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#a166ff0c9953120778c4b1094a922c7d6">data</a> ()</td></tr>
-<tr class="separator:a166ff0c9953120778c4b1094a922c7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70fb81ed6ec489e88d8fa5eba35add71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> std::vector&lt; <a class="el" href="class_octree_node.html">OctreeNode</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#a70fb81ed6ec489e88d8fa5eba35add71">children</a> ()</td></tr>
-<tr class="separator:a70fb81ed6ec489e88d8fa5eba35add71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7494d417aeb9e0c875e7e3213b8d5a24"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_a_a_b_b.html">AABB</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#a7494d417aeb9e0c875e7e3213b8d5a24">aabb</a> () const</td></tr>
+<tr class="separator:a7494d417aeb9e0c875e7e3213b8d5a24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada261ac93ed9f32c16dd8b551131f842"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#ada261ac93ed9f32c16dd8b551131f842">setAabb</a> (<a class="el" href="class_a_a_b_b.html">AABB</a> value)</td></tr>
+<tr class="separator:ada261ac93ed9f32c16dd8b551131f842"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef5b6012da51377b8105f9995aecba69"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#aef5b6012da51377b8105f9995aecba69">data</a> ()</td></tr>
+<tr class="separator:aef5b6012da51377b8105f9995aecba69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4848e19dcb21760e009091ab5f5313e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_octree_node.html">OctreeNode</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#ae4848e19dcb21760e009091ab5f5313e">children</a> ()</td></tr>
+<tr class="separator:ae4848e19dcb21760e009091ab5f5313e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a5d576a427b36d625a2ee004f9cf2a14b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#a5d576a427b36d625a2ee004f9cf2a14b">OctreeNode</a> (<a class="el" href="class_octree_node.html">OctreeNode</a> *root, const <a class="el" href="class_a_a_b_b.html">AABB</a> &amp;<a class="el" href="class_octree_node.html#ab9be17b6052c3476979d76f5632a55fb">aabb</a>)</td></tr>
-<tr class="separator:a5d576a427b36d625a2ee004f9cf2a14b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0080bd63c007cc27ca896162882c41f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#a0080bd63c007cc27ca896162882c41f9">OctreeNode</a> (<a class="el" href="class_octree_node.html">OctreeNode</a> *root, const <a class="el" href="class_a_a_b_b.html">AABB</a> &amp;<a class="el" href="class_octree_node.html#a7494d417aeb9e0c875e7e3213b8d5a24">aabb</a>)</td></tr>
+<tr class="separator:a0080bd63c007cc27ca896162882c41f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91b427664d0cc5cd3a38fde38d76b68b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#a91b427664d0cc5cd3a38fde38d76b68b">OctreeNode</a> (<a class="el" href="class_octree_node.html">OctreeNode</a> *root)</td></tr>
 <tr class="separator:a91b427664d0cc5cd3a38fde38d76b68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6349bda02e64bebf3e86fe2d793db67e"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#a6349bda02e64bebf3e86fe2d793db67e">~OctreeNode</a> ()</td></tr>
@@ -163,14 +163,14 @@ Protected Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a876c1fe6708637b541dec63773456e56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#a876c1fe6708637b541dec63773456e56">_clearChildren</a> (std::vector&lt; <a class="el" href="class_octree_node.html">OctreeNode</a> * &gt; &amp;<a class="el" href="class_octree_node.html#a70fb81ed6ec489e88d8fa5eba35add71">children</a>)</td></tr>
+<tr class="memitem:a876c1fe6708637b541dec63773456e56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_octree_node.html#a876c1fe6708637b541dec63773456e56">_clearChildren</a> (std::vector&lt; <a class="el" href="class_octree_node.html">OctreeNode</a> * &gt; &amp;<a class="el" href="class_octree_node.html#ae4848e19dcb21760e009091ab5f5313e">children</a>)</td></tr>
 <tr class="separator:a876c1fe6708637b541dec63773456e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An node of octree. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a5d576a427b36d625a2ee004f9cf2a14b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d576a427b36d625a2ee004f9cf2a14b">&#9670;&nbsp;</a></span>OctreeNode() <span class="overload">[1/2]</span></h2>
+<a id="a0080bd63c007cc27ca896162882c41f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0080bd63c007cc27ca896162882c41f9">&#9670;&nbsp;</a></span>OctreeNode() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -179,7 +179,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#a7e58e50de2558a89a5915b9234017fb5">NS_CANNON_BEGIN</a> OctreeNode::OctreeNode </td>
+          <td class="memname">OctreeNode::OctreeNode </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_octree_node.html">OctreeNode</a> *&#160;</td>
           <td class="paramname"><em>root</em>, </td>
@@ -283,8 +283,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab9be17b6052c3476979d76f5632a55fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9be17b6052c3476979d76f5632a55fb">&#9670;&nbsp;</a></span>aabb()</h2>
+<a id="a7494d417aeb9e0c875e7e3213b8d5a24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7494d417aeb9e0c875e7e3213b8d5a24">&#9670;&nbsp;</a></span>aabb()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,7 +293,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> const <a class="el" href="class_a_a_b_b.html">AABB</a>&amp; OctreeNode::aabb </td>
+          <td class="memname">const <a class="el" href="class_a_a_b_b.html">AABB</a>&amp; OctreeNode::aabb </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -346,8 +346,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a70fb81ed6ec489e88d8fa5eba35add71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70fb81ed6ec489e88d8fa5eba35add71">&#9670;&nbsp;</a></span>children()</h2>
+<a id="ae4848e19dcb21760e009091ab5f5313e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4848e19dcb21760e009091ab5f5313e">&#9670;&nbsp;</a></span>children()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -356,7 +356,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> std::vector&lt;<a class="el" href="class_octree_node.html">OctreeNode</a>*&gt;&amp; OctreeNode::children </td>
+          <td class="memname">std::vector&lt;<a class="el" href="class_octree_node.html">OctreeNode</a>*&gt;&amp; OctreeNode::children </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -371,8 +371,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a166ff0c9953120778c4b1094a922c7d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a166ff0c9953120778c4b1094a922c7d6">&#9670;&nbsp;</a></span>data()</h2>
+<a id="aef5b6012da51377b8105f9995aecba69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef5b6012da51377b8105f9995aecba69">&#9670;&nbsp;</a></span>data()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -381,7 +381,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> std::vector&lt;int&gt;&amp; OctreeNode::data </td>
+          <td class="memname">std::vector&lt;int&gt;&amp; OctreeNode::data </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -522,8 +522,8 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a80e78ff9473e5ef89fb3395086083899"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80e78ff9473e5ef89fb3395086083899">&#9670;&nbsp;</a></span>setAabb()</h2>
+<a id="ada261ac93ed9f32c16dd8b551131f842"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada261ac93ed9f32c16dd8b551131f842">&#9670;&nbsp;</a></span>setAabb()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -532,7 +532,7 @@ Private Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> void OctreeNode::setAabb </td>
+          <td class="memname">void OctreeNode::setAabb </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="class_a_a_b_b.html">AABB</a>&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
