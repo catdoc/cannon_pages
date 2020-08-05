@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Cannon Cpp: Cannon CPP —— 3D C++ physics engine</title>
+<title>Cannon Cpp: Cannon CPP —— C++ 3D physics engine</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,20 +83,123 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Cannon CPP —— 3D C++ physics engine </div>  </div>
+<div class="title">Cannon CPP —— C++ 3D physics engine </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="intro_sec"></a>
-Introduction</h1>
-<p><a href="https://github.com/ihago-net/CannonCPP">Cannon Cpp</a> is a C++ port of <a href="https://github.com/schteppe/cannon.js">Cannon.js</a>.</p>
+<div class="textblock"><p><a href="https://github.com/ihago-net/CannonCPP">Cannon Cpp</a> is a C++ port of <a href="https://github.com/schteppe/cannon.js">Cannon.js</a>.</p>
 <p><a href="https://github.com/schteppe/cannon.js">Cannon.js</a> is a lightweight 3D physics engine for the web.</p>
-<p><a href="https://github.com/ihago-net/CannonCPP">Cannon Cpp</a> was originally used as the C++ 3D physics engine for <a href="https://open.ihago.net/">Hago H5 Game Runtime</a>.</p>
-<h1><a class="anchor" id="install_sec"></a>
-Cloning this repository</h1>
-<h2><a class="anchor" id="step1"></a>
-Step 1: git clone https://github.com/ihago-net/CannonCPP.git</h2>
-<h2><a class="anchor" id="step2"></a>
-Step 2: git submodule update –init</h2>
+<h2><a class="anchor" id="autotoc_md0"></a>
+Introduction</h2>
+<p><a href="https://github.com/ihago-net/CannonCPP">Cannon Cpp</a> is a C++ port of <a href="https://github.com/schteppe/cannon.js">Cannon.js</a> with some modifications:</p><ul>
+<li>Add a reference counting mechanism.</li>
+<li>Add a memory pool management.</li>
+<li>Events are dispatched by the dispatcher of the world.</li>
+<li>Remove PreStep and PostStep <a class="el" href="struct_event.html" title="Represents a event.">Event</a> for each body.</li>
+<li>The way to create a heightfield with an image is not supported.</li>
+</ul>
+<p>Cannon Cpp was originally used as the C++ 3D physics engine for <a href="https://open.ihago.net/">Hago Game Runtime</a>.</p>
+<h2><a class="anchor" id="autotoc_md1"></a>
+Clone this repository</h2>
+<div class="fragment"><div class="line">$ git clone https:<span class="comment">//github.com/ihago-net/CannonCPP.git</span></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md2"></a>
+Run Demos</h2>
+<h3><a class="anchor" id="autotoc_md3"></a>
+Requirements for Demos</h3>
+<ul>
+<li><a href="https://github.com/bergstr11/three.cpp">Three Cpp: A port of three.js</a></li>
+<li><a href="https://www.glfw.org/">glfw3</a></li>
+<li><a href="https://github.com/nothings/stb">stb</a></li>
+<li><a href="https://github.com/leethomason/tinyxml2">tinyxml2</a></li>
+</ul>
+<p>No additional download is required, already included in the project.</p>
+<h3><a class="anchor" id="autotoc_md4"></a>
+Run in Xcode</h3>
+<ul>
+<li>Open demos/proj.mac/CannonCppDemo.xcodeproj in Xcode</li>
+<li>Build &amp;&amp; Run</li>
+<li>Input Key ‘Enter‘ to switch demo</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Example</h2>
+<div class="fragment"><div class="line"><span class="comment">// Create a world</span></div>
+<div class="line"><span class="keyword">auto</span> world = <span class="keyword">new</span> cannon::World();</div>
+<div class="line">world-&gt;set_broadphase(<span class="keyword">new</span> cannon::NaiveBroadphase());</div>
+<div class="line">world-&gt;set_allowSleep(<span class="keyword">true</span>);</div>
+<div class="line">world-&gt;get_defaultMaterial()-&gt;set_friction(0.5);</div>
+<div class="line">world-&gt;get_defaultMaterial()-&gt;set_restitution(0);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create a ground material</span></div>
+<div class="line">cannon::Material::MaterialOptions matOptions(world-&gt;genMaterialId());</div>
+<div class="line"><span class="keyword">auto</span> groundMaterial = <span class="keyword">new</span> cannon::Material(matOptions);</div>
+<div class="line">groundMaterial-&gt;set_friction(0.3);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create a ground plane</span></div>
+<div class="line"><span class="keyword">auto</span> groundShape = <span class="keyword">new</span> cannon::Plane(world-&gt;genShapeId());</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create a ground body</span></div>
+<div class="line">cannon::Body::BodyOptions groundBodyOptions(world, world-&gt;genBodyId());</div>
+<div class="line">groundBodyOptions.mass = 0;</div>
+<div class="line">groundBodyOptions.material = groundMaterial;</div>
+<div class="line"><span class="keyword">auto</span> groundBody = <span class="keyword">new</span> cannon::Body(groundBodyOptions);</div>
+<div class="line">groundBody-&gt;addShape(groundShape);</div>
+<div class="line">world-&gt;addBody(groundBody);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create a box shape</span></div>
+<div class="line"><span class="keywordtype">float</span> size = 1;</div>
+<div class="line">cannon::Vec3 halfExtents = cannon::Vec3(size, size, size);</div>
+<div class="line"><span class="keyword">auto</span> boxShape = <span class="keyword">new</span> cannon::Box(world-&gt;genShapeId(), world, halfExtents);</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// Create a box body</span></div>
+<div class="line">cannon::Body::BodyOptions boxBodyOptions(world, world-&gt;genBodyId());</div>
+<div class="line">boxBodyOptions.mass = 1;</div>
+<div class="line"><span class="keyword">auto</span> boxBody = <span class="keyword">new</span> cannon::Body(boxBodyOptions);</div>
+<div class="line">boxBody-&gt;addShape(boxShape);</div>
+<div class="line">boxBody-&gt;get_position().set(0,0,5);</div>
+<div class="line">world-&gt;addBody(boxBody);</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md6"></a>
+Documentation</h2>
+<ul>
+<li>The API documentation is <a href="https://catdoc.github.io/cannon_pages/">here</a></li>
+</ul>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Build for WebAssembly</h2>
+<h3><a class="anchor" id="autotoc_md8"></a>
+Install Emscripten:</h3>
+<div class="fragment"><div class="line">$ git clone https:<span class="comment">//github.com/emscripten-core/emsdk.git</span></div>
+<div class="line">$ cd emsdk</div>
+<div class="line">$ git pull</div>
+<div class="line">$ ./emsdk install latest</div>
+<div class="line">$ ./emsdk activate latest</div>
+<div class="line">$ source ./emsdk_env.sh</div>
+<div class="line">$ emcc -v</div>
+</div><!-- fragment --><ul>
+<li>Set your_emsdk_path/upstream/emscripten to $EMSCRIPTEN in PATH env</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md9"></a>
+Compile Wasm:</h3>
+<div class="fragment"><div class="line">$ cd webassembly</div>
+<div class="line">$ $EMSCRIPTEN/emmake make</div>
+</div><!-- fragment --><ul>
+<li>The Cannon_v1.0.0_min.wasm.wasm will be output to dir webassembly/build</li>
+</ul>
+<h3><a class="anchor" id="autotoc_md10"></a>
+WebAssembly usage for Cocos Creator3D In &lt;a href="https://open.ihago.net/"&gt;Hago Game Runtime&lt;/a&gt;:</h3>
+<ul>
+<li>Copy Cannon_v1.0.0_min.wasm.js &amp; Cannon_v1.0.0_min.wasm.wasm to your project build output dir</li>
+<li>Replace main.js with main-fix-hago.js</li>
+<li>Add <code>&lt;script src="Cannon_v1.0.0_min.wasm.js" /&gt;</code> to index.html</li>
+<li>Replace cocos3d-js.js with the code snippet: <div class="fragment"><div class="line">cannon_min = window.WASM_CANNON || cannon_min;</div>
+<div class="line">setWrap &amp; getWrap</div>
+<div class="line">shapesLength &amp; getShapeOffset &amp; getShapeOrientation</div>
+</div><!-- fragment --></li>
+</ul>
+<h2><a class="anchor" id="autotoc_md11"></a>
+TODO:</h2>
+<ul>
+<li>Demos will support android platform</li>
+<li>Add UI in demos</li>
+<li>Add demos for WebAssembly </li>
+</ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->

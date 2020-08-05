@@ -157,7 +157,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af443a629da6c56354ebb19418d82b7ae"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_defines_8h.html#af4fb79d9580a2a30df14bef5210fb77c">CANNON_DEFINE_REF_FUNC_DESC</a> <a class="el" href="class_a_a_b_b.html">AABB</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_a_b_b.html#af443a629da6c56354ebb19418d82b7ae">createRef</a> ()</td></tr>
+<tr class="memitem:af443a629da6c56354ebb19418d82b7ae"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_a_a_b_b.html">AABB</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_a_a_b_b.html#af443a629da6c56354ebb19418d82b7ae">createRef</a> ()</td></tr>
 <tr class="separator:af443a629da6c56354ebb19418d82b7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -238,8 +238,8 @@ Private Attributes</h2></td></tr>
 <p>The constructor of <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lowerBound</td><td>A pointer to a <a class="el" href="class_vec3.html" title="3-dimensional vector">Vec3</a> </td></tr>
-    <tr><td class="paramname">upperBound</td><td>a pointer to a <a class="el" href="class_vec3.html" title="3-dimensional vector">Vec3</a> </td></tr>
+    <tr><td class="paramname">lowerBoundPtr</td><td>A pointer to a <a class="el" href="class_vec3.html" title="3-dimensional vector">Vec3</a> </td></tr>
+    <tr><td class="paramname">upperBoundPtr</td><td>A pointer to a <a class="el" href="class_vec3.html" title="3-dimensional vector">Vec3</a> </td></tr>
   </table>
   </dd>
 </dl>
@@ -303,7 +303,7 @@ Private Attributes</h2></td></tr>
 <p>Returns true if the given <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a> is fully contained in this <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">aabb</td><td></td></tr>
+    <tr><td class="paramname">aabb</td><td>The <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a> to be tested </td></tr>
   </table>
   </dd>
 </dl>
@@ -382,7 +382,7 @@ Private Attributes</h2></td></tr>
 <p>Extend this <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a> so that it covers the given <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a> too. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">aabb</td><td></td></tr>
+    <tr><td class="paramname">aabb</td><td>The <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a> to be extended </td></tr>
   </table>
   </dd>
 </dl>
@@ -454,14 +454,14 @@ Private Attributes</h2></td></tr>
 <p>Get corners of this. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a</td><td></td></tr>
-    <tr><td class="paramname">b</td><td></td></tr>
-    <tr><td class="paramname">c</td><td></td></tr>
-    <tr><td class="paramname">d</td><td></td></tr>
-    <tr><td class="paramname">e</td><td></td></tr>
-    <tr><td class="paramname">f</td><td></td></tr>
-    <tr><td class="paramname">g</td><td></td></tr>
-    <tr><td class="paramname">h</td><td></td></tr>
+    <tr><td class="paramname">a</td><td>The Corner a </td></tr>
+    <tr><td class="paramname">b</td><td>The Corner b </td></tr>
+    <tr><td class="paramname">c</td><td>The Corner c </td></tr>
+    <tr><td class="paramname">d</td><td>The Corner d </td></tr>
+    <tr><td class="paramname">e</td><td>The Corner e </td></tr>
+    <tr><td class="paramname">f</td><td>The Corner f </td></tr>
+    <tr><td class="paramname">g</td><td>The Corner g </td></tr>
+    <tr><td class="paramname">h</td><td>The Corner h </td></tr>
   </table>
   </dd>
 </dl>
@@ -555,7 +555,7 @@ Private Attributes</h2></td></tr>
 <p>Returns true if the given <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a> overlaps this <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">aabb</td><td></td></tr>
+    <tr><td class="paramname">aabb</td><td>The <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a> to be tested </td></tr>
   </table>
   </dd>
 </dl>
@@ -632,9 +632,9 @@ Private Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">points</td><td>An array of <a class="el" href="class_vec3.html" title="3-dimensional vector">Vec3</a>'s. </td></tr>
-    <tr><td class="paramname">position</td><td></td></tr>
-    <tr><td class="paramname">quaternion</td><td></td></tr>
-    <tr><td class="paramname">skinSize</td><td></td></tr>
+    <tr><td class="paramname">position</td><td>The position in world frame </td></tr>
+    <tr><td class="paramname">quaternion</td><td>The orientation in world frame </td></tr>
+    <tr><td class="paramname">skinSize</td><td>A pointer to float </td></tr>
   </table>
   </dd>
 </dl>
@@ -723,8 +723,8 @@ Private Attributes</h2></td></tr>
 <p>Get the representation of an <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a> in another frame. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frame</td><td></td></tr>
-    <tr><td class="paramname">target</td><td></td></tr>
+    <tr><td class="paramname">frame</td><td>The local frame </td></tr>
+    <tr><td class="paramname">target</td><td>The transformed result </td></tr>
   </table>
   </dd>
 </dl>
@@ -761,8 +761,8 @@ Private Attributes</h2></td></tr>
 <p>Get the representation of an <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a> in the global frame. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">frame</td><td></td></tr>
-    <tr><td class="paramname">target</td><td></td></tr>
+    <tr><td class="paramname">frame</td><td>The world frame </td></tr>
+    <tr><td class="paramname">target</td><td>The transformed result </td></tr>
   </table>
   </dd>
 </dl>

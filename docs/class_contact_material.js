@@ -1,8 +1,8 @@
 var class_contact_material =
 [
-    [ "Options", "class_contact_material_1_1_options.html", "class_contact_material_1_1_options" ],
+    [ "ContactMaterialOptions", "struct_contact_material_1_1_contact_material_options.html", "struct_contact_material_1_1_contact_material_options" ],
     [ "ContactMaterial", "class_contact_material.html#ae4134c1492e0b04a27322bf02b17dd24", null ],
-    [ "ContactMaterial", "class_contact_material.html#a2a2d15d7a53bb5d004f6b74be51f947f", null ],
+    [ "ContactMaterial", "class_contact_material.html#af672dc350e6bd2d7a6861b348b70bbc3", null ],
     [ "~ContactMaterial", "class_contact_material.html#ab0f1811a1d17722d1734f6a3b000012c", null ],
     [ "contactEquationRelaxation", "class_contact_material.html#ab9a897efaf7921f83f532699a260729c", null ],
     [ "contactEquationStiffness", "class_contact_material.html#add91fb2bad05d6f7ba6abc9e242b2e8d", null ],

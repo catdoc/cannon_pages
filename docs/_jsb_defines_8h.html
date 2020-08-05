@@ -641,7 +641,7 @@ Macros</h2></td></tr>
 <div class="line">SE_LOGW(<span class="stringliteral">&quot;cannon %s::%s func nativeObject is nullptr.&quot;</span>, #clsName, #funcName); \</div>
 <div class="line">return <span class="keyword">false</span>; \</div>
 <div class="line">} \</div>
-<div class="line">auto cobj = (CANNON::clsName*)s.nativeThisObject(); \</div>
+<div class="line">auto cobj = (cannon::clsName*)s.nativeThisObject(); \</div>
 <div class="line">auto&amp; args = s.args();  \</div>
 <div class="line">int argc = (int)args.size(); \</div>
 <div class="line">bool ok = <span class="keyword">true</span>;</div>
@@ -845,7 +845,7 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">bool</span> js_cannon_##cls##_set_##property(se::State&amp; s) \</div>
 <div class="line">{ \</div>
-<div class="line">CANNON::cls* cobj = (CANNON::cls*)s.nativeThisObject(); \</div>
+<div class="line">cannon::cls* cobj = (cannon::cls*)s.nativeThisObject(); \</div>
 <div class="line">SE_PRECONDITION2(cobj, <span class="keyword">false</span>, <span class="stringliteral">&quot;js_cannon_#cls_set_#property : Invalid Native Object&quot;</span>); \</div>
 <div class="line">const <span class="keyword">auto</span>&amp; args = s.args(); \</div>
 <div class="line">size_t argc = args.size(); \</div>
@@ -863,7 +863,7 @@ Macros</h2></td></tr>
 <div class="line">SE_BIND_PROP_SET(js_cannon_##cls##_set_##property) \</div>
 <div class="line">static <span class="keywordtype">bool</span> js_cannon_##cls##_get_##property(se::State&amp; s) \</div>
 <div class="line">{ \</div>
-<div class="line">CANNON::cls* cobj = (CANNON::cls*)s.nativeThisObject(); \</div>
+<div class="line">cannon::cls* cobj = (cannon::cls*)s.nativeThisObject(); \</div>
 <div class="line">SE_PRECONDITION2(cobj, <span class="keyword">false</span>, <span class="stringliteral">&quot;js_cannon_#cls_get_#property : Invalid Native Object&quot;</span>); \</div>
 <div class="line">s.rval().returnFunc(cobj-&gt;get_##property()); \</div>
 <div class="line">return <span class="keyword">true</span>; \</div>
@@ -953,7 +953,7 @@ Macros</h2></td></tr>
 <div class="line">SE_BIND_CTOR(js_cannon_##clsName##_constructor, __jsb_cannon_##clsName##_class, js_cannon_##clsName##_finalize) \</div>
 <div class="line">static <span class="keywordtype">bool</span> js_cannon_##clsName##_finalize(se::State&amp; s) \</div>
 <div class="line">{ \</div>
-<div class="line">CANNON::clsName* cobj = (CANNON::clsName*)s.nativeThisObject(); \</div>
+<div class="line">cannon::clsName* cobj = (cannon::clsName*)s.nativeThisObject(); \</div>
 <div class="line">delete cobj;    \</div>
 <div class="line">return <span class="keyword">true</span>;  \</div>
 <div class="line">}  \</div>
@@ -980,7 +980,7 @@ Macros</h2></td></tr>
 <div class="line">SE_BIND_CTOR(js_cannon_##clsName##_constructor, __jsb_cannon_##clsName##_class, js_cannon_##clsName##_finalize) \</div>
 <div class="line">static <span class="keywordtype">bool</span> js_cannon_##clsName##_finalize(se::State&amp; s) \</div>
 <div class="line">{ \</div>
-<div class="line">CANNON::clsName* cobj = (CANNON::clsName*)s.nativeThisObject(); \</div>
+<div class="line">cannon::clsName* cobj = (cannon::clsName*)s.nativeThisObject(); \</div>
 <div class="line">if (cobj == <span class="keyword">nullptr</span>) { \</div>
 <div class="line">return <span class="keyword">false</span>; \</div>
 <div class="line">} \</div>
@@ -1015,7 +1015,7 @@ Macros</h2></td></tr>
 <div class="line">{  \</div>
 <div class="line">const <span class="keyword">auto</span>&amp; args = s.args();  \</div>
 <div class="line">int argc = (int)args.size(); \</div>
-<div class="line">CANNON::clsName* cobj = <span class="keyword">nullptr</span>;</div>
+<div class="line">cannon::clsName* cobj = <span class="keyword">nullptr</span>;</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1078,7 +1078,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">cls-&gt;install();  \</div>
-<div class="line">JSBClassType::registerClass&lt;CANNON::clsName&gt;(cls);  \</div>
+<div class="line">JSBClassType::registerClass&lt;cannon::clsName&gt;(cls);  \</div>
 <div class="line">__jsb_cannon_##clsName##_proto = cls-&gt;getProto();  \</div>
 <div class="line">__jsb_cannon_##clsName##_class = cls;  \</div>
 <div class="line">return <span class="keyword">true</span>;  \</div>

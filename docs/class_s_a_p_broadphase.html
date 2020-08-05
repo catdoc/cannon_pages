@@ -366,21 +366,12 @@ Protected Attributes</h2></td></tr>
 <p>Returns all the bodies within the <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">world</td><td></td></tr>
-    <tr><td class="paramname">aabb</td><td></td></tr>
-    <tr><td class="paramname">result</td><td>An array to store resulting bodies in.</td></tr>
+    <tr><td class="paramname">world</td><td>The physics world </td></tr>
+    <tr><td class="paramname">aabb</td><td>The <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a> </td></tr>
+    <tr><td class="paramname">result</td><td>An array to store resulting bodies in </td></tr>
   </table>
   </dd>
 </dl>
-<p>Returns all the bodies within an <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a>. @method aabbQuery </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">{World}</td><td>world </td></tr>
-    <tr><td class="paramname">{AABB}</td><td>aabb </td></tr>
-    <tr><td class="paramname">{array}</td><td>result An array to store resulting bodies in. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{array} </dd></dl>
 
 <p>Reimplemented from <a class="el" href="class_broadphase.html#a9facce4558308813253f5fb11f5f5f41">Broadphase</a>.</p>
 
@@ -410,7 +401,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Computes the variance of the body positions and estimates the best axis to use. Will automatically set property .axisIndex. </p>
-<p>Computes the variance of the body positions and estimates the best axis to use. Will automatically set property .axisIndex. @method autoDetectAxis </p>
 
 </div>
 </div>
@@ -457,23 +447,13 @@ Protected Attributes</h2></td></tr>
 <p>Check if the bounds of two bodies overlap, along the given SAP axis. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bi</td><td></td></tr>
-    <tr><td class="paramname">bj</td><td></td></tr>
-    <tr><td class="paramname">axisIndex</td><td></td></tr>
+    <tr><td class="paramname">bi</td><td>A body to be checked </td></tr>
+    <tr><td class="paramname">bj</td><td>Another body to be checked </td></tr>
+    <tr><td class="paramname">axisIndex</td><td>The axis index, 0 for x axis, and 1 for y axis. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if overlap</dd></dl>
-<p>Check if the bounds of two bodies overlap, along the given SAP axis.</p>
-<p>@method checkBounds </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">{Body}</td><td>bi </td></tr>
-    <tr><td class="paramname">{Body}</td><td>bj </td></tr>
-    <tr><td class="paramname">{Number}</td><td>axisIndex </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{Boolean} </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if overlap </dd></dl>
 
 </div>
 </div>
@@ -521,21 +501,13 @@ Protected Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">world</td><td>The world to search in </td></tr>
-    <tr><td class="paramname">p1</td><td>Empty array to be filled with body objects </td></tr>
-    <tr><td class="paramname">p2</td><td>Empty array to be filled with body objects</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Get all the collision pairs in the physics world @method collisionPairs </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">{World}</td><td>world </td></tr>
-    <tr><td class="paramname">{Array}</td><td>pairs1 </td></tr>
-    <tr><td class="paramname">{Array}</td><td>pairs2 </td></tr>
+    <tr><td class="paramname">pairs1</td><td>Empty array to be filled with body objects </td></tr>
+    <tr><td class="paramname">pairs2</td><td>Empty array to be filled with body objects </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="class_broadphase.html#a7dc8cdc6dba4155918c8b2b87af4dc45">Broadphase</a>.</p>
+<p>Reimplemented from <a class="el" href="class_broadphase.html#acbcfee012a6e4fcb552f5ef36a2c94cb">Broadphase</a>.</p>
 
 </div>
 </div>
@@ -566,17 +538,10 @@ Protected Attributes</h2></td></tr>
 <p>insertionSortX </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a</td><td>An array of body</td></tr>
+    <tr><td class="paramname">a</td><td>An array of body </td></tr>
   </table>
   </dd>
 </dl>
-<p>@method insertionSortX </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">{Array}</td><td>a </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{Array} </dd></dl>
 
 </div>
 </div>
@@ -607,17 +572,10 @@ Protected Attributes</h2></td></tr>
 <p>insertionSortY </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a</td><td>An array of body</td></tr>
+    <tr><td class="paramname">a</td><td>An array of body </td></tr>
   </table>
   </dd>
 </dl>
-<p>@method insertionSortY </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">{Array}</td><td>a </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{Array} </dd></dl>
 
 </div>
 </div>
@@ -648,17 +606,10 @@ Protected Attributes</h2></td></tr>
 <p>insertionSortZ </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a</td><td>An array of body</td></tr>
+    <tr><td class="paramname">a</td><td>An array of body </td></tr>
   </table>
   </dd>
 </dl>
-<p>@method insertionSortZ </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">{Array}</td><td>a </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>{Array} </dd></dl>
 
 </div>
 </div>
@@ -717,8 +668,7 @@ Protected Attributes</h2></td></tr>
 <p>Change the world. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">world</td><td>To be implemented by subcasses @method setWorld </td></tr>
-    <tr><td class="paramname">{World}</td><td>world </td></tr>
+    <tr><td class="paramname">world</td><td>The physics world </td></tr>
   </table>
   </dd>
 </dl>

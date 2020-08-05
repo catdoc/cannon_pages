@@ -323,13 +323,13 @@ Protected Attributes</h2></td></tr>
 <p>The constructor of <a class="el" href="class_hinge_constraint.html" title="Hinge constraint. Think of it as a door hinge. It tries to keep the door in the correct place and wit...">HingeConstraint</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>The id of this constraint </td></tr>
-    <tr><td class="paramname">bodyA</td><td></td></tr>
-    <tr><td class="paramname">bodyB</td><td><a class="el" href="class_body.html" title="A RigidBody in the physics world.">Body</a> that will be constrained in a similar way to the same point as bodyA. </td></tr>
+    <tr><td class="paramname">id</td><td>The ID of this constraint. </td></tr>
+    <tr><td class="paramname">bodyA</td><td>A body that will be constrained. </td></tr>
+    <tr><td class="paramname">bodyB</td><td>Another body that will be constrained in a similar way to the same point as bodyA. </td></tr>
     <tr><td class="paramname">pivotA</td><td>A point defined locally in bodyA. This defines the offset of axisA. </td></tr>
     <tr><td class="paramname">pivotB</td><td>See pivotA. </td></tr>
     <tr><td class="paramname">axisA</td><td>An axis that bodyA can rotate around, defined locally in bodyA. </td></tr>
-    <tr><td class="paramname">axisB</td><td></td></tr>
+    <tr><td class="paramname">axisB</td><td>An axis that bodyB can rotate around, defined locally in bodyB. </td></tr>
     <tr><td class="paramname">maxForce</td><td>The maximum force that should be applied to constrain the bodies. </td></tr>
     <tr><td class="paramname">collideConnected</td><td>Default is true </td></tr>
     <tr><td class="paramname">wakeUpBodies</td><td>Default is true </td></tr>

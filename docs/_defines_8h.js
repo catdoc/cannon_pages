@@ -56,14 +56,14 @@ var _defines_8h =
     [ "NS_CANNON_BEGIN", "_defines_8h.html#a7e58e50de2558a89a5915b9234017fb5", null ],
     [ "NS_CANNON_END", "_defines_8h.html#a560b9a4b8b95b0695aa8612c3af11f0a", null ],
     [ "seval_to_real_t", "_defines_8h.html#a3bcff8cc630dd5d7c076b60a44e554c4", null ],
-    [ "byte", "_defines_8h.html#aae7598da89369680ff3f220f8aa70aab", null ],
+    [ "byte", "_defines_8h.html#ac61cff3fccce1d39835a85a773613d78", null ],
     [ "real_t", "_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9", null ],
-    [ "EulerOrder", "_defines_8h.html#a80437c87e23ffad13337ff7759c2b942", [
-      [ "XYZ", "_defines_8h.html#a80437c87e23ffad13337ff7759c2b942abebd96c77d57199374f4c28c383bd8c9", null ],
-      [ "YZX", "_defines_8h.html#a80437c87e23ffad13337ff7759c2b942aca010e09c51266fd72dc2b56c05a9cb3", null ],
-      [ "ZXY", "_defines_8h.html#a80437c87e23ffad13337ff7759c2b942a36863842d59f448cdd01725c828d9c03", null ],
-      [ "ZYX", "_defines_8h.html#a80437c87e23ffad13337ff7759c2b942ab36a3886a6ee33e7f2b5a144135511f1", null ],
-      [ "YXZ", "_defines_8h.html#a80437c87e23ffad13337ff7759c2b942a0324f89abce9d58d23a0f60d397f14cf", null ],
-      [ "XZY", "_defines_8h.html#a80437c87e23ffad13337ff7759c2b942ac9f5ee5e12c3c1eeb9deedd1f9c0b475", null ]
+    [ "EulerOrder", "_defines_8h.html#a9cdaaa56ba1b15900324aeaeda47771b", [
+      [ "XYZ", "_defines_8h.html#a9cdaaa56ba1b15900324aeaeda47771bafb1ff05c50c0f3c3dc00f3f58daa783e", null ],
+      [ "YZX", "_defines_8h.html#a9cdaaa56ba1b15900324aeaeda47771badc2ffc685cfc5b904e4ab491aa713add", null ],
+      [ "ZXY", "_defines_8h.html#a9cdaaa56ba1b15900324aeaeda47771bacedb9699bfae6eaaee40bf59376c658b", null ],
+      [ "ZYX", "_defines_8h.html#a9cdaaa56ba1b15900324aeaeda47771bac286da8d020ccc4cd452ce66a70a5367", null ],
+      [ "YXZ", "_defines_8h.html#a9cdaaa56ba1b15900324aeaeda47771ba72abcf2195fc82882d084838f250d0c1", null ],
+      [ "XZY", "_defines_8h.html#a9cdaaa56ba1b15900324aeaeda47771bae2fde14b1ee4e4e764e5d71e25f6c324", null ]
     ] ]
 ];

@@ -1,18 +1,6 @@
 var class_shape =
 [
-    [ "ShapeOptions", "class_shape_1_1_shape_options.html", "class_shape_1_1_shape_options" ],
-    [ "Type", "class_shape.html#a359229718ec54cfac5980b883e3e4ea8", [
-      [ "NONE", "class_shape.html#a359229718ec54cfac5980b883e3e4ea8ab50339a10e1de285ac99d4c3990b8693", null ],
-      [ "SPHERE", "class_shape.html#a359229718ec54cfac5980b883e3e4ea8a6f7cea7381e843e2ee0338b4a92b0d43", null ],
-      [ "PLANE", "class_shape.html#a359229718ec54cfac5980b883e3e4ea8aad6990fc23cd957328515fde2db852a3", null ],
-      [ "BOX", "class_shape.html#a359229718ec54cfac5980b883e3e4ea8ae657cce1913c857166b0475f18668ef5", null ],
-      [ "COMPOUND", "class_shape.html#a359229718ec54cfac5980b883e3e4ea8a756a113833040dfb33e27830fba5e901", null ],
-      [ "CONVEXPOLYHEDRON", "class_shape.html#a359229718ec54cfac5980b883e3e4ea8aaf87682f4e39e153fc763c1a202d8879", null ],
-      [ "HEIGHTFIELD", "class_shape.html#a359229718ec54cfac5980b883e3e4ea8ad7214d4b35b44c07027e9dd1639e60fe", null ],
-      [ "PARTICLE", "class_shape.html#a359229718ec54cfac5980b883e3e4ea8a5818992261344f3f6c810ea0dfc13c24", null ],
-      [ "CYLINDER", "class_shape.html#a359229718ec54cfac5980b883e3e4ea8addec32fe897072b48368b1abe03de2aa", null ],
-      [ "TRIMESH", "class_shape.html#a359229718ec54cfac5980b883e3e4ea8a67cd38949832626298475650a6bba26a", null ]
-    ] ],
+    [ "ShapeOptions", "struct_shape_1_1_shape_options.html", "struct_shape_1_1_shape_options" ],
     [ "Shape", "class_shape.html#a6556b4959f74547a8e1ba2cab9924898", null ],
     [ "~Shape", "class_shape.html#a935afc9e576015f967d90de56977167d", null ],
     [ "boundingSphereRadius", "class_shape.html#ad440e9ce0d0c649558f54acf2a4979f7", null ],

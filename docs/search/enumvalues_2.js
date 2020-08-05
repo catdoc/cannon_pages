@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['closest_2764',['CLOSEST',['../class_ray.html#a80e540b5796e4bc6693ec045be99fc36ae9c32f09a44ae1ae34e42d53502fab77',1,'Ray']]],
-  ['collide_2765',['COLLIDE',['../_event_8h.html#a2628ea8d12e8b2563c32f05dc7fff6faa8c8a75df85d04cb6eaea28ddff7a5589',1,'Event.h']]],
-  ['compound_2766',['COMPOUND',['../class_shape.html#a359229718ec54cfac5980b883e3e4ea8a756a113833040dfb33e27830fba5e901',1,'Shape']]],
-  ['convexpolyhedron_2767',['CONVEXPOLYHEDRON',['../class_shape.html#a359229718ec54cfac5980b883e3e4ea8aaf87682f4e39e153fc763c1a202d8879',1,'Shape']]],
-  ['cylinder_2768',['CYLINDER',['../class_shape.html#a359229718ec54cfac5980b883e3e4ea8addec32fe897072b48368b1abe03de2aa',1,'Shape']]]
+  ['xyz_2783',['XYZ',['../namespacecannon.html#a9cdaaa56ba1b15900324aeaeda47771bafb1ff05c50c0f3c3dc00f3f58daa783e',1,'cannon']]],
+  ['xzy_2784',['XZY',['../namespacecannon.html#a9cdaaa56ba1b15900324aeaeda47771bae2fde14b1ee4e4e764e5d71e25f6c324',1,'cannon']]]
 ];

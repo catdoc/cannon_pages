@@ -87,7 +87,6 @@ $(document).ready(function(){initNavTree('class_ray.html',''); initResizable(); 
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_ray-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -105,8 +104,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ray_1_1_intersect_options.html">IntersectOptions</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Only used by <a class="el" href="class_ray.html#a9af7c4fe060e8924b510d196097fca19" title="intersectConvex">Ray::intersectConvex</a>.  <a href="struct_ray_1_1_intersect_options.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray_1_1_ray_options.html">RayOptions</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The options to perform a ray test.  <a href="class_ray_1_1_ray_options.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_ray_1_1_ray_options.html">RayOptions</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The options to perform a ray test.  <a href="struct_ray_1_1_ray_options.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
@@ -127,7 +126,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae11e496ad4c6b4838a3136f34569c2de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b0e575ce5df046c0c7615c32a96a46f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#a8b0e575ce5df046c0c7615c32a96a46f">~Ray</a> ()</td></tr>
 <tr class="separator:a8b0e575ce5df046c0c7615c32a96a46f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58b7a7fc108dd2e557d705854c59fd49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#a58b7a7fc108dd2e557d705854c59fd49">intersectWorld</a> (<a class="el" href="class_world.html">World</a> *world, const <a class="el" href="class_ray_1_1_ray_options.html">RayOptions</a> &amp;options)</td></tr>
+<tr class="memitem:a58b7a7fc108dd2e557d705854c59fd49"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#a58b7a7fc108dd2e557d705854c59fd49">intersectWorld</a> (<a class="el" href="class_world.html">World</a> *world, const <a class="el" href="struct_ray_1_1_ray_options.html">RayOptions</a> &amp;options)</td></tr>
 <tr class="memdesc:a58b7a7fc108dd2e557d705854c59fd49"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do itersection against all bodies in the given <a class="el" href="class_world.html" title="Represents the entire physical world.">World</a>.  <a href="class_ray.html#a58b7a7fc108dd2e557d705854c59fd49">More...</a><br /></td></tr>
 <tr class="separator:a58b7a7fc108dd2e557d705854c59fd49"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b12444da5843f516e3af6eec24abd12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#a9b12444da5843f516e3af6eec24abd12">intersectBody</a> (<a class="el" href="class_body.html">Body</a> *body, <a class="el" href="class_raycast_result.html">RaycastResult</a> *<a class="el" href="class_ray.html#a6158a59fd8b8fba2b85af77f510c69ae">result</a>)</td></tr>
@@ -164,7 +163,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:af850daf3992f1d95564b03736bfd6953"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the world <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a> of the ray.  <a href="class_ray.html#af850daf3992f1d95564b03736bfd6953">More...</a><br /></td></tr>
 <tr class="separator:af850daf3992f1d95564b03736bfd6953"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea73830e3b86463a43bbf312541fa68f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#aea73830e3b86463a43bbf312541fa68f">reportIntersection</a> (const <a class="el" href="class_vec3.html">Vec3</a> &amp;normal, const <a class="el" href="class_vec3.html">Vec3</a> &amp;hitPointWorld, <a class="el" href="class_shape.html">Shape</a> *shape, <a class="el" href="class_body.html">Body</a> *body, int hitFaceIndex=-1)</td></tr>
-<tr class="memdesc:aea73830e3b86463a43bbf312541fa68f"><td class="mdescLeft">&#160;</td><td class="mdescRight">reportIntersection  <a href="class_ray.html#aea73830e3b86463a43bbf312541fa68f">More...</a><br /></td></tr>
+<tr class="memdesc:aea73830e3b86463a43bbf312541fa68f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Report the intersection info.  <a href="class_ray.html#aea73830e3b86463a43bbf312541fa68f">More...</a><br /></td></tr>
 <tr class="separator:aea73830e3b86463a43bbf312541fa68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c0b3f89c8a0f4ecbe378e1ef6b05ac0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#a3c0b3f89c8a0f4ecbe378e1ef6b05ac0">distanceFromIntersection</a> (const <a class="el" href="class_vec3.html">Vec3</a> &amp;<a class="el" href="class_ray.html#a7b17288a97b3b3054afbfbf6c115f31d">from</a>, const <a class="el" href="class_vec3.html">Vec3</a> &amp;<a class="el" href="class_ray.html#a95d3feab454503e98ca3bfbb44a146e6">direction</a>, const <a class="el" href="class_vec3.html">Vec3</a> &amp;position)</td></tr>
 <tr class="separator:a3c0b3f89c8a0f4ecbe378e1ef6b05ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -189,14 +188,11 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa6682168def8b0fa5e381cd7eab80b25"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_ray.html">Ray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#aa6682168def8b0fa5e381cd7eab80b25">createRef</a> (const <a class="el" href="class_vec3.html">Vec3</a> &amp;<a class="el" href="class_ray.html#a7b17288a97b3b3054afbfbf6c115f31d">from</a>=<a class="el" href="class_vec3.html#a41092321b11b7397e6b27730661523b2">Vec3::ZERO</a>, const <a class="el" href="class_vec3.html">Vec3</a> &amp;<a class="el" href="class_ray.html#ae61be26912e8de58cf278a7c8d8b3448">to</a>=<a class="el" href="class_vec3.html#a41092321b11b7397e6b27730661523b2">Vec3::ZERO</a>)</td></tr>
+<tr class="separator:aa6682168def8b0fa5e381cd7eab80b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a57b73b8d402e51cf9a10c58681594133"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#a57b73b8d402e51cf9a10c58681594133">pointInTriangle</a> (const <a class="el" href="class_vec3.html">Vec3</a> &amp;p, const <a class="el" href="class_vec3.html">Vec3</a> &amp;a, const <a class="el" href="class_vec3.html">Vec3</a> &amp;b, const <a class="el" href="class_vec3.html">Vec3</a> &amp;c)</td></tr>
 <tr class="memdesc:a57b73b8d402e51cf9a10c58681594133"><td class="mdescLeft">&#160;</td><td class="mdescRight">As per "Barycentric Technique" as named here <a href="http://www.blackpawn.com/texts/pointinpoly/default.html">http://www.blackpawn.com/texts/pointinpoly/default.html</a> But without the division.  <a href="class_ray.html#a57b73b8d402e51cf9a10c58681594133">More...</a><br /></td></tr>
 <tr class="separator:a57b73b8d402e51cf9a10c58681594133"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
-<tr class="memitem:aa6682168def8b0fa5e381cd7eab80b25"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_defines_8h.html#af4fb79d9580a2a30df14bef5210fb77c">CANNON_DEFINE_REF_FUNC_DESC</a> <a class="el" href="class_ray.html">Ray</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ray.html#aa6682168def8b0fa5e381cd7eab80b25">createRef</a> (const <a class="el" href="class_vec3.html">Vec3</a> &amp;<a class="el" href="class_ray.html#a7b17288a97b3b3054afbfbf6c115f31d">from</a>=<a class="el" href="class_vec3.html#a41092321b11b7397e6b27730661523b2">Vec3::ZERO</a>, const <a class="el" href="class_vec3.html">Vec3</a> &amp;<a class="el" href="class_ray.html#ae61be26912e8de58cf278a7c8d8b3448">to</a>=<a class="el" href="class_vec3.html#a41092321b11b7397e6b27730661523b2">Vec3::ZERO</a>)</td></tr>
-<tr class="separator:aa6682168def8b0fa5e381cd7eab80b25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -369,7 +365,7 @@ Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -479,7 +475,7 @@ Private Attributes</h2></td></tr>
 <p>Get the world <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a> of the ray. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">aabb</td><td>An pointer the aabb result </td></tr>
+    <tr><td class="paramname">result</td><td>An pointer the aabb result </td></tr>
   </table>
   </dd>
 </dl>
@@ -977,7 +973,7 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="class_ray_1_1_ray_options.html">RayOptions</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_ray_1_1_ray_options.html">RayOptions</a> &amp;&#160;</td>
           <td class="paramname"><em>options</em>&#160;</td>
         </tr>
         <tr>
@@ -1112,13 +1108,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>reportIntersection </p>
+<p>Report the intersection info. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">normal</td><td></td></tr>
-    <tr><td class="paramname">hitPointWorld</td><td></td></tr>
-    <tr><td class="paramname">shape</td><td></td></tr>
-    <tr><td class="paramname">body</td><td></td></tr>
+    <tr><td class="paramname">normal</td><td>The normal result </td></tr>
+    <tr><td class="paramname">hitPointWorld</td><td>The hitPoint in world frame </td></tr>
+    <tr><td class="paramname">shape</td><td>The shape is hit </td></tr>
+    <tr><td class="paramname">body</td><td>The body is hit </td></tr>
   </table>
   </dd>
 </dl>

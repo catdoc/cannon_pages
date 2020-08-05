@@ -1,7 +1,7 @@
 var class_spring =
 [
-    [ "Options", "struct_spring_1_1_options.html", "struct_spring_1_1_options" ],
-    [ "Spring", "class_spring.html#aa45948281274b91485727be8557c8902", null ],
+    [ "SpringOptions", "struct_spring_1_1_spring_options.html", "struct_spring_1_1_spring_options" ],
+    [ "Spring", "class_spring.html#a74677ffd44b244bbf4b46db3a96f2435", null ],
     [ "~Spring", "class_spring.html#a8b5c6088814c8e343be53682f33866f1", null ],
     [ "applyForce", "class_spring.html#ad98d71526f5cac12ac688cf502f1ef7d", null ],
     [ "getWorldAnchorA", "class_spring.html#a0bfabfeb12e0d941eb57aa1c3091da93", null ],

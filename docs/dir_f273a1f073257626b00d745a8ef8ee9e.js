@@ -7,7 +7,7 @@ var dir_f273a1f073257626b00d745a8ef8ee9e =
     [ "World.cpp", "_world_8cpp.html", "_world_8cpp" ],
     [ "World.h", "_world_8h.html", [
       [ "World", "class_world.html", "class_world" ],
-      [ "WorldOptions", "class_world_1_1_world_options.html", "class_world_1_1_world_options" ],
+      [ "WorldOptions", "struct_world_1_1_world_options.html", "struct_world_1_1_world_options" ],
       [ "Profile", "struct_world_1_1_profile.html", "struct_world_1_1_profile" ]
     ] ]
 ];

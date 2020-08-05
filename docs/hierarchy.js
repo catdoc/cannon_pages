@@ -2,12 +2,13 @@ var hierarchy =
 [
     [ "AABB", "class_a_a_b_b.html", null ],
     [ "BlockAllocator", "class_block_allocator.html", null ],
-    [ "Body::BodyOptions", "class_body_1_1_body_options.html", null ],
+    [ "Body::BodyOptions", "struct_body_1_1_body_options.html", null ],
     [ "Heightfield::CachedPillar", "class_heightfield_1_1_cached_pillar.html", null ],
     [ "CannonBlock", "struct_cannon_block.html", null ],
     [ "CannonChunk", "struct_cannon_chunk.html", null ],
     [ "CannonStackEntry", "struct_cannon_stack_entry.html", null ],
     [ "ContactListTuple", "struct_contact_list_tuple.html", null ],
+    [ "ContactMaterial::ContactMaterialOptions", "struct_contact_material_1_1_contact_material_options.html", null ],
     [ "ContactMaterialTuple", "struct_contact_material_tuple.html", null ],
     [ "ConvexPolyhedron::ContactPointObject", "struct_convex_polyhedron_1_1_contact_point_object.html", null ],
     [ "ContactTuple", "struct_contact_tuple.html", null ],
@@ -27,21 +28,18 @@ var hierarchy =
     ] ],
     [ "JacobianElement", "class_jacobian_element.html", null ],
     [ "Mat3", "class_mat3.html", null ],
-    [ "Material::MaterialOptions", "class_material_1_1_material_options.html", null ],
+    [ "Material::MaterialOptions", "struct_material_1_1_material_options.html", null ],
     [ "SplitSolver::Node", "struct_split_solver_1_1_node.html", null ],
     [ "ObjectCollisionMatrix", "class_object_collision_matrix.html", null ],
     [ "OctreeNode", "class_octree_node.html", [
       [ "Octree", "class_octree.html", null ]
     ] ],
-    [ "Spring::Options", "struct_spring_1_1_options.html", null ],
-    [ "WheelInfo::Options", "struct_wheel_info_1_1_options.html", null ],
-    [ "ContactMaterial::Options", "class_contact_material_1_1_options.html", null ],
     [ "World::Profile", "struct_world_1_1_profile.html", null ],
     [ "Quaternion", "class_quaternion.html", null ],
     [ "Ray", "class_ray.html", null ],
     [ "RayCallback", "class_ray_callback.html", null ],
     [ "RaycastResult", "class_raycast_result.html", null ],
-    [ "Ray::RayOptions", "class_ray_1_1_ray_options.html", null ],
+    [ "Ray::RayOptions", "struct_ray_1_1_ray_options.html", null ],
     [ "Ref", "class_ref.html", [
       [ "Body", "class_body.html", null ],
       [ "Broadphase", "class_broadphase.html", [
@@ -86,8 +84,9 @@ var hierarchy =
       ] ],
       [ "Spring", "class_spring.html", null ]
     ] ],
-    [ "Shape::ShapeOptions", "class_shape_1_1_shape_options.html", null ],
+    [ "Shape::ShapeOptions", "struct_shape_1_1_shape_options.html", null ],
     [ "ShapePairTuple", "struct_shape_pair_tuple.html", null ],
+    [ "Spring::SpringOptions", "struct_spring_1_1_spring_options.html", null ],
     [ "StackAllocator", "class_stack_allocator.html", null ],
     [ "Transform", "class_transform.html", null ],
     [ "TupleDictionary< T >", "class_tuple_dictionary.html", null ],
@@ -98,6 +97,7 @@ var hierarchy =
     [ "Utils", "class_utils.html", null ],
     [ "Vec3", "class_vec3.html", null ],
     [ "WheelInfo", "class_wheel_info.html", null ],
+    [ "WheelInfo::WheelOptions", "struct_wheel_info_1_1_wheel_options.html", null ],
     [ "World", "class_world.html", null ],
-    [ "World::WorldOptions", "class_world_1_1_world_options.html", null ]
+    [ "World::WorldOptions", "struct_world_1_1_world_options.html", null ]
 ];

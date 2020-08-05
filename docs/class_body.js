@@ -1,17 +1,6 @@
 var class_body =
 [
-    [ "BodyOptions", "class_body_1_1_body_options.html", "class_body_1_1_body_options" ],
-    [ "State", "class_body.html#a3971c24c55943acf832094ddb07a7fba", [
-      [ "AWAKE", "class_body.html#a3971c24c55943acf832094ddb07a7fbaafca549f3541c801906abc34b45e8953e", null ],
-      [ "SLEEPY", "class_body.html#a3971c24c55943acf832094ddb07a7fbaa2da6c866dc5d2eaf501cac50c18fd7de", null ],
-      [ "SLEEPING", "class_body.html#a3971c24c55943acf832094ddb07a7fbaa7850588c11fe6db41b8b2dd6c455f8f3", null ]
-    ] ],
-    [ "Type", "class_body.html#a69bf70adf31befb1ba5c616bb1de51e4", [
-      [ "UNKNOWN", "class_body.html#a69bf70adf31befb1ba5c616bb1de51e4a696b031073e74bf2cb98e5ef201d4aa3", null ],
-      [ "DYNAMIC", "class_body.html#a69bf70adf31befb1ba5c616bb1de51e4a0fcc90da4811c877ba9f9c12f7d60bc9", null ],
-      [ "STATIC", "class_body.html#a69bf70adf31befb1ba5c616bb1de51e4afe6f99ef1ec99efbdc19a9786cf1facc", null ],
-      [ "KINEMATIC", "class_body.html#a69bf70adf31befb1ba5c616bb1de51e4a019b36cb8fbb31ba1f7c7b7595eb964d", null ]
-    ] ],
+    [ "BodyOptions", "struct_body_1_1_body_options.html", "struct_body_1_1_body_options" ],
     [ "Body", "class_body.html#a25fb1177f9b012247a67919df1023792", null ],
     [ "~Body", "class_body.html#abe1c4da65568cf7978b6247affc461e3", null ],
     [ "aabb", "class_body.html#adc0fcf9cf3d803455f1fee43d837ce65", null ],

@@ -1,7 +1,7 @@
 var class_world =
 [
     [ "Profile", "struct_world_1_1_profile.html", "struct_world_1_1_profile" ],
-    [ "WorldOptions", "class_world_1_1_world_options.html", "class_world_1_1_world_options" ],
+    [ "WorldOptions", "struct_world_1_1_world_options.html", "struct_world_1_1_world_options" ],
     [ "World", "class_world.html#a90b5a7952619fd7214d83ae5e25aa6f2", null ],
     [ "~World", "class_world.html#a8c73fba541a5817fff65147ba47cd827", null ],
     [ "addBody", "class_world.html#aeef7453a683ae1026fb1051ccef7345d", null ],

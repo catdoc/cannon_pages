@@ -98,36 +98,37 @@ $(document).ready(function(){initNavTree('_sphere_8h_source.html',''); initResiz
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_sphere.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="_defines_8h.html#a432c8182843f8521633b313f36acfbac">CANNON_API</a> <a class="code" href="class_sphere.html">Sphere</a> : <span class="keyword">public</span> <a class="code" href="class_shape.html">Shape</a> {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="_defines_8h.html#ab0aaa28d81b40e26ca465986a3908c32">CANNON_DEFINE_CLASS_TYPE</a>(<a class="code" href="class_sphere.html">Sphere</a>)</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_sphere.html">Sphere</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> radius=1.0);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="_defines_8h.html#a1816ce40815dc2bd16d2366e35d3e016">CANNON_DECLARE_ALIGNED_ALLOCATOR</a>()</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_vec3.html">Vec3</a>&amp; <a class="code" href="class_shape.html#af7a33344a69e7b0b5371846a8a5f1e53">calculateLocalInertia</a>(<a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> mass, <a class="code" href="class_vec3.html">Vec3</a>&amp; target) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="code" href="class_shape.html#a79e9b42392a45a4fb4d4ad5c420c994f">volume</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_shape.html#aa2b8d88fc3ca0f712ebc8e7c4838b1f4">updateBoundingSphereRadius</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_shape.html#a63fcd01efa598e40ccd15d1d17ae0c10">calculateWorldAABB</a>(<span class="keyword">const</span> <a class="code" href="class_vec3.html">Vec3</a> &amp;pos, <span class="keyword">const</span> <a class="code" href="class_quaternion.html">Quaternion</a> &amp;quat, <a class="code" href="class_vec3.html">Vec3</a> &amp;min, <a class="code" href="class_vec3.html">Vec3</a> &amp;max) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_sphere.html#a3654e00e639eced4f6e44b51fb9eb2d5">   59</a></span>&#160;    <a class="code" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="code" href="class_sphere.html#a3654e00e639eced4f6e44b51fb9eb2d5">radius</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _radius; }</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="_defines_8h.html#adee8a38766b92df14c0c12d71b8a8df5">CANNON_DEFINE_GETTER_SETTER_BASE</a>(radius, <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a>)</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_sphere.html">Sphere</a>();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_sphere.html#ada5ac639cc0a1d1ece8d7a85a21f2b45">   70</a></span>&#160;    <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> _radius = 1.0;   </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<a class="code" href="_defines_8h.html#a560b9a4b8b95b0695aa8612c3af11f0a">NS_CANNON_END</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="_defines_8h.html#a1816ce40815dc2bd16d2366e35d3e016">CANNON_DECLARE_ALIGNED_ALLOCATOR</a>()</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_sphere.html">Sphere</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> radius=1.0);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_vec3.html">Vec3</a>&amp; <a class="code" href="class_shape.html#af7a33344a69e7b0b5371846a8a5f1e53">calculateLocalInertia</a>(<a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> mass, <a class="code" href="class_vec3.html">Vec3</a>&amp; target) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="code" href="class_shape.html#a79e9b42392a45a4fb4d4ad5c420c994f">volume</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_shape.html#aa2b8d88fc3ca0f712ebc8e7c4838b1f4">updateBoundingSphereRadius</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_shape.html#a63fcd01efa598e40ccd15d1d17ae0c10">calculateWorldAABB</a>(<span class="keyword">const</span> <a class="code" href="class_vec3.html">Vec3</a> &amp;pos, <span class="keyword">const</span> <a class="code" href="class_quaternion.html">Quaternion</a> &amp;quat, <a class="code" href="class_vec3.html">Vec3</a> &amp;min, <a class="code" href="class_vec3.html">Vec3</a> &amp;max) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_sphere.html#a3654e00e639eced4f6e44b51fb9eb2d5">   60</a></span>&#160;    <a class="code" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="code" href="class_sphere.html#a3654e00e639eced4f6e44b51fb9eb2d5">radius</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _radius; }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="_defines_8h.html#adee8a38766b92df14c0c12d71b8a8df5">CANNON_DEFINE_GETTER_SETTER_BASE</a>(radius, <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a>)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_sphere.html">Sphere</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_sphere.html#ada5ac639cc0a1d1ece8d7a85a21f2b45">   71</a></span>&#160;    <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> _radius = 1.0;   </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<a class="code" href="_defines_8h.html#a560b9a4b8b95b0695aa8612c3af11f0a">NS_CANNON_END</a></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_quaternion_html"><div class="ttname"><a href="class_quaternion.html">Quaternion</a></div><div class="ttdoc">A Quaternion describes a rotation in 3D space. The Quaternion is mathematically defined as Q = x*i + ...</div><div class="ttdef"><b>Definition:</b> Quaternion.h:24</div></div>
-<div class="ttc" id="aclass_sphere_html_a3654e00e639eced4f6e44b51fb9eb2d5"><div class="ttname"><a href="class_sphere.html#a3654e00e639eced4f6e44b51fb9eb2d5">Sphere::radius</a></div><div class="ttdeci">real_t radius() const</div><div class="ttdoc">Get the radius of this shape.</div><div class="ttdef"><b>Definition:</b> Sphere.h:59</div></div>
+<div class="ttc" id="aclass_sphere_html_a3654e00e639eced4f6e44b51fb9eb2d5"><div class="ttname"><a href="class_sphere.html#a3654e00e639eced4f6e44b51fb9eb2d5">Sphere::radius</a></div><div class="ttdeci">real_t radius() const</div><div class="ttdoc">Get the radius of this shape.</div><div class="ttdef"><b>Definition:</b> Sphere.h:60</div></div>
 <div class="ttc" id="acannon_8h_html"><div class="ttname"><a href="cannon_8h.html">cannon.h</a></div></div>
 <div class="ttc" id="aclass_shape_html_a63fcd01efa598e40ccd15d1d17ae0c10"><div class="ttname"><a href="class_shape.html#a63fcd01efa598e40ccd15d1d17ae0c10">Shape::calculateWorldAABB</a></div><div class="ttdeci">virtual void calculateWorldAABB(const Vec3 &amp;pos, const Quaternion &amp;quat, Vec3 &amp;min, Vec3 &amp;max)</div><div class="ttdoc">Calculate the AABB in the world frame.</div><div class="ttdef"><b>Definition:</b> Shape.h:100</div></div>
 <div class="ttc" id="aclass_shape_html_aa2b8d88fc3ca0f712ebc8e7c4838b1f4"><div class="ttname"><a href="class_shape.html#aa2b8d88fc3ca0f712ebc8e7c4838b1f4">Shape::updateBoundingSphereRadius</a></div><div class="ttdeci">virtual void updateBoundingSphereRadius()</div><div class="ttdoc">Computes the bounding sphere radius. The result is stored in the property .boundingSphereRadius.</div><div class="ttdef"><b>Definition:</b> Shape.h:76</div></div>

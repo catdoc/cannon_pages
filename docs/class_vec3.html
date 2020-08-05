@@ -217,7 +217,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9dcc1708abe686e8801cd1eb5a3f156d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_defines_8h.html#af4fb79d9580a2a30df14bef5210fb77c">CANNON_DEFINE_REF_FUNC_DESC</a> <a class="el" href="class_vec3.html">Vec3</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec3.html#a9dcc1708abe686e8801cd1eb5a3f156d">createRef</a> (<a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_vec3.html#a0dff800eba156f1eb6412ed10ffc1b6c">x</a>=0, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_vec3.html#a2715a0d1f3d933f4125ad32c14907bd0">y</a>=0, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_vec3.html#a62c3d07220d9fac19e4cb0aa9fefc127">z</a>=0)</td></tr>
+<tr class="memitem:a9dcc1708abe686e8801cd1eb5a3f156d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_vec3.html">Vec3</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vec3.html#a9dcc1708abe686e8801cd1eb5a3f156d">createRef</a> (<a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_vec3.html#a0dff800eba156f1eb6412ed10ffc1b6c">x</a>=0, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_vec3.html#a2715a0d1f3d933f4125ad32c14907bd0">y</a>=0, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_vec3.html#a62c3d07220d9fac19e4cb0aa9fefc127">z</a>=0)</td></tr>
 <tr class="separator:a9dcc1708abe686e8801cd1eb5a3f156d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -333,9 +333,9 @@ Static Public Attributes</h2></td></tr>
 <p>The constructor of <a class="el" href="class_vec3.html" title="3-dimensional vector">Vec3</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td></td></tr>
-    <tr><td class="paramname">y</td><td></td></tr>
-    <tr><td class="paramname">z</td><td></td></tr>
+    <tr><td class="paramname">x</td><td>The x component. </td></tr>
+    <tr><td class="paramname">y</td><td>The y component. </td></tr>
+    <tr><td class="paramname">z</td><td>The z component. </td></tr>
   </table>
   </dd>
 </dl>
@@ -439,8 +439,8 @@ Static Public Attributes</h2></td></tr>
 <p>Scale a vector and add it to this vector. Save the result in "target". (target = this + vector * scalar) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">scalar</td><td></td></tr>
-    <tr><td class="paramname">vector</td><td>Another Vector </td></tr>
+    <tr><td class="paramname">scalar</td><td>The scalar value. </td></tr>
+    <tr><td class="paramname">v</td><td>Another vector. </td></tr>
     <tr><td class="paramname">target</td><td>The vector to save the result in. </td></tr>
   </table>
   </dd>
@@ -486,12 +486,12 @@ Static Public Attributes</h2></td></tr>
 <p>Check if a vector equals is almost equal to another one. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">v</td><td></td></tr>
-    <tr><td class="paramname">precision</td><td></td></tr>
+    <tr><td class="paramname">v</td><td>Another vector. </td></tr>
+    <tr><td class="paramname">precision</td><td>The precision. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if equals within precision. </dd></dl>
 
 </div>
 </div>
@@ -522,11 +522,11 @@ Static Public Attributes</h2></td></tr>
 <p>Check if a vector is almost zero. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">precision</td><td></td></tr>
+    <tr><td class="paramname">precision</td><td>The precision. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if equals with zero within precision. </dd></dl>
 
 </div>
 </div>
@@ -664,7 +664,7 @@ Static Public Attributes</h2></td></tr>
 <p>Vector cross product. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">v</td><td></td></tr>
+    <tr><td class="paramname">v</td><td>Another vector. </td></tr>
     <tr><td class="paramname">target</td><td>Target to save in. </td></tr>
   </table>
   </dd>
@@ -721,7 +721,7 @@ Static Public Attributes</h2></td></tr>
 <p>Get squared distance from this point to another point. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p</td><td>Another point </td></tr>
+    <tr><td class="paramname">v</td><td>Another point </td></tr>
   </table>
   </dd>
 </dl>
@@ -756,7 +756,7 @@ Static Public Attributes</h2></td></tr>
 <p>Get distance from this point to another point. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p</td><td>Another point </td></tr>
+    <tr><td class="paramname">v</td><td>Another point </td></tr>
   </table>
   </dd>
 </dl>
@@ -836,12 +836,12 @@ Static Public Attributes</h2></td></tr>
 <p>Check if the vector is anti-parallel to another vector. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">v</td><td></td></tr>
-    <tr><td class="paramname">precision</td><td>Set to zero for exact comparisons </td></tr>
+    <tr><td class="paramname">v</td><td>Another vector. </td></tr>
+    <tr><td class="paramname">precision</td><td>Set to zero for exact comparisons. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if is anti-parallel to another vector within precision. </dd></dl>
 
 </div>
 </div>
@@ -1019,13 +1019,12 @@ Static Public Attributes</h2></td></tr>
 <p>Multiply all the components of the vector with a scalar. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">scalar</td><td></td></tr>
+    <tr><td class="paramname">scalar</td><td>The scalar value. </td></tr>
     <tr><td class="paramname">target</td><td>The vector to save the result in. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>target </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000003">Deprecated:</a></b></dt><dd>Use .<a class="el" href="class_vec3.html#a755ba4e89dc6b93d6d76251ccfaac28e" title="Multiply all the components of the vector with a scalar.">scale()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -1066,13 +1065,12 @@ Static Public Attributes</h2></td></tr>
 <p>Multiply all the components of the vector with a scalar. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">scalar</td><td></td></tr>
+    <tr><td class="paramname">scalar</td><td>The scalar value. </td></tr>
     <tr><td class="paramname">target</td><td>The vector to save the result in. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>target </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000004">Deprecated:</a></b></dt><dd>Use .<a class="el" href="class_vec3.html#a755ba4e89dc6b93d6d76251ccfaac28e" title="Multiply all the components of the vector with a scalar.">scale()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -1136,7 +1134,6 @@ Static Public Attributes</h2></td></tr>
 
 <p>Get the length of the vector. </p>
 <dl class="section return"><dt>Returns</dt><dd>The length of the vector </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use .<a class="el" href="class_vec3.html#a7a3f0e2beb46a5dd09c2428dd3dea9a9" title="Get the length of the vector.">length()</a> instead </dd></dl>
 
 </div>
 </div>
@@ -1165,7 +1162,6 @@ Static Public Attributes</h2></td></tr>
 
 <p>Get the squared length of the vector. </p>
 <dl class="section return"><dt>Returns</dt><dd>The squared length </dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000002">Deprecated:</a></b></dt><dd>Use .<a class="el" href="class_vec3.html#a6b278122cd324a83e495741f8acf6e86" title="Get the squared length of the vector.">lengthSquared()</a> instead. </dd></dl>
 
 </div>
 </div>
@@ -1364,7 +1360,7 @@ Static Public Attributes</h2></td></tr>
 <p>Multiply all the components of the vector with a scalar. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">scalar</td><td></td></tr>
+    <tr><td class="paramname">scalar</td><td>The scalar value. </td></tr>
     <tr><td class="paramname">target</td><td>The vector to save the result in. </td></tr>
   </table>
   </dd>
@@ -1416,9 +1412,9 @@ Static Public Attributes</h2></td></tr>
 <p>Set the vectors' 3 elements. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td></td></tr>
-    <tr><td class="paramname">y</td><td></td></tr>
-    <tr><td class="paramname">z</td><td></td></tr>
+    <tr><td class="paramname">x_</td><td>The x component. </td></tr>
+    <tr><td class="paramname">y_</td><td>The y component. </td></tr>
+    <tr><td class="paramname">z_</td><td>The z component. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1602,7 +1598,7 @@ Static Public Attributes</h2></td></tr>
 <p>Vector addition. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">v</td><td></td></tr>
+    <tr><td class="paramname">v</td><td>Another vector. </td></tr>
     <tr><td class="paramname">target</td><td>Target to save in. </td></tr>
   </table>
   </dd>
@@ -1648,7 +1644,7 @@ Static Public Attributes</h2></td></tr>
 <p>Multiply the vector with an other vector, component-wise. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">vector</td><td>Another Vector </td></tr>
+    <tr><td class="paramname">v</td><td>Another vector. </td></tr>
     <tr><td class="paramname">target</td><td>The vector to save the result in. </td></tr>
   </table>
   </dd>
@@ -1694,8 +1690,8 @@ Static Public Attributes</h2></td></tr>
 <p>Vector subtraction. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">v</td><td></td></tr>
-    <tr><td class="paramname">target.</td><td>Target to save in. </td></tr>
+    <tr><td class="paramname">v</td><td>Another vector. </td></tr>
+    <tr><td class="paramname">target</td><td>Target to save in. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1926,7 +1922,7 @@ Static Public Attributes</h2></td></tr>
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_vec3_html_a0dff800eba156f1eb6412ed10ffc1b6c"><div class="ttname"><a href="class_vec3.html#a0dff800eba156f1eb6412ed10ffc1b6c">Vec3::x</a></div><div class="ttdeci">real_t x</div><div class="ttdef"><b>Definition:</b> Vec3.h:578</div></div>
 <div class="ttc" id="aclass_vec3_html"><div class="ttname"><a href="class_vec3.html">Vec3</a></div><div class="ttdoc">3-dimensional vector</div><div class="ttdef"><b>Definition:</b> Vec3.h:32</div></div>
-<div class="ttc" id="aclass_vec3_html_aae7a1ffaa1108a30c281da216d1cd312"><div class="ttname"><a href="class_vec3.html#aae7a1ffaa1108a30c281da216d1cd312">Vec3::Vec3</a></div><div class="ttdeci">Vec3()</div><div class="ttdoc">The constructor of Vec3, x, y and z set to 0.</div><div class="ttdef"><b>Definition:</b> Vec3.h:39</div></div>
+<div class="ttc" id="aclass_vec3_html_aae7a1ffaa1108a30c281da216d1cd312"><div class="ttname"><a href="class_vec3.html#aae7a1ffaa1108a30c281da216d1cd312">Vec3::Vec3</a></div><div class="ttdeci">Vec3()</div><div class="ttdoc">The constructor of Vec3, x, y and z set to 0.</div><div class="ttdef"><b>Definition:</b> Vec3.h:45</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

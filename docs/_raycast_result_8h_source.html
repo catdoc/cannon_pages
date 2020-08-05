@@ -101,62 +101,61 @@ $(document).ready(function(){initNavTree('_raycast_result_8h_source.html',''); i
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="_defines_8h.html#a1a6f68409f400f7f366a1edc04da9bd0">CANNON_DEFINE_CLASS_TYPE_PLAIN</a>(<a class="code" href="class_raycast_result.html">RaycastResult</a>)</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_raycast_result.html">RaycastResult</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    ~<a class="code" href="class_raycast_result.html">RaycastResult</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="_defines_8h.html#a1816ce40815dc2bd16d2366e35d3e016">CANNON_DECLARE_ALIGNED_ALLOCATOR</a>()</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;   </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> reset();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> abort();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="_c_make_lists_8txt.html#a1e53e9ab3c119f43d120f4251fc7e02c">set</a>(</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_vec3.html">Vec3</a>&amp; rayFromWorld,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_vec3.html">Vec3</a>&amp; rayToWorld,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_vec3.html">Vec3</a>&amp; hitNormalWorld,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_vec3.html">Vec3</a>&amp; hitPointWorld,</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="class_shape.html">Shape</a>* shape,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="class_body.html">Body</a>* body,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> distance</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    );</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_raycast_result.html">RaycastResult</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_raycast_result.html">RaycastResult</a>&amp; other);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="_defines_8h.html#a1d67488347e99e148b728f859dcea7c4">CANNON_DEFINE_GETTER_SETTER_POINTER_REF_WITH_SAME_NAME</a>(rayFromWorld, <a class="code" href="class_vec3.html">Vec3</a>)</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="_defines_8h.html#a1d67488347e99e148b728f859dcea7c4">CANNON_DEFINE_GETTER_SETTER_POINTER_REF_WITH_SAME_NAME</a>(rayToWorld, <a class="code" href="class_vec3.html">Vec3</a>)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="_defines_8h.html#a1d67488347e99e148b728f859dcea7c4">CANNON_DEFINE_GETTER_SETTER_POINTER_REF_WITH_SAME_NAME</a>(hitNormalWorld, <a class="code" href="class_vec3.html">Vec3</a>)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="_defines_8h.html#a1d67488347e99e148b728f859dcea7c4">CANNON_DEFINE_GETTER_SETTER_POINTER_REF_WITH_SAME_NAME</a>(hitPointWorld, <a class="code" href="class_vec3.html">Vec3</a>)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="_defines_8h.html#a6a169f33163044d1d508936330070412">CANNON_DEFINE_GETTER_SETTER_BASE_WITH_SAME_NAME</a>(hasHit, <span class="keywordtype">bool</span>)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="_defines_8h.html#a6a169f33163044d1d508936330070412">CANNON_DEFINE_GETTER_SETTER_BASE_WITH_SAME_NAME</a>(distance, <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a>)</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_raycast_result.html#addce44cd4029f9c0a10dba71340fd2b8">   58</a></span>&#160;    <a class="code" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> <a class="code" href="class_shape.html">Shape</a>* get_shape() { <span class="keywordflow">return</span> _shape; }</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> <span class="keywordtype">void</span> set_shape(<a class="code" href="class_shape.html">Shape</a>* value);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_raycast_result.html#af199797f6a3642720bf6f4ea19a63320">   61</a></span>&#160;    <a class="code" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> <a class="code" href="class_body.html">Body</a>* <a class="code" href="class_raycast_result.html#af199797f6a3642720bf6f4ea19a63320">get_body</a>() { <span class="keywordflow">return</span> _body; }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> <span class="keywordtype">void</span> set_body(<a class="code" href="class_body.html">Body</a>* body);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="_defines_8h.html#a1816ce40815dc2bd16d2366e35d3e016">CANNON_DECLARE_ALIGNED_ALLOCATOR</a>()</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="_defines_8h.html#af4fb79d9580a2a30df14bef5210fb77c">CANNON_DEFINE_REF_FUNC_DESC</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_raycast_result.html">RaycastResult</a>* createRef();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_raycast_result.html">RaycastResult</a>();</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    ~<a class="code" href="class_raycast_result.html">RaycastResult</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;   </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> reset();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> abort();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="_c_make_lists_8txt.html#a1e53e9ab3c119f43d120f4251fc7e02c">set</a>(</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_vec3.html">Vec3</a>&amp; rayFromWorld,</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_vec3.html">Vec3</a>&amp; rayToWorld,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_vec3.html">Vec3</a>&amp; hitNormalWorld,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keyword">const</span> <a class="code" href="class_vec3.html">Vec3</a>&amp; hitPointWorld,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="class_shape.html">Shape</a>* shape,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="class_body.html">Body</a>* body,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> distance</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    );</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_raycast_result.html">RaycastResult</a>&amp; operator=(<span class="keyword">const</span> <a class="code" href="class_raycast_result.html">RaycastResult</a>&amp; other);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="_defines_8h.html#a1d67488347e99e148b728f859dcea7c4">CANNON_DEFINE_GETTER_SETTER_POINTER_REF_WITH_SAME_NAME</a>(rayFromWorld, <a class="code" href="class_vec3.html">Vec3</a>)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="_defines_8h.html#a1d67488347e99e148b728f859dcea7c4">CANNON_DEFINE_GETTER_SETTER_POINTER_REF_WITH_SAME_NAME</a>(rayToWorld, <a class="code" href="class_vec3.html">Vec3</a>)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="_defines_8h.html#a1d67488347e99e148b728f859dcea7c4">CANNON_DEFINE_GETTER_SETTER_POINTER_REF_WITH_SAME_NAME</a>(hitNormalWorld, <a class="code" href="class_vec3.html">Vec3</a>)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="_defines_8h.html#a1d67488347e99e148b728f859dcea7c4">CANNON_DEFINE_GETTER_SETTER_POINTER_REF_WITH_SAME_NAME</a>(hitPointWorld, <a class="code" href="class_vec3.html">Vec3</a>)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="_defines_8h.html#a6a169f33163044d1d508936330070412">CANNON_DEFINE_GETTER_SETTER_BASE_WITH_SAME_NAME</a>(hasHit, <span class="keywordtype">bool</span>)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="_defines_8h.html#a6a169f33163044d1d508936330070412">CANNON_DEFINE_GETTER_SETTER_BASE_WITH_SAME_NAME</a>(distance, <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a>)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="class_raycast_result.html#addce44cd4029f9c0a10dba71340fd2b8">   61</a></span>&#160;    <a class="code" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> <a class="code" href="class_shape.html">Shape</a>* get_shape() { <span class="keywordflow">return</span> _shape; }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> <span class="keywordtype">void</span> set_shape(<a class="code" href="class_shape.html">Shape</a>* value);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="_defines_8h.html#adee8a38766b92df14c0c12d71b8a8df5">CANNON_DEFINE_GETTER_SETTER_BASE</a>(bodyId, <span class="keywordtype">int</span>)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="_defines_8h.html#adee8a38766b92df14c0c12d71b8a8df5">CANNON_DEFINE_GETTER_SETTER_BASE</a>(shapeId, <span class="keywordtype">int</span>)</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="_defines_8h.html#af4fb79d9580a2a30df14bef5210fb77c">CANNON_DEFINE_REF_FUNC_DESC</a></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_raycast_result.html">RaycastResult</a>* createRef();</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_raycast_result.html#af199797f6a3642720bf6f4ea19a63320">   64</a></span>&#160;    <a class="code" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> <a class="code" href="class_body.html">Body</a>* <a class="code" href="class_raycast_result.html#af199797f6a3642720bf6f4ea19a63320">get_body</a>() { <span class="keywordflow">return</span> _body; }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> <span class="keywordtype">void</span> set_body(<a class="code" href="class_body.html">Body</a>* body);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="_defines_8h.html#adee8a38766b92df14c0c12d71b8a8df5">CANNON_DEFINE_GETTER_SETTER_BASE</a>(bodyId, <span class="keywordtype">int</span>)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="_defines_8h.html#adee8a38766b92df14c0c12d71b8a8df5">CANNON_DEFINE_GETTER_SETTER_BASE</a>(shapeId, <span class="keywordtype">int</span>)</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    </div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_raycast_result.html#a78b8693aa722296994d2ba9e27a267b8">   70</a></span>&#160;    <a class="code" href="class_vec3.html">Vec3</a>* rayFromWorld = <span class="keyword">nullptr</span>; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_raycast_result.html#a76333528bcb96146c63490479081a262">   71</a></span>&#160;    <a class="code" href="class_vec3.html">Vec3</a>* rayToWorld = <span class="keyword">nullptr</span>; </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_raycast_result.html#aa50eafc1cc36f1dc5258baeb3deafca5">   72</a></span>&#160;    <a class="code" href="class_vec3.html">Vec3</a>* hitNormalWorld = <span class="keyword">nullptr</span>; </div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_raycast_result.html#aa0c433b4c44abcc81989fbc5bc71de21">   73</a></span>&#160;    <a class="code" href="class_vec3.html">Vec3</a>* hitPointWorld = <span class="keyword">nullptr</span>;  </div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_raycast_result.html#a78b8693aa722296994d2ba9e27a267b8">   70</a></span>&#160;    <a class="code" href="class_vec3.html">Vec3</a>* rayFromWorld = <span class="keywordtype">nullptr</span>; </div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="class_raycast_result.html#a76333528bcb96146c63490479081a262">   71</a></span>&#160;    <a class="code" href="class_vec3.html">Vec3</a>* rayToWorld = <span class="keywordtype">nullptr</span>; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_raycast_result.html#aa50eafc1cc36f1dc5258baeb3deafca5">   72</a></span>&#160;    <a class="code" href="class_vec3.html">Vec3</a>* hitNormalWorld = <span class="keywordtype">nullptr</span>; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_raycast_result.html#aa0c433b4c44abcc81989fbc5bc71de21">   73</a></span>&#160;    <a class="code" href="class_vec3.html">Vec3</a>* hitPointWorld = <span class="keywordtype">nullptr</span>;  </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_raycast_result.html#aa69adb7e78c6e988ef2ff57077586e0c">   75</a></span>&#160;    <a class="code" href="class_shape.html">Shape</a>* _shape = <span class="keyword">nullptr</span>;    </div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_raycast_result.html#a641af957109d5f1e8233fb0ba6273314">   76</a></span>&#160;    <a class="code" href="class_body.html">Body</a>* _body = <span class="keyword">nullptr</span>;  </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_raycast_result.html#aa69adb7e78c6e988ef2ff57077586e0c">   75</a></span>&#160;    <a class="code" href="class_shape.html">Shape</a>* _shape = <span class="keywordtype">nullptr</span>;    </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_raycast_result.html#a641af957109d5f1e8233fb0ba6273314">   76</a></span>&#160;    <a class="code" href="class_body.html">Body</a>* _body = <span class="keywordtype">nullptr</span>;  </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    </div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_raycast_result.html#a31dbdec7bcd8638fd1f10b3bc8c4a9b2">   78</a></span>&#160;    <span class="keywordtype">bool</span> hasHit = <span class="keyword">false</span>;    </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_raycast_result.html#a31dbdec7bcd8638fd1f10b3bc8c4a9b2">   78</a></span>&#160;    <span class="keywordtype">bool</span> hasHit = false;    </div>
 <div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_raycast_result.html#a1c23c398d1e026c1e269332ee0114196">   79</a></span>&#160;    <span class="keywordtype">int</span> hitFaceIndex = -1;  </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    </div>
 <div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="class_raycast_result.html#a9407c5360296e0219728356aff5d35a0">   81</a></span>&#160;    <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> distance = -1;   </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    </div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_raycast_result.html#a19304caf86d9a579b077c922a0a75e68">   83</a></span>&#160;    <span class="keywordtype">bool</span> _shouldStop = <span class="keyword">false</span>;   </div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="class_raycast_result.html#a19304caf86d9a579b077c922a0a75e68">   83</a></span>&#160;    <span class="keywordtype">bool</span> _shouldStop = false;   </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    </div>
 <div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="class_raycast_result.html#ae98e7cbc983c3446700b0688bf821534">   85</a></span>&#160;    <span class="keywordtype">int</span> _bodyId = 0;  </div>
 <div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="class_raycast_result.html#af65df205d7e845958989e63de57eb918">   86</a></span>&#160;    <span class="keywordtype">int</span> _shapeId = 0; </div>
@@ -166,7 +165,7 @@ $(document).ready(function(){initNavTree('_raycast_result_8h_source.html',''); i
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<a class="code" href="_defines_8h.html#a560b9a4b8b95b0695aa8612c3af11f0a">NS_CANNON_END</a></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_raycast_result_html_af199797f6a3642720bf6f4ea19a63320"><div class="ttname"><a href="class_raycast_result.html#af199797f6a3642720bf6f4ea19a63320">RaycastResult::get_body</a></div><div class="ttdeci">Body * get_body()</div><div class="ttdef"><b>Definition:</b> RaycastResult.h:61</div></div>
+<div class="ttc" id="aclass_raycast_result_html_af199797f6a3642720bf6f4ea19a63320"><div class="ttname"><a href="class_raycast_result.html#af199797f6a3642720bf6f4ea19a63320">RaycastResult::get_body</a></div><div class="ttdeci">Body * get_body()</div><div class="ttdef"><b>Definition:</b> RaycastResult.h:64</div></div>
 <div class="ttc" id="a_defines_8h_html_a1a6f68409f400f7f366a1edc04da9bd0"><div class="ttname"><a href="_defines_8h.html#a1a6f68409f400f7f366a1edc04da9bd0">CANNON_DEFINE_CLASS_TYPE_PLAIN</a></div><div class="ttdeci">#define CANNON_DEFINE_CLASS_TYPE_PLAIN(cls)</div><div class="ttdef"><b>Definition:</b> Defines.h:152</div></div>
 <div class="ttc" id="a_defines_8h_html_adee8a38766b92df14c0c12d71b8a8df5"><div class="ttname"><a href="_defines_8h.html#adee8a38766b92df14c0c12d71b8a8df5">CANNON_DEFINE_GETTER_SETTER_BASE</a></div><div class="ttdeci">#define CANNON_DEFINE_GETTER_SETTER_BASE(propName, propType)</div><div class="ttdef"><b>Definition:</b> Defines.h:160</div></div>
 <div class="ttc" id="a_defines_8h_html_a560b9a4b8b95b0695aa8612c3af11f0a"><div class="ttname"><a href="_defines_8h.html#a560b9a4b8b95b0695aa8612c3af11f0a">NS_CANNON_END</a></div><div class="ttdeci">#define NS_CANNON_END</div><div class="ttdef"><b>Definition:</b> Defines.h:6</div></div>

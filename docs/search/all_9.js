@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['id_747',['id',['../class_material_1_1_material_options.html#a4917af2b00adf3516797ef025865db9b',1,'Material::MaterialOptions::id()'],['../class_body_1_1_body_options.html#a7116b14d8dee166107c197b7cc30f7f3',1,'Body::BodyOptions::id()'],['../class_shape_1_1_shape_options.html#a4479b4ce277eb579dd1fe82939a3c761',1,'Shape::ShapeOptions::id()'],['../class_equation.html#a2b12b9d4d6dd37049b48e4042c9706c1',1,'Equation::id()'],['../class_material.html#aa608c9c702fee26871c1f21f7ba9ee44',1,'Material::id()'],['../class_body.html#a3a22217ae709b13556031b69ea65c688',1,'Body::id()'],['../class_shape.html#aab8b8f4e70cb53457d4a387e7027293b',1,'Shape::id()'],['../class_world.html#a5dca267a59b3ad378363f76ed9efffa9',1,'World::id()']]],
+  ['id_747',['id',['../struct_material_1_1_material_options.html#a4917af2b00adf3516797ef025865db9b',1,'Material::MaterialOptions::id()'],['../struct_body_1_1_body_options.html#a7116b14d8dee166107c197b7cc30f7f3',1,'Body::BodyOptions::id()'],['../struct_shape_1_1_shape_options.html#a4479b4ce277eb579dd1fe82939a3c761',1,'Shape::ShapeOptions::id()'],['../class_equation.html#a2b12b9d4d6dd37049b48e4042c9706c1',1,'Equation::id()'],['../class_material.html#aa608c9c702fee26871c1f21f7ba9ee44',1,'Material::id()'],['../class_body.html#a3a22217ae709b13556031b69ea65c688',1,'Body::id()'],['../class_shape.html#aab8b8f4e70cb53457d4a387e7027293b',1,'Shape::id()'],['../class_world.html#a5dca267a59b3ad378363f76ed9efffa9',1,'World::id()']]],
   ['identity_748',['identity',['../class_mat3.html#a7f2760f9c5ece39911b2368ba50e9c8c',1,'Mat3']]],
   ['idkey_749',['IDKey',['../struct_i_d_key.html',1,'IDKey'],['../struct_i_d_key.html#a8059bebcbe8bc1be6d5c3d3b88cab717',1,'IDKey::IDKey()'],['../struct_i_d_key.html#a2b78831df4feea2fb017621d6f25affe',1,'IDKey::IDKey(int id1, int id2)']]],
   ['idkey_2eh_750',['IDKey.h',['../_i_d_key_8h.html',1,'']]],
@@ -42,7 +42,7 @@ var searchData=
   ['invmasssolve_786',['invMassSolve',['../class_body.html#a9ea9887a1fccd517cc1ce5e7d41e3658',1,'Body']]],
   ['isantiparallelto_787',['isAntiparallelTo',['../class_vec3.html#a1a0d44471ea9b39e51c947fcc03ffca6',1,'Vec3']]],
   ['isawake_788',['isAwake',['../class_body.html#a5375a33410d104deafb59eb319dece66',1,'Body']]],
-  ['isfrontwheel_789',['isFrontWheel',['../struct_wheel_info_1_1_options.html#a560e028af1744e59982bfbc94df3c4c7',1,'WheelInfo::Options']]],
+  ['isfrontwheel_789',['isFrontWheel',['../struct_wheel_info_1_1_wheel_options.html#ac07e798cb3518fe14f5d12116a946597',1,'WheelInfo::WheelOptions']]],
   ['isincontact_790',['isInContact',['../class_wheel_info.html#a27e43804ea278a7088ef8c599bbbf3f7',1,'WheelInfo']]],
   ['issleeping_791',['isSleeping',['../class_body.html#a7961cc46e458d25f4edc65cfa6a7035b',1,'Body']]],
   ['issleepy_792',['isSleepy',['../class_body.html#a052be579fc80f1c16271e5d680be7587',1,'Body']]],

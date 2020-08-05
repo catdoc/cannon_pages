@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['x_1298',['x',['../class_quaternion.html#a77e297f51eb7953066e958f029ae272a',1,'Quaternion::x()'],['../class_vec3.html#a0dff800eba156f1eb6412ed10ffc1b6c',1,'Vec3::x()']]],
-  ['xyz_1299',['XYZ',['../namespace_c_a_n_n_o_n.html#a80437c87e23ffad13337ff7759c2b942abebd96c77d57199374f4c28c383bd8c9',1,'CANNON']]],
-  ['xzy_1300',['XZY',['../namespace_c_a_n_n_o_n.html#a80437c87e23ffad13337ff7759c2b942ac9f5ee5e12c3c1eeb9deedd1f9c0b475',1,'CANNON']]]
+  ['y_1299',['y',['../class_quaternion.html#a431bfa17dcafcf392f333748e31d301d',1,'Quaternion::y()'],['../class_vec3.html#a2715a0d1f3d933f4125ad32c14907bd0',1,'Vec3::y()']]],
+  ['yxz_1300',['YXZ',['../namespacecannon.html#a9cdaaa56ba1b15900324aeaeda47771ba72abcf2195fc82882d084838f250d0c1',1,'cannon']]],
+  ['yzx_1301',['YZX',['../namespacecannon.html#a9cdaaa56ba1b15900324aeaeda47771badc2ffc685cfc5b904e4ab491aa713add',1,'cannon']]]
 ];

@@ -9,7 +9,7 @@ var searchData=
   ['body_1621',['Body',['../class_body.html#a25fb1177f9b012247a67919df1023792',1,'Body']]],
   ['bodya_1622',['bodyA',['../class_constraint.html#a18e17cf9972d2dc75858ec39570d0435',1,'Constraint']]],
   ['bodyb_1623',['bodyB',['../class_constraint.html#af62e3ed7547e29975b4621bd2b2e37fd',1,'Constraint']]],
-  ['bodyoptions_1624',['BodyOptions',['../class_body_1_1_body_options.html#a46cb3c0f9dbe2baa2f08fb191cd19031',1,'Body::BodyOptions']]],
+  ['bodyoptions_1624',['BodyOptions',['../struct_body_1_1_body_options.html#a46cb3c0f9dbe2baa2f08fb191cd19031',1,'Body::BodyOptions']]],
   ['boundingradius_1625',['boundingRadius',['../class_body.html#a00902d0433c599944859d33d46041e05',1,'Body']]],
   ['boundingsphereradius_1626',['boundingSphereRadius',['../class_shape.html#ad440e9ce0d0c649558f54acf2a4979f7',1,'Shape']]],
   ['box_1627',['Box',['../class_box.html#a63d0913efda29e4d4c0d6207f1d9a31c',1,'Box']]],

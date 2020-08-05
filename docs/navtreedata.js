@@ -25,14 +25,7 @@
 var NAVTREE =
 [
   [ "Cannon Cpp", "index.html", [
-    [ "Cannon CPP —— 3D C++ physics engine", "index.html", [
-      [ "Introduction", "index.html#intro_sec", null ],
-      [ "Cloning this repository", "index.html#install_sec", [
-        [ "Step 1: git clone https://github.com/ihago-net/CannonCPP.git", "index.html#step1", null ],
-        [ "Step 2: git submodule update –init", "index.html#step2", null ]
-      ] ]
-    ] ],
-    [ "Deprecated List", "deprecated.html", null ],
+    [ "Cannon CPP —— C++ 3D physics engine", "index.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -62,7 +55,6 @@ var NAVTREE =
         [ "Functions", "globals_func.html", null ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
-        [ "Enumerations", "globals_enum.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -72,14 +64,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_a_b_b_8cpp.html",
-"_rigid_vehicle_8h.html",
-"class_body.html#adbc4de1813a6f0029fc63574df5b00d7",
-"class_equation.html#a3fe08aabff1ada58a94272c420efab14",
-"class_narrowphase.html#abbebfdcac0af461b088088a51f7a20b4",
-"class_rigid_vehicle.html#aeee7f262648a1216698995d07e94b1ea",
-"class_vec3.html#a13cb4503ed03dfb0b611adfdecac2453",
-"class_world.html#aff0586446dcba7914dd24e00f55085b9",
-"struct_world_1_1_profile.html#a858bf65b72535a5d83fbd2ad18f37fdd"
+"_ref_8h_source.html",
+"class_body.html#ad3a1f74f3ef1a21657b957e78419b182",
+"class_equation.html#aef0a5eb31cb9002de9ce8a95ca856189",
+"class_octree_node.html#a7494d417aeb9e0c875e7e3213b8d5a24",
+"class_s_a_p_broadphase.html#af9a20c2ae6cd13d7ebfd49c3f7d46ac4",
+"class_wheel_info.html#a108fc20c2e947d092e7b8d6f8ee7a3ea",
+"functions_type.html",
+"struct_world_1_1_world_options.html#ae5a01b3d80386d780dd4c5cfb0a1a247"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

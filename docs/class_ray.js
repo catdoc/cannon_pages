@@ -1,7 +1,7 @@
 var class_ray =
 [
     [ "IntersectOptions", "struct_ray_1_1_intersect_options.html", "struct_ray_1_1_intersect_options" ],
-    [ "RayOptions", "class_ray_1_1_ray_options.html", "class_ray_1_1_ray_options" ],
+    [ "RayOptions", "struct_ray_1_1_ray_options.html", "struct_ray_1_1_ray_options" ],
     [ "IntersectFunc", "class_ray.html#af3f8cb919582ba498e4af5eb7c2a00be", null ],
     [ "IntersectionMode", "class_ray.html#a80e540b5796e4bc6693ec045be99fc36", [
       [ "CLOSEST", "class_ray.html#a80e540b5796e4bc6693ec045be99fc36ae9c32f09a44ae1ae34e42d53502fab77", null ],

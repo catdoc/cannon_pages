@@ -112,9 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab2f2f328dcdaabc8661cde0cf87a53f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ffccd2d060e76273a7c480009ba5db9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_naive_broadphase.html#a5ffccd2d060e76273a7c480009ba5db9">~NaiveBroadphase</a> ()</td></tr>
 <tr class="separator:a5ffccd2d060e76273a7c480009ba5db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad511ba3d57b9572c0238620c42b3e279"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_naive_broadphase.html#ad511ba3d57b9572c0238620c42b3e279">collisionPairs</a> (<a class="el" href="class_world.html">World</a> *world, std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;p1, std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;p2) override</td></tr>
-<tr class="memdesc:ad511ba3d57b9572c0238620c42b3e279"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the collision pairs from the world.  <a href="class_naive_broadphase.html#ad511ba3d57b9572c0238620c42b3e279">More...</a><br /></td></tr>
-<tr class="separator:ad511ba3d57b9572c0238620c42b3e279"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12a264bee24e9ea5f350cf1d044131a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_naive_broadphase.html#a12a264bee24e9ea5f350cf1d044131a4">collisionPairs</a> (<a class="el" href="class_world.html">World</a> *world, std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;pairs1, std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;pairs2) override</td></tr>
+<tr class="memdesc:a12a264bee24e9ea5f350cf1d044131a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the collision pairs from the world.  <a href="class_naive_broadphase.html#a12a264bee24e9ea5f350cf1d044131a4">More...</a><br /></td></tr>
+<tr class="separator:a12a264bee24e9ea5f350cf1d044131a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64e0c20731c785f0b64e3bfdff8e4d2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_naive_broadphase.html#a64e0c20731c785f0b64e3bfdff8e4d2f">aabbQuery</a> (<a class="el" href="class_world.html">World</a> *world, const <a class="el" href="class_a_a_b_b.html">AABB</a> &amp;aabb, std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;result) override</td></tr>
 <tr class="memdesc:a64e0c20731c785f0b64e3bfdff8e4d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns all the bodies within the <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a>.  <a href="class_naive_broadphase.html#a64e0c20731c785f0b64e3bfdff8e4d2f">More...</a><br /></td></tr>
 <tr class="separator:a64e0c20731c785f0b64e3bfdff8e4d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,8 +264,8 @@ Additional Inherited Members</h2></td></tr>
 <p>Returns all the bodies within the <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">world</td><td></td></tr>
-    <tr><td class="paramname">aabb</td><td></td></tr>
+    <tr><td class="paramname">world</td><td>The physics world </td></tr>
+    <tr><td class="paramname">aabb</td><td>The <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a> </td></tr>
     <tr><td class="paramname">result</td><td>An array to store resulting bodies in. </td></tr>
   </table>
   </dd>
@@ -275,8 +275,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ad511ba3d57b9572c0238620c42b3e279"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad511ba3d57b9572c0238620c42b3e279">&#9670;&nbsp;</a></span>collisionPairs()</h2>
+<a id="a12a264bee24e9ea5f350cf1d044131a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12a264bee24e9ea5f350cf1d044131a4">&#9670;&nbsp;</a></span>collisionPairs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -294,13 +294,13 @@ Additional Inherited Members</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;&#160;</td>
-          <td class="paramname"><em>p1</em>, </td>
+          <td class="paramname"><em>pairs1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;&#160;</td>
-          <td class="paramname"><em>p2</em>&#160;</td>
+          <td class="paramname"><em>pairs2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -319,13 +319,13 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">world</td><td>The world to search in </td></tr>
-    <tr><td class="paramname">p1</td><td>Empty array to be filled with body objects </td></tr>
-    <tr><td class="paramname">p2</td><td>Empty array to be filled with body objects </td></tr>
+    <tr><td class="paramname">pairs1</td><td>Empty array to be filled with body objects </td></tr>
+    <tr><td class="paramname">pairs2</td><td>Empty array to be filled with body objects </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="class_broadphase.html#a7dc8cdc6dba4155918c8b2b87af4dc45">Broadphase</a>.</p>
+<p>Reimplemented from <a class="el" href="class_broadphase.html#acbcfee012a6e4fcb552f5ef36a2c94cb">Broadphase</a>.</p>
 
 </div>
 </div>
@@ -356,7 +356,7 @@ Additional Inherited Members</h2></td></tr>
 <p>To be implemented by subcasses. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">world</td><td></td></tr>
+    <tr><td class="paramname">world</td><td>The physics world </td></tr>
   </table>
   </dd>
 </dl>

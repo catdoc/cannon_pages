@@ -183,7 +183,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a524a9c578aebb295a5c32e2f3d4586c5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_defines_8h.html#af4fb79d9580a2a30df14bef5210fb77c">CANNON_DEFINE_REF_FUNC_DESC</a> <a class="el" href="class_quaternion.html">Quaternion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quaternion.html#a524a9c578aebb295a5c32e2f3d4586c5">createRef</a> (<a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_quaternion.html#a77e297f51eb7953066e958f029ae272a">x</a>=0, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_quaternion.html#a431bfa17dcafcf392f333748e31d301d">y</a>=0, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_quaternion.html#a0eaf082698a81161c76da1d9dc05ff8c">z</a>=0, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_quaternion.html#a6f2c72d7513607c386374d19f92dbaad">w</a>=1)</td></tr>
+<tr class="memitem:a524a9c578aebb295a5c32e2f3d4586c5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_quaternion.html">Quaternion</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quaternion.html#a524a9c578aebb295a5c32e2f3d4586c5">createRef</a> (<a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_quaternion.html#a77e297f51eb7953066e958f029ae272a">x</a>=0, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_quaternion.html#a431bfa17dcafcf392f333748e31d301d">y</a>=0, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_quaternion.html#a0eaf082698a81161c76da1d9dc05ff8c">z</a>=0, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_quaternion.html#a6f2c72d7513607c386374d19f92dbaad">w</a>=1)</td></tr>
 <tr class="separator:a524a9c578aebb295a5c32e2f3d4586c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -579,9 +579,9 @@ Static Public Attributes</h2></td></tr>
 <p>Rotate an absolute orientation quaternion given an angular velocity and a time step. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">angularVelocity</td><td></td></tr>
-    <tr><td class="paramname">dt</td><td></td></tr>
-    <tr><td class="paramname">angularFactor</td><td></td></tr>
+    <tr><td class="paramname">angularVelocity</td><td>The angular velocity. </td></tr>
+    <tr><td class="paramname">dt</td><td>The delta time. </td></tr>
+    <tr><td class="paramname">angularFactor</td><td>The angular factor. </td></tr>
     <tr><td class="paramname">target</td><td>The target to save result in </td></tr>
   </table>
   </dd>
@@ -662,12 +662,12 @@ Static Public Attributes</h2></td></tr>
 <p><a class="el" href="class_quaternion.html" title="A Quaternion describes a rotation in 3D space. The Quaternion is mathematically defined as Q = x*i + ...">Quaternion</a> multiplication. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">q</td><td></td></tr>
-    <tr><td class="paramname">target.</td><td></td></tr>
+    <tr><td class="paramname">q</td><td>The quaternion to be multipied. </td></tr>
+    <tr><td class="paramname">target</td><td>The result. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>target </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The target result. </dd></dl>
 
 </div>
 </div>
@@ -923,12 +923,12 @@ Static Public Attributes</h2></td></tr>
 <p>Set the quaternion components given an axis and an angle. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">axis</td><td></td></tr>
-    <tr><td class="paramname">angle</td><td>in radians </td></tr>
+    <tr><td class="paramname">axis</td><td>The axis vector. </td></tr>
+    <tr><td class="paramname">angle</td><td>in radians. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>this </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>This quaternion. </dd></dl>
 
 </div>
 </div>
@@ -973,13 +973,14 @@ Static Public Attributes</h2></td></tr>
 <p>See <a href="http://www.mathworks.com/matlabcentral/fileexchange/20696-function-to-convert-between-dcm-euler-angles-quaternions-and-euler-vectors/content/SpinCalc.m">http://www.mathworks.com/matlabcentral/fileexchange/20696-function-to-convert-between-dcm-euler-angles-quaternions-and-euler-vectors/content/SpinCalc.m</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td></td></tr>
-    <tr><td class="paramname">y</td><td></td></tr>
-    <tr><td class="paramname">z</td><td></td></tr>
-    <tr><td class="paramname">order</td><td>The order to apply angles: XYZ or YXZ or any other combination </td></tr>
+    <tr><td class="paramname">x</td><td>The x angle. </td></tr>
+    <tr><td class="paramname">y</td><td>The y angle. </td></tr>
+    <tr><td class="paramname">z</td><td>The z angle. </td></tr>
+    <tr><td class="paramname">order</td><td>The order to apply angles: XYZ or YXZ or any other combination. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The result quaternion. </dd></dl>
 
 </div>
 </div>
@@ -1117,7 +1118,7 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Convert to an Array. </p>
-<dl class="section return"><dt>Returns</dt><dd>Array </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>An array </dd></dl>
 
 </div>
 </div>
@@ -1234,7 +1235,7 @@ Static Public Attributes</h2></td></tr>
 <p>Multiply the quaternion by a vector. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">v</td><td></td></tr>
+    <tr><td class="paramname">v</td><td>The vector to be multiplied. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1271,7 +1272,7 @@ Static Public Attributes</h2></td></tr>
 <p>Multiply the quaternion by a vector. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">v</td><td></td></tr>
+    <tr><td class="paramname">v</td><td>The vector to be multiplied. </td></tr>
     <tr><td class="paramname">target</td><td>The vector result </td></tr>
   </table>
   </dd>

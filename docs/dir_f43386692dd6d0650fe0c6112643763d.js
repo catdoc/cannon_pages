@@ -26,10 +26,7 @@ var dir_f43386692dd6d0650fe0c6112643763d =
       [ "Plane", "class_plane.html", "class_plane" ]
     ] ],
     [ "Shape.cpp", "_shape_8cpp.html", null ],
-    [ "Shape.h", "_shape_8h.html", [
-      [ "Shape", "class_shape.html", "class_shape" ],
-      [ "ShapeOptions", "class_shape_1_1_shape_options.html", "class_shape_1_1_shape_options" ]
-    ] ],
+    [ "Shape.h", "_shape_8h.html", "_shape_8h" ],
     [ "Sphere.cpp", "_sphere_8cpp.html", null ],
     [ "Sphere.h", "_sphere_8h.html", [
       [ "Sphere", "class_sphere.html", "class_sphere" ]

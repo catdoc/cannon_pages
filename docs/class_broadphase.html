@@ -114,9 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:affabc5503bd5d39b015463b51870ee2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broadphase.html#affabc5503bd5d39b015463b51870ee2c">Broadphase</a> ()</td></tr>
 <tr class="memdesc:affabc5503bd5d39b015463b51870ee2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_broadphase.html#affabc5503bd5d39b015463b51870ee2c">More...</a><br /></td></tr>
 <tr class="separator:affabc5503bd5d39b015463b51870ee2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dc8cdc6dba4155918c8b2b87af4dc45"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broadphase.html#a7dc8cdc6dba4155918c8b2b87af4dc45">collisionPairs</a> (<a class="el" href="class_world.html">World</a> *world, std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;p1, std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;p2)</td></tr>
-<tr class="memdesc:a7dc8cdc6dba4155918c8b2b87af4dc45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the collision pairs from the world.  <a href="class_broadphase.html#a7dc8cdc6dba4155918c8b2b87af4dc45">More...</a><br /></td></tr>
-<tr class="separator:a7dc8cdc6dba4155918c8b2b87af4dc45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbcfee012a6e4fcb552f5ef36a2c94cb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broadphase.html#acbcfee012a6e4fcb552f5ef36a2c94cb">collisionPairs</a> (<a class="el" href="class_world.html">World</a> *world, std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;pairs1, std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;pairs2)</td></tr>
+<tr class="memdesc:acbcfee012a6e4fcb552f5ef36a2c94cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the collision pairs from the world.  <a href="class_broadphase.html#acbcfee012a6e4fcb552f5ef36a2c94cb">More...</a><br /></td></tr>
+<tr class="separator:acbcfee012a6e4fcb552f5ef36a2c94cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeb161e2bb922d13bcb1e3fc736dfb04"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broadphase.html#adeb161e2bb922d13bcb1e3fc736dfb04">needBroadphaseCollision</a> (<a class="el" href="class_body.html">Body</a> *bodyA, <a class="el" href="class_body.html">Body</a> *bodyB)</td></tr>
 <tr class="memdesc:adeb161e2bb922d13bcb1e3fc736dfb04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a body pair needs to be intersection tested at all.  <a href="class_broadphase.html#adeb161e2bb922d13bcb1e3fc736dfb04">More...</a><br /></td></tr>
 <tr class="separator:adeb161e2bb922d13bcb1e3fc736dfb04"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,8 +270,8 @@ Protected Attributes</h2></td></tr>
 <p>Returns all the bodies within the <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">world</td><td></td></tr>
-    <tr><td class="paramname">aabb</td><td></td></tr>
+    <tr><td class="paramname">world</td><td>The physics world </td></tr>
+    <tr><td class="paramname">aabb</td><td>The <a class="el" href="class_a_a_b_b.html" title="Axis aligned bounding box class.">AABB</a> </td></tr>
     <tr><td class="paramname">result</td><td>An array to store resulting bodies in. </td></tr>
   </table>
   </dd>
@@ -281,8 +281,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7dc8cdc6dba4155918c8b2b87af4dc45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dc8cdc6dba4155918c8b2b87af4dc45">&#9670;&nbsp;</a></span>collisionPairs()</h2>
+<a id="acbcfee012a6e4fcb552f5ef36a2c94cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbcfee012a6e4fcb552f5ef36a2c94cb">&#9670;&nbsp;</a></span>collisionPairs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -300,13 +300,13 @@ Protected Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;&#160;</td>
-          <td class="paramname"><em>p1</em>, </td>
+          <td class="paramname"><em>pairs1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;&#160;</td>
-          <td class="paramname"><em>p2</em>&#160;</td>
+          <td class="paramname"><em>pairs2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -325,13 +325,13 @@ Protected Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">world</td><td>The world to search in </td></tr>
-    <tr><td class="paramname">p1</td><td>Empty array to be filled with body objects </td></tr>
-    <tr><td class="paramname">p2</td><td>Empty array to be filled with body objects </td></tr>
+    <tr><td class="paramname">pairs1</td><td>Empty array to be filled with body objects </td></tr>
+    <tr><td class="paramname">pairs2</td><td>Empty array to be filled with body objects </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="class_grid_broadphase.html#a2d256ddbcdc1be54711e02713b002451">GridBroadphase</a>, <a class="el" href="class_s_a_p_broadphase.html#ae6ac9982738b21afc13ae8dd5c839ee7">SAPBroadphase</a>, and <a class="el" href="class_naive_broadphase.html#ad511ba3d57b9572c0238620c42b3e279">NaiveBroadphase</a>.</p>
+<p>Reimplemented in <a class="el" href="class_grid_broadphase.html#a2d256ddbcdc1be54711e02713b002451">GridBroadphase</a>, <a class="el" href="class_s_a_p_broadphase.html#ae6ac9982738b21afc13ae8dd5c839ee7">SAPBroadphase</a>, and <a class="el" href="class_naive_broadphase.html#a12a264bee24e9ea5f350cf1d044131a4">NaiveBroadphase</a>.</p>
 
 </div>
 </div>
@@ -409,10 +409,10 @@ Protected Attributes</h2></td></tr>
 <p>Check if the bounding boxes of two bodies are intersecting. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bodyA</td><td></td></tr>
-    <tr><td class="paramname">bodyB</td><td></td></tr>
-    <tr><td class="paramname">pairs1</td><td></td></tr>
-    <tr><td class="paramname">pairs2</td><td></td></tr>
+    <tr><td class="paramname">bodyA</td><td>The body A to be tested </td></tr>
+    <tr><td class="paramname">bodyB</td><td>The body B to be tested </td></tr>
+    <tr><td class="paramname">pairs1</td><td>bodyA is appended to this array if intersection </td></tr>
+    <tr><td class="paramname">pairs2</td><td>bodyB is appended to this array if intersection </td></tr>
   </table>
   </dd>
 </dl>
@@ -468,8 +468,8 @@ Protected Attributes</h2></td></tr>
 <p>Check if the bounding spheres of two bodies are intersecting. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bodyA</td><td></td></tr>
-    <tr><td class="paramname">bodyB</td><td></td></tr>
+    <tr><td class="paramname">bodyA</td><td>The body A to be tested </td></tr>
+    <tr><td class="paramname">bodyB</td><td>The body B to be tested </td></tr>
     <tr><td class="paramname">pairs1</td><td>bodyA is appended to this array if intersection </td></tr>
     <tr><td class="paramname">pairs2</td><td>bodyB is appended to this array if intersection </td></tr>
   </table>
@@ -519,10 +519,10 @@ Protected Attributes</h2></td></tr>
 <p>Check if the bounding volumes of two bodies intersect. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bodyA</td><td></td></tr>
-    <tr><td class="paramname">bodyB</td><td></td></tr>
-    <tr><td class="paramname">pairs1</td><td></td></tr>
-    <tr><td class="paramname">pairs2</td><td></td></tr>
+    <tr><td class="paramname">bodyA</td><td>The body A to be tested </td></tr>
+    <tr><td class="paramname">bodyB</td><td>The body B to be tested </td></tr>
+    <tr><td class="paramname">pairs1</td><td>An array of body to be tested </td></tr>
+    <tr><td class="paramname">pairs2</td><td>Another array of body to be tested </td></tr>
   </table>
   </dd>
 </dl>
@@ -558,8 +558,8 @@ Protected Attributes</h2></td></tr>
 <p>Removes duplicate pairs from the pair arrays. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pairs1</td><td></td></tr>
-    <tr><td class="paramname">pairs2</td><td></td></tr>
+    <tr><td class="paramname">pairs1</td><td>An array of body to be tested </td></tr>
+    <tr><td class="paramname">pairs2</td><td>Another array of body to be tested </td></tr>
   </table>
   </dd>
 </dl>
@@ -595,12 +595,12 @@ Protected Attributes</h2></td></tr>
 <p>Check if a body pair needs to be intersection tested at all. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bodyA</td><td></td></tr>
-    <tr><td class="paramname">bodyB</td><td></td></tr>
+    <tr><td class="paramname">bodyA</td><td>The body A to be tested </td></tr>
+    <tr><td class="paramname">bodyB</td><td>The body B to be tested </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>bool True if needs collision </dd></dl>
 
 </div>
 </div>
@@ -657,7 +657,7 @@ Protected Attributes</h2></td></tr>
 <p>To be implemented by subcasses. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">world</td><td></td></tr>
+    <tr><td class="paramname">world</td><td>The physics world </td></tr>
   </table>
   </dd>
 </dl>

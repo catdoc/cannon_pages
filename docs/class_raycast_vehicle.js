@@ -3,7 +3,7 @@ var class_raycast_vehicle =
     [ "RaycastVehicle", "class_raycast_vehicle.html#a9c70bdc7ad1b3df61717df346ad14616", null ],
     [ "~RaycastVehicle", "class_raycast_vehicle.html#a0e6a15eb393f6b244eaea658b1913e62", null ],
     [ "addToWorld", "class_raycast_vehicle.html#ab9ac725578768ea629bfad1a62e94b7a", null ],
-    [ "addWheel", "class_raycast_vehicle.html#a3e9d21ad5f94f47580a0fd9b46d608d8", null ],
+    [ "addWheel", "class_raycast_vehicle.html#a2c3b6c297033920815f891531e347187", null ],
     [ "applyEngineForce", "class_raycast_vehicle.html#a41ddfef33029e2fb9e428f5ca9793669", null ],
     [ "calcRollingFriction", "class_raycast_vehicle.html#a4e484c6bad919ef68767049c6ad197e2", null ],
     [ "castRay", "class_raycast_vehicle.html#af2ecb21f1e9d43ee08866614dceb1162", null ],

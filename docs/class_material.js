@@ -1,6 +1,6 @@
 var class_material =
 [
-    [ "MaterialOptions", "class_material_1_1_material_options.html", "class_material_1_1_material_options" ],
+    [ "MaterialOptions", "struct_material_1_1_material_options.html", "struct_material_1_1_material_options" ],
     [ "Material", "class_material.html#abdbf0d4678e9a6fc93f385b8231882eb", null ],
     [ "Material", "class_material.html#a557697de7c958d86aecfa9e2e5e233cc", null ],
     [ "~Material", "class_material.html#a2c19452d71f54075df8f5405b03129f4", null ],

@@ -23,7 +23,7 @@ var dir_438608684527798d1927f91bda17c1cc =
     [ "Ray.cpp", "_ray_8cpp.html", "_ray_8cpp" ],
     [ "Ray.h", "_ray_8h.html", [
       [ "Ray", "class_ray.html", "class_ray" ],
-      [ "RayOptions", "class_ray_1_1_ray_options.html", "class_ray_1_1_ray_options" ],
+      [ "RayOptions", "struct_ray_1_1_ray_options.html", "struct_ray_1_1_ray_options" ],
       [ "IntersectOptions", "struct_ray_1_1_intersect_options.html", "struct_ray_1_1_intersect_options" ]
     ] ],
     [ "RayCallback.cpp", "_ray_callback_8cpp.html", null ],

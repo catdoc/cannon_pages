@@ -1,16 +1,15 @@
 var _event_8h =
 [
     [ "Event", "struct_event.html", "struct_event" ],
-    [ "EventType", "_event_8h.html#a2628ea8d12e8b2563c32f05dc7fff6fa", [
-      [ "NONE", "_event_8h.html#a2628ea8d12e8b2563c32f05dc7fff6faab50339a10e1de285ac99d4c3990b8693", null ],
-      [ "WAKEUP", "_event_8h.html#a2628ea8d12e8b2563c32f05dc7fff6faab1850cc82ad99880312747def331d1b3", null ],
-      [ "SLEEPY", "_event_8h.html#a2628ea8d12e8b2563c32f05dc7fff6faa2da6c866dc5d2eaf501cac50c18fd7de", null ],
-      [ "SLEEP", "_event_8h.html#a2628ea8d12e8b2563c32f05dc7fff6faab32bd403b93dc6deffdab7af55e82596", null ],
-      [ "ADDBODY", "_event_8h.html#a2628ea8d12e8b2563c32f05dc7fff6faa03927f81711018ee2ee6f819ae284c2d", null ],
-      [ "REMOVEBODY", "_event_8h.html#a2628ea8d12e8b2563c32f05dc7fff6faa98916c1b8eea703aea6789aea3ab17b9", null ],
-      [ "COLLIDE", "_event_8h.html#a2628ea8d12e8b2563c32f05dc7fff6faa8c8a75df85d04cb6eaea28ddff7a5589", null ],
-      [ "TRIGGERED", "_event_8h.html#a2628ea8d12e8b2563c32f05dc7fff6faaf1fcc60a82022cc2e88f99043e730c2e", null ],
-      [ "PRESTEP", "_event_8h.html#a2628ea8d12e8b2563c32f05dc7fff6faa4b4585527f6e5b3cb5e41ed464988559", null ],
-      [ "POSTSTEP", "_event_8h.html#a2628ea8d12e8b2563c32f05dc7fff6faaec89d940435cb4af1656cc807052b30b", null ]
-    ] ]
+    [ "ADDBODY", "_event_8h.html#a9d2e28b4e36f1a639b98354ee1dee41f", null ],
+    [ "COLLIDE", "_event_8h.html#add913dd0c79c71228589cd49e27573cd", null ],
+    [ "EventType", "_event_8h.html#a0bb83d4fc949ffe034e5cff910dd4666", null ],
+    [ "NONE", "_event_8h.html#a899caa602e4fff675b17cdbab33607ec", null ],
+    [ "POSTSTEP", "_event_8h.html#a1fe84232600ee17b3c8e0e48a184db73", null ],
+    [ "PRESTEP", "_event_8h.html#a5041b1efcf99abdf11028146d8133584", null ],
+    [ "REMOVEBODY", "_event_8h.html#a44a2ba1dc7ac80adc5c2783f4298de1a", null ],
+    [ "SLEEP", "_event_8h.html#a17e6c7776bf7afc731751d4c9a18a517", null ],
+    [ "SLEEPY", "_event_8h.html#a8ca55e8963f11873d2736d0d2accdc9e", null ],
+    [ "TRIGGERED", "_event_8h.html#a41b2a9a87405fe4a43d4f1936e19c675", null ],
+    [ "WAKEUP", "_event_8h.html#a9ad0328c768307c8038a0b0b4b342114", null ]
 ];

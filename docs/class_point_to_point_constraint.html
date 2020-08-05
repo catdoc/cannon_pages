@@ -199,9 +199,9 @@ Protected Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Connects two bodies at given offset points. </p>
-<p>Example: </p><div class="fragment"><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespace_c_a_n_n_o_n.html">CANNON</a>;</div>
+<p>Example: </p><div class="fragment"><div class="line"><span class="keyword">using namespace </span><a class="code" href="namespacecannon.html">cannon</a>;</div>
 <div class="line"> </div>
-<div class="line">CANNON::Body::BodyOptions bodyOptions(world);</div>
+<div class="line"><a class="code" href="struct_body_1_1_body_options.html">Body::BodyOptions</a> bodyOptions(world);</div>
 <div class="line">bodyOptions.id = world-&gt;genBodyId();</div>
 <div class="line">bodyOptions.mass = 1;</div>
 <div class="line"><span class="keyword">auto</span> <a class="code" href="class_constraint.html#a18e17cf9972d2dc75858ec39570d0435">bodyA</a> = <span class="keyword">new</span> <a class="code" href="class_body.html">Body</a>(bodyOptions);</div>
@@ -285,9 +285,9 @@ Protected Attributes</h2></td></tr>
 <p>The constructor of <a class="el" href="class_point_to_point_constraint.html" title="Connects two bodies at given offset points.">PointToPointConstraint</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">id</td><td>The id of this pointToPointConstraint </td></tr>
-    <tr><td class="paramname">bodyA</td><td></td></tr>
-    <tr><td class="paramname">bodyB</td><td><a class="el" href="class_body.html" title="A RigidBody in the physics world.">Body</a> that will be constrained in a similar way to the same point as bodyA. We will therefore get a link between bodyA and bodyB. If not specified, bodyA will be constrained to a static point. </td></tr>
+    <tr><td class="paramname">id</td><td>The ID of this pointToPointConstraint </td></tr>
+    <tr><td class="paramname">bodyA</td><td>A body that will be constrained. </td></tr>
+    <tr><td class="paramname">bodyB</td><td>Another body that will be constrained in a similar way to the same point as bodyA. We will therefore get a link between bodyA and bodyB. If not specified, bodyA will be constrained to a static point. </td></tr>
     <tr><td class="paramname">pivotA</td><td>The point relative to the center of mass of bodyA which bodyA is constrained to. </td></tr>
     <tr><td class="paramname">pivotB</td><td>See pivotA. </td></tr>
     <tr><td class="paramname">maxForce</td><td>The maximum force that should be applied to constrain the bodies. </td></tr>
@@ -483,10 +483,11 @@ Protected Attributes</h2></td></tr>
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_constraint_html_a18e17cf9972d2dc75858ec39570d0435"><div class="ttname"><a href="class_constraint.html#a18e17cf9972d2dc75858ec39570d0435">Constraint::bodyA</a></div><div class="ttdeci">Body * bodyA() const</div><div class="ttdef"><b>Definition:</b> Constraint.h:51</div></div>
 <div class="ttc" id="aclass_constraint_html_af62e3ed7547e29975b4621bd2b2e37fd"><div class="ttname"><a href="class_constraint.html#af62e3ed7547e29975b4621bd2b2e37fd">Constraint::bodyB</a></div><div class="ttdeci">Body * bodyB() const</div><div class="ttdef"><b>Definition:</b> Constraint.h:52</div></div>
-<div class="ttc" id="anamespace_c_a_n_n_o_n_html"><div class="ttname"><a href="namespace_c_a_n_n_o_n.html">CANNON</a></div><div class="ttdef"><b>Definition:</b> Defines.h:37</div></div>
 <div class="ttc" id="aclass_body_html_a70bd8f5044a1caee83b6aa5835885172"><div class="ttname"><a href="class_body.html#a70bd8f5044a1caee83b6aa5835885172">Body::addShape</a></div><div class="ttdeci">void addShape(Shape *shape, const Vec3 &amp;offset=Vec3::ZERO, const Quaternion &amp;orientation=Quaternion::UNIT)</div><div class="ttdoc">Add a shape to the body with a local offset and orientation.</div><div class="ttdef"><b>Definition:</b> Body.cpp:376</div></div>
+<div class="ttc" id="anamespacecannon_html"><div class="ttname"><a href="namespacecannon.html">cannon</a></div><div class="ttdef"><b>Definition:</b> Defines.h:37</div></div>
 <div class="ttc" id="aclass_vec3_html"><div class="ttname"><a href="class_vec3.html">Vec3</a></div><div class="ttdoc">3-dimensional vector</div><div class="ttdef"><b>Definition:</b> Vec3.h:32</div></div>
 <div class="ttc" id="aclass_body_html"><div class="ttname"><a href="class_body.html">Body</a></div><div class="ttdoc">A RigidBody in the physics world.</div><div class="ttdef"><b>Definition:</b> Body.h:47</div></div>
+<div class="ttc" id="astruct_body_1_1_body_options_html"><div class="ttname"><a href="struct_body_1_1_body_options.html">Body::BodyOptions</a></div><div class="ttdoc">Options to create body.</div><div class="ttdef"><b>Definition:</b> Body.h:85</div></div>
 <div class="ttc" id="aclass_point_to_point_constraint_html_a501fb66b8599586c003dbaa79ce36aa1"><div class="ttname"><a href="class_point_to_point_constraint.html#a501fb66b8599586c003dbaa79ce36aa1">PointToPointConstraint::PointToPointConstraint</a></div><div class="ttdeci">PointToPointConstraint(int id, Body *bodyA, Body *bodyB, Vec3 pivotA=Vec3::ZERO, Vec3 pivotB=Vec3::ZERO, real_t maxForce=1e6, bool collideConnected=true, bool wakeUpBodies=true)</div><div class="ttdoc">The constructor of PointToPointConstraint.</div><div class="ttdef"><b>Definition:</b> PointToPointConstraint.cpp:12</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
