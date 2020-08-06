@@ -137,69 +137,70 @@ Run in Xcode (Only support to run demos on macOS platform currently)</h3>
 <h2><a class="anchor" id="autotoc_md5"></a>
 Example</h2>
 <div class="fragment"><div class="line"> {c++}</div>
-<div class="line">Create a world</div>
+<div class="line"><span class="comment">// Create a world</span></div>
 <div class="line"> <span class="keyword">auto</span> world = <span class="keyword">new</span> cannon::World();</div>
 <div class="line"> </div>
 <div class="line"> <span class="keyword">auto</span> broadphase = <span class="keyword">new</span> cannon::NaiveBroadphase()</div>
 <div class="line"> world-&gt;set_broadphase(broadphase);</div>
-<div class="line">broadphase is retained by world, so it could be safely released here.</div>
+<div class="line"><span class="comment">// broadphase is retained by world, so it could be safely released here.</span></div>
 <div class="line"> broadphase-&gt;release();</div>
 <div class="line"> </div>
 <div class="line"> world-&gt;set_allowSleep(true);</div>
 <div class="line"> world-&gt;get_defaultMaterial()-&gt;set_friction(0.5);</div>
 <div class="line"> world-&gt;get_defaultMaterial()-&gt;set_restitution(0);</div>
 <div class="line"> </div>
-<div class="line">Create a ground material</div>
+<div class="line"><span class="comment">// Create a ground material</span></div>
 <div class="line"> <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_material.html">Material</a>::MaterialOptions matOptions(world-&gt;genMaterialId());</div>
 <div class="line"> auto groundMaterial = new <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_material.html">Material</a>(matOptions);</div>
 <div class="line"> groundMaterial-&gt;set_friction(0.3);</div>
 <div class="line"> </div>
-<div class="line">Create a ground plane</div>
+<div class="line"><span class="comment">// Create a ground plane</span></div>
 <div class="line"> auto groundShape = new <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_plane.html">Plane</a>(world-&gt;genShapeId());</div>
 <div class="line"> </div>
-<div class="line">Create a ground body</div>
+<div class="line"><span class="comment">// Create a ground body</span></div>
 <div class="line"> <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_body.html">Body</a>::BodyOptions groundBodyOptions(world, world-&gt;genBodyId());</div>
 <div class="line"> groundBodyOptions.mass = 0;</div>
 <div class="line"> groundBodyOptions.material = groundMaterial;</div>
 <div class="line"> auto groundBody = new <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_body.html">Body</a>(groundBodyOptions);</div>
 <div class="line"> </div>
-<div class="line">groundMaterial is retained by groundBody, so it could be safely released here.</div>
+<div class="line"><span class="comment">// groundMaterial is retained by groundBody, so it could be safely released here.</span></div>
 <div class="line"> groundMaterial-&gt;release();</div>
 <div class="line"> </div>
 <div class="line"> groundBody-&gt;addShape(groundShape);</div>
 <div class="line"> </div>
-<div class="line">groundShape is retained by groundBody, so it could be safely released here.</div>
+<div class="line"><span class="comment">// groundShape is retained by groundBody, so it could be safely released here.</span></div>
 <div class="line"> groundShape-&gt;release();</div>
 <div class="line"> </div>
 <div class="line"> world-&gt;addBody(groundBody);</div>
 <div class="line"> </div>
-<div class="line">groundBody is retained by world, so it could be safely released here.</div>
+<div class="line"><span class="comment">// groundBody is retained by world, so it could be safely released here.</span></div>
 <div class="line"> groundBody-&gt;release();</div>
 <div class="line"> </div>
-<div class="line">Create a box shape</div>
+<div class="line"><span class="comment">// Create a box shape</span></div>
 <div class="line"> <span class="keywordtype">float</span> size = 1;</div>
 <div class="line"> <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_vec3.html">Vec3</a> halfExtents(size, size, size);</div>
 <div class="line"> auto boxShape = new <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_box.html">Box</a>(world-&gt;genShapeId(), world, halfExtents);</div>
 <div class="line"> </div>
-<div class="line">Create a box body</div>
+<div class="line"><span class="comment">// Create a box body</span></div>
 <div class="line"> <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_body.html">Body</a>::BodyOptions boxBodyOptions(world, world-&gt;genBodyId());</div>
 <div class="line"> boxBodyOptions.mass = 1;</div>
 <div class="line"> auto boxBody = new <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_body.html">Body</a>(boxBodyOptions);</div>
 <div class="line"> boxBody-&gt;addShape(boxShape);</div>
 <div class="line"> </div>
-<div class="line">boxShape is retained by boxBody, so it could be safely released here.</div>
+<div class="line"><span class="comment">// boxShape is retained by boxBody, so it could be safely released here.</span></div>
 <div class="line"> boxShape-&gt;release();</div>
 <div class="line"> </div>
 <div class="line"> boxBody-&gt;get_position().<a class="code" href="_c_make_lists_8txt.html#a1e53e9ab3c119f43d120f4251fc7e02c">set</a>(0,0,5);</div>
 <div class="line"> world-&gt;addBody(boxBody);</div>
 <div class="line"> </div>
-<div class="line">boxBody is retained by world, so it could be safely released here.</div>
+<div class="line"><span class="comment">// boxBody is retained by world, so it could be safely released here.</span></div>
 <div class="line"> boxBody-&gt;release();</div>
 <div class="line"> </div>
-<div class="line"> </div>
+<div class="line"><span class="comment">//</span></div>
 <div class="line"> ...</div>
 <div class="line">release world some where</div>
 <div class="line"> world-&gt;release();</div>
+<div class="line"><span class="comment">//</span></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md6"></a>
 Documentation</h2>
 <ul>
