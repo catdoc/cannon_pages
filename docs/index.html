@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.18"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Cannon Cpp: Cannon CPP —— C++ 3D physics engine</title>
+<title>Cannon Cpp: CannonCPP</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -83,21 +83,36 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Cannon CPP —— C++ 3D physics engine </div>  </div>
+<div class="title">CannonCPP </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a href="https://github.com/ihago-net/CannonCPP">Cannon Cpp</a> is a C++ port of <a href="https://github.com/schteppe/cannon.js">Cannon.js</a>.</p>
-<p><a href="https://github.com/schteppe/cannon.js">Cannon.js</a> is a lightweight 3D physics engine for the web.</p>
+<div class="textblock"><p><a href="https://github.com/ihago-net/CannonCPP">CannonCPP</a> is a lightweight 3D physics engine written by C++ language. It's ported from <a href="https://github.com/schteppe/cannon.js">CannonJS</a>, originally used in <a href="https://open.ihago.net">Hago Game Runtime</a> and now released under the <a href="https://opensource.org/licenses/MIT">MIT license</a>.</p>
 <h2><a class="anchor" id="autotoc_md0"></a>
-Introduction</h2>
-<p><a href="https://github.com/ihago-net/CannonCPP">Cannon Cpp</a> is a C++ port of <a href="https://github.com/schteppe/cannon.js">Cannon.js</a> with some modifications:</p><ul>
-<li>Add a reference counting mechanism.</li>
-<li>Add a memory pool management.</li>
-<li>Events are dispatched by the dispatcher of the world.</li>
-<li>Remove PreStep and PostStep <a class="el" href="struct_event.html" title="Represents a event.">Event</a> for each body.</li>
-<li>The way to create a heightfield with an image is not supported.</li>
+Features</h2>
+<p>CannonCPP inherits most features from CannonJS:</p>
+<ul>
+<li>Rigid body dynamics</li>
+<li>Discrete collision detection</li>
+<li>Contacts, friction and restitution</li>
+<li>Constraints</li>
+<li>PointToPoint (a.k.a. ball/socket joint)</li>
+<li>Distance</li>
+<li>Hinge (with optional motor)</li>
+<li>Lock</li>
+<li>ConeTwist</li>
+<li>Gauss-Seidel constraint solver and an island split algorithm</li>
+<li>Collision filters</li>
+<li><a class="el" href="class_body.html" title="A RigidBody in the physics world.">Body</a> sleeping</li>
+<li>Experimental SPH / fluid support</li>
+<li>Various shapes and collision algorithms</li>
 </ul>
-<p>Cannon Cpp was originally used as the C++ 3D physics engine for <a href="https://open.ihago.net/">Hago Game Runtime</a>.</p>
+<p>To implement CannonCPP, we have</p>
+<ul>
+<li>added a reference counting mechanism to resolve object lifecycle dependence</li>
+<li>added a memory pool to make memory allocation &amp; deallocation faster</li>
+<li>used the dispatcher of world to emit events rather than emitting events by each body in CannonJS</li>
+<li>removed PreStep and PostStep <a class="el" href="struct_event.html" title="Represents a event.">Event</a> for each body</li>
+</ul>
 <h2><a class="anchor" id="autotoc_md1"></a>
 Clone this repository</h2>
 <div class="fragment"><div class="line">$ git clone https:<span class="comment">//github.com/ihago-net/CannonCPP.git</span></div>
@@ -111,51 +126,80 @@ Requirements for Demos</h3>
 <li><a href="https://github.com/nothings/stb">stb</a></li>
 <li><a href="https://github.com/leethomason/tinyxml2">tinyxml2</a></li>
 </ul>
-<p>No additional download is required, already included in the project.</p>
+<p>These 3rd-party libraries are already included in this project, no additional downloads are required.</p>
 <h3><a class="anchor" id="autotoc_md4"></a>
-Run in Xcode</h3>
+Run in Xcode (Only support to run demos on macOS platform currently)</h3>
 <ul>
 <li>Open demos/proj.mac/CannonCppDemo.xcodeproj in Xcode</li>
 <li>Build &amp;&amp; Run</li>
-<li>Input Key ‘Enter‘ to switch demo</li>
+<li>Tap <code>Enter</code> key to switch demos</li>
 </ul>
 <h2><a class="anchor" id="autotoc_md5"></a>
 Example</h2>
-<div class="fragment"><div class="line"><span class="comment">// Create a world</span></div>
-<div class="line"><span class="keyword">auto</span> world = <span class="keyword">new</span> cannon::World();</div>
-<div class="line">world-&gt;set_broadphase(<span class="keyword">new</span> cannon::NaiveBroadphase());</div>
-<div class="line">world-&gt;set_allowSleep(<span class="keyword">true</span>);</div>
-<div class="line">world-&gt;get_defaultMaterial()-&gt;set_friction(0.5);</div>
-<div class="line">world-&gt;get_defaultMaterial()-&gt;set_restitution(0);</div>
+<div class="fragment"><div class="line"> {c++}</div>
+<div class="line">Create a world</div>
+<div class="line"> <span class="keyword">auto</span> world = <span class="keyword">new</span> cannon::World();</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Create a ground material</span></div>
-<div class="line">cannon::Material::MaterialOptions matOptions(world-&gt;genMaterialId());</div>
-<div class="line"><span class="keyword">auto</span> groundMaterial = <span class="keyword">new</span> cannon::Material(matOptions);</div>
-<div class="line">groundMaterial-&gt;set_friction(0.3);</div>
+<div class="line"> <span class="keyword">auto</span> broadphase = <span class="keyword">new</span> cannon::NaiveBroadphase()</div>
+<div class="line"> world-&gt;set_broadphase(broadphase);</div>
+<div class="line">broadphase is retained by world, so it could be safely released here.</div>
+<div class="line"> broadphase-&gt;release();</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Create a ground plane</span></div>
-<div class="line"><span class="keyword">auto</span> groundShape = <span class="keyword">new</span> cannon::Plane(world-&gt;genShapeId());</div>
+<div class="line"> world-&gt;set_allowSleep(true);</div>
+<div class="line"> world-&gt;get_defaultMaterial()-&gt;set_friction(0.5);</div>
+<div class="line"> world-&gt;get_defaultMaterial()-&gt;set_restitution(0);</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Create a ground body</span></div>
-<div class="line">cannon::Body::BodyOptions groundBodyOptions(world, world-&gt;genBodyId());</div>
-<div class="line">groundBodyOptions.mass = 0;</div>
-<div class="line">groundBodyOptions.material = groundMaterial;</div>
-<div class="line"><span class="keyword">auto</span> groundBody = <span class="keyword">new</span> cannon::Body(groundBodyOptions);</div>
-<div class="line">groundBody-&gt;addShape(groundShape);</div>
-<div class="line">world-&gt;addBody(groundBody);</div>
+<div class="line">Create a ground material</div>
+<div class="line"> <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_material.html">Material</a>::MaterialOptions matOptions(world-&gt;genMaterialId());</div>
+<div class="line"> auto groundMaterial = new <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_material.html">Material</a>(matOptions);</div>
+<div class="line"> groundMaterial-&gt;set_friction(0.3);</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Create a box shape</span></div>
-<div class="line"><span class="keywordtype">float</span> size = 1;</div>
-<div class="line">cannon::Vec3 halfExtents = cannon::Vec3(size, size, size);</div>
-<div class="line"><span class="keyword">auto</span> boxShape = <span class="keyword">new</span> cannon::Box(world-&gt;genShapeId(), world, halfExtents);</div>
+<div class="line">Create a ground plane</div>
+<div class="line"> auto groundShape = new <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_plane.html">Plane</a>(world-&gt;genShapeId());</div>
 <div class="line"> </div>
-<div class="line"><span class="comment">// Create a box body</span></div>
-<div class="line">cannon::Body::BodyOptions boxBodyOptions(world, world-&gt;genBodyId());</div>
-<div class="line">boxBodyOptions.mass = 1;</div>
-<div class="line"><span class="keyword">auto</span> boxBody = <span class="keyword">new</span> cannon::Body(boxBodyOptions);</div>
-<div class="line">boxBody-&gt;addShape(boxShape);</div>
-<div class="line">boxBody-&gt;get_position().set(0,0,5);</div>
-<div class="line">world-&gt;addBody(boxBody);</div>
+<div class="line">Create a ground body</div>
+<div class="line"> <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_body.html">Body</a>::BodyOptions groundBodyOptions(world, world-&gt;genBodyId());</div>
+<div class="line"> groundBodyOptions.mass = 0;</div>
+<div class="line"> groundBodyOptions.material = groundMaterial;</div>
+<div class="line"> auto groundBody = new <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_body.html">Body</a>(groundBodyOptions);</div>
+<div class="line"> </div>
+<div class="line">groundMaterial is retained by groundBody, so it could be safely released here.</div>
+<div class="line"> groundMaterial-&gt;release();</div>
+<div class="line"> </div>
+<div class="line"> groundBody-&gt;addShape(groundShape);</div>
+<div class="line"> </div>
+<div class="line">groundShape is retained by groundBody, so it could be safely released here.</div>
+<div class="line"> groundShape-&gt;release();</div>
+<div class="line"> </div>
+<div class="line"> world-&gt;addBody(groundBody);</div>
+<div class="line"> </div>
+<div class="line">groundBody is retained by world, so it could be safely released here.</div>
+<div class="line"> groundBody-&gt;release();</div>
+<div class="line"> </div>
+<div class="line">Create a box shape</div>
+<div class="line"> <span class="keywordtype">float</span> size = 1;</div>
+<div class="line"> <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_vec3.html">Vec3</a> halfExtents(size, size, size);</div>
+<div class="line"> auto boxShape = new <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_box.html">Box</a>(world-&gt;genShapeId(), world, halfExtents);</div>
+<div class="line"> </div>
+<div class="line">Create a box body</div>
+<div class="line"> <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_body.html">Body</a>::BodyOptions boxBodyOptions(world, world-&gt;genBodyId());</div>
+<div class="line"> boxBodyOptions.mass = 1;</div>
+<div class="line"> auto boxBody = new <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_body.html">Body</a>(boxBodyOptions);</div>
+<div class="line"> boxBody-&gt;addShape(boxShape);</div>
+<div class="line"> </div>
+<div class="line">boxShape is retained by boxBody, so it could be safely released here.</div>
+<div class="line"> boxShape-&gt;release();</div>
+<div class="line"> </div>
+<div class="line"> boxBody-&gt;get_position().<a class="code" href="_c_make_lists_8txt.html#a1e53e9ab3c119f43d120f4251fc7e02c">set</a>(0,0,5);</div>
+<div class="line"> world-&gt;addBody(boxBody);</div>
+<div class="line"> </div>
+<div class="line">boxBody is retained by world, so it could be safely released here.</div>
+<div class="line"> boxBody-&gt;release();</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line"> ...</div>
+<div class="line">release world some where</div>
+<div class="line"> world-&gt;release();</div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md6"></a>
 Documentation</h2>
 <ul>
@@ -180,29 +224,118 @@ Compile Wasm:</h3>
 <div class="fragment"><div class="line">$ cd webassembly</div>
 <div class="line">$ $EMSCRIPTEN/emmake make</div>
 </div><!-- fragment --><ul>
-<li>The Cannon_v1.0.0_min.wasm.wasm will be output to dir webassembly/build</li>
+<li>The <code>Cannon_v1.0.0_min.wasm.wasm</code> will be generated in <code>webassembly/build</code> directory</li>
 </ul>
 <h3><a class="anchor" id="autotoc_md10"></a>
-WebAssembly usage for Cocos Creator3D In &lt;a href="https://open.ihago.net/"&gt;Hago Game Runtime&lt;/a&gt;:</h3>
+WebAssembly usage for Cocos Creator 3D In &lt;a href="https://open.ihago.net"&gt;Hago Game Runtime&lt;/a&gt;:</h3>
 <ul>
-<li>Copy Cannon_v1.0.0_min.wasm.js &amp; Cannon_v1.0.0_min.wasm.wasm to your project build output dir</li>
-<li>Replace main.js with main-fix-hago.js</li>
+<li>Copy <code>Cannon_v1.0.0_min.wasm.js</code> &amp; <code>Cannon_v1.0.0_min.wasm.wasm</code> to the directory where <code>index.html</code> exists.</li>
+<li>Replace main.js with webassembly/main-fix-hago.js</li>
 <li>Add <code>&lt;script src="Cannon_v1.0.0_min.wasm.js" /&gt;</code> to index.html</li>
-<li>Replace cocos3d-js.js with the code snippet: <div class="fragment"><div class="line">cannon_min = window.WASM_CANNON || cannon_min;</div>
-<div class="line">setWrap &amp; getWrap</div>
-<div class="line">shapesLength &amp; getShapeOffset &amp; getShapeOrientation</div>
+<li>Hack some functions in physics/framework/util.ts: <div class="fragment"><div class="line">export function setWrap&lt;Wrapper&gt;(object: any, wrapper: Wrapper) {</div>
+<div class="line">    if (CANNON.cc_wrapper_map) {</div>
+<div class="line">       CANNON.cc_wrapper_map[object.id] = wrapper;</div>
+<div class="line">    }</div>
+<div class="line">    else {</div>
+<div class="line">       (object as IWrapped&lt;Wrapper&gt;).__cc_wrapper__ = wrapper;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">export function getWrap&lt;Wrapper&gt;(object: any) {</div>
+<div class="line">    if (CANNON.cc_wrapper_map) {</div>
+<div class="line">       return CANNON.cc_wrapper_map[object.id];</div>
+<div class="line">    }</div>
+<div class="line">    else {</div>
+<div class="line">       return object.__cc_wrapper__;</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --></li>
+<li>Hack some functions in physics/framework/cannon/cannon-shared-body.ts: <div class="fragment"><div class="line">addShape(v: CannonShape) {</div>
+<div class="line">    let index = this.shapes.indexOf(v);</div>
+<div class="line">    if (index &lt; 0) {</div>
+<div class="line">       if (this.body.shapesLength) {</div>
+<div class="line">       index = this.body.shapesLength();</div>
+<div class="line">    }else{</div>
+<div class="line">       index = this.body.shapes.length;</div>
+<div class="line">    }</div>
+<div class="line">    this.body.addShape(v.impl);</div>
+<div class="line">    this.shapes.push(v);</div>
+<div class="line"> </div>
+<div class="line">    v.setIndex(index);</div>
+<div class="line">    let offset;</div>
+<div class="line">    let orient;</div>
+<div class="line">    if (this.body.getShapeOffset &amp;&amp; this.body.getShapeOffset) {</div>
+<div class="line">       offset = this.body.getShapeOffset(index),</div>
+<div class="line">       orient = this.body.getShapeOrientation(index);</div>
+<div class="line">    } else {</div>
+<div class="line">       offset = this.body.shapeOffsets[index];</div>
+<div class="line">       orient = this.body.shapeOrientations[index];</div>
+<div class="line">    }</div>
+<div class="line">    v.setOffsetAndOrient(offset, orient);</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">private onCollided(event: CANNON.ICollisionEvent) {</div>
+<div class="line">    CollisionEventObject.type = event.event;</div>
+<div class="line">    const self = getWrap&lt;CannonShape&gt;(event.selfShape);</div>
+<div class="line">    const other = getWrap&lt;CannonShape&gt;(event.otherShape);</div>
+<div class="line"> </div>
+<div class="line">    if (self) {</div>
+<div class="line">        CollisionEventObject.selfCollider = self.collider;</div>
+<div class="line">        CollisionEventObject.otherCollider = other ? other.collider : null;</div>
+<div class="line">        let i = 0;</div>
+<div class="line">        for (i = CollisionEventObject.contacts.length; i--;) {</div>
+<div class="line">           contactsPool.push(CollisionEventObject.contacts.pop());</div>
+<div class="line">        }</div>
+<div class="line">        let contactCount;</div>
+<div class="line">        if (event.contactCount) {</div>
+<div class="line">           contactCount = event.contactCount();</div>
+<div class="line">        } else {</div>
+<div class="line">           contactCount = event.contacts.length;</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        for (i = 0; i &lt; contactCount; i++) {</div>
+<div class="line">            let cq;</div>
+<div class="line">            if (event.getContact) {</div>
+<div class="line">               cq = event.getContact(i);</div>
+<div class="line">            } else {</div>
+<div class="line">               cq = event.contacts[i];</div>
+<div class="line">            }</div>
+<div class="line"> </div>
+<div class="line">            ...</div>
+<div class="line">        }</div>
+<div class="line"> </div>
+<div class="line">        ...</div>
+<div class="line">    }</div>
+<div class="line">}</div>
+</div><!-- fragment --></li>
+<li>Modify cocos3d-js.js with the following code snippet: <div class="fragment"><div class="line">// Position before this line of existing code.</div>
+<div class="line">var K8=e(&quot;PhysicMaterial&quot;,eo(&quot;cc.PhysicMaterial&quot;)</div>
+<div class="line"> </div>
+<div class="line">// Insert one line of code, after modified.</div>
+<div class="line">Y8 = window.WASM_CANNON || Y8;</div>
+<div class="line">var K8=e(&quot;PhysicMaterial&quot;,eo(&quot;cc.PhysicMaterial&quot;)</div>
 </div><!-- fragment --></li>
 </ul>
 <h2><a class="anchor" id="autotoc_md11"></a>
 TODO:</h2>
 <ul>
-<li>Demos will support android platform</li>
-<li>Add UI in demos</li>
-<li>Add demos for WebAssembly </li>
+<li>Support to create a heightfield with an image</li>
+<li>Support to run demos on Android, iOS and Win32 platforms</li>
+<li>Use Dear ImGUI library for adjusting parameters in demos</li>
+<li>Add demos for WebAssembly</li>
+<li>CI building </li>
 </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclass_box_html"><div class="ttname"><a href="class_box.html">Box</a></div><div class="ttdoc">A 3d box shape.</div><div class="ttdef"><b>Definition:</b> Box.h:46</div></div>
+<div class="ttc" id="anamespacecannon_html"><div class="ttname"><a href="namespacecannon.html">cannon</a></div><div class="ttdef"><b>Definition:</b> Defines.h:59</div></div>
+<div class="ttc" id="aclass_material_html"><div class="ttname"><a href="class_material.html">Material</a></div><div class="ttdoc">Defines a physics material.</div><div class="ttdef"><b>Definition:</b> Material.h:37</div></div>
+<div class="ttc" id="a_c_make_lists_8txt_html_a1e53e9ab3c119f43d120f4251fc7e02c"><div class="ttname"><a href="_c_make_lists_8txt.html#a1e53e9ab3c119f43d120f4251fc7e02c">set</a></div><div class="ttdeci">set(CANNONCPP_PATH ${ROOT_PATH}/src) set(CMAKE_CXX_FLAGS_DEBUG &quot;$</div><div class="ttdef"><b>Definition:</b> CMakeLists.txt:6</div></div>
+<div class="ttc" id="aclass_vec3_html"><div class="ttname"><a href="class_vec3.html">Vec3</a></div><div class="ttdoc">3-dimensional vector</div><div class="ttdef"><b>Definition:</b> Vec3.h:54</div></div>
+<div class="ttc" id="aclass_body_html"><div class="ttname"><a href="class_body.html">Body</a></div><div class="ttdoc">A RigidBody in the physics world.</div><div class="ttdef"><b>Definition:</b> Body.h:69</div></div>
+<div class="ttc" id="aclass_plane_html"><div class="ttname"><a href="class_plane.html">Plane</a></div><div class="ttdoc">A plane, facing in the Z direction. The plane has its surface at z=0 and everything below z=0 is assu...</div><div class="ttdef"><b>Definition:</b> Plane.h:36</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

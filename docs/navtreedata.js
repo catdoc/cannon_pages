@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "Cannon Cpp", "index.html", [
-    [ "Cannon CPP —— C++ 3D physics engine", "index.html", null ],
+    [ "CannonCPP", "index.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
