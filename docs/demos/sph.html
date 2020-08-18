@@ -8,9 +8,9 @@
   </head>
   <body>
     
-    <script src="../build/Cannon_v1.0.0_min.wasm.js"></script>
+    <script src="../../build/Cannon_v1.0.0_min.wasm.js"></script>
     <script src="../build/cannon_helper.js"></script>
-    <script src="../fix-wrapper.js"></script>
+    <script src="../../fix-wrapper.js"></script>
 
     <script>
 
@@ -29,7 +29,8 @@
           sph.density = 1;
           sph.viscosity = 0.03;
           sph.smoothingRadius = 1.0;
-          world.subsystems.push(sph);
+          //world.subsystems.push(sph);
+          world.addSystem(sph);
 
           // Tweak contact properties.
           world.defaultContactMaterial.contactEquationStiffness = 1e11; // Contact stiffness - use to make softer/harder contacts

@@ -572,15 +572,16 @@ var wrapCANNON = function(CANNON) {
     CANNON.RigidVehicle.prototype.addWheel = function(options) {
         options = options || {};
         let wheelBody = options.body;
-        let position = typeof(options.position) !== 'undefined' ? options.position : new CANNON.Vec3();
+        let position = typeof(options.position) !== 'undefined' ? options.position : new CANNON.Vec3(0,2,0);
         let axis = typeof(options.axis) !== 'undefined' ? options.axis : new CANNON.Vec3(0, 1, 0);
 
-        console.warn('wheelBody ' + wheelBody + ', ' + position + ',' + axis);
         return this._oldAddWheel(wheelBody, position, axis);
     }
 
     CANNON._NativeRaycastVehicle = CANNON.RaycastVehicle;
     CANNON.RaycastVehicle = function(options) {
+        options = options || {};
+
         let chassisBody = options.chassisBody;
         let indexRightAxis = typeof(options.indexRightAxis) !== 'undefined' ? options.indexRightAxis : 1;
         let indexForwardAxis = typeof(options.indexForwardAxis) !== 'undefined' ? options.indexForwardAxis : 0;
@@ -661,16 +662,6 @@ var wrapCANNON = function(CANNON) {
         }
         return contacts;
     } });
-
-    // Object.defineProperty(CANNON.World.prototype, 'contact', { get: function() {
-    //     let count = this.getContactCount();
-    //     let contacts = [];
-    //     for (let i = 0; i < count; ++i) {
-    //         let contact = this.getContact(i);
-    //         contacts[i] = contact;
-    //     }
-    //     return contacts;
-    // } });
 
     Object.defineProperty(CANNON.BodyOptions.prototype, 'position', { get: CANNON.BodyOptions.prototype.get_position, set: CANNON.BodyOptions.prototype.set_position });
     Object.defineProperty(CANNON.BodyOptions.prototype, 'quaternion', { get: CANNON.BodyOptions.prototype.get_quaternion, set: CANNON.BodyOptions.prototype.set_quaternion });
@@ -800,7 +791,7 @@ var wrapCANNON = function(CANNON) {
     Object.defineProperty(CANNON.Vec3.prototype, 'z', { get: CANNON.Vec3.prototype.get_z, set: CANNON.Vec3.prototype.set_z});
 
     CANNON.Vec3.prototype.vadd = function(v, target) {
-        target = target || {};
+        target = target || new CANNON.Vec3();
         target.x = this.x + v.x;
         target.y = this.y + v.y;
         target.z = this.z + v.z;
@@ -849,6 +840,12 @@ var wrapCANNON = function(CANNON) {
             return wheelInfos;
         }
     });
+
+    Object.defineProperty(CANNON.SPHSystem.prototype, 'density', { get: CANNON.SPHSystem.prototype.get_density, set: CANNON.SPHSystem.prototype.set_density });
+    Object.defineProperty(CANNON.SPHSystem.prototype, 'smoothingRadius', { get: CANNON.SPHSystem.prototype.get_smoothingRadius, set: CANNON.SPHSystem.prototype.set_smoothingRadius });
+    Object.defineProperty(CANNON.SPHSystem.prototype, 'speedOfSound', { get: CANNON.SPHSystem.prototype.get_speedOfSound, set: CANNON.SPHSystem.prototype.set_speedOfSound });
+    Object.defineProperty(CANNON.SPHSystem.prototype, 'viscosity', { get: CANNON.SPHSystem.prototype.get_viscosity, set: CANNON.SPHSystem.prototype.set_viscosity });
+    Object.defineProperty(CANNON.SPHSystem.prototype, 'eps', { get: CANNON.SPHSystem.prototype.get_eps, set: CANNON.SPHSystem.prototype.set_eps });
 
     CANNON.dump = function(obj) {
         for (var key in obj) {
