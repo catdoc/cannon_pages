@@ -633,6 +633,16 @@ var wrapCANNON = function(CANNON) {
         return index;
     }
 
+    Object.defineProperty(CANNON.World.prototype, 'bodies', { get: function() {
+        let count = this.numObjects();
+        let bodies = [];
+        for (let i = 0; i < count; ++i) {
+            let body = this.getBody(i);
+            bodies[i] = body;
+        }
+        return bodies;
+    } });
+
     Object.defineProperty(CANNON.World.prototype, 'allowSleep', { get: CANNON.World.prototype.get_allowSleep, set: CANNON.World.prototype.set_allowSleep });
     Object.defineProperty(CANNON.World.prototype, 'gravity', { get: CANNON.World.prototype.get_gravity, set: CANNON.World.prototype.set_gravity });
     Object.defineProperty(CANNON.World.prototype, 'broadphase', { get: CANNON.World.prototype.get_broadphase, set: CANNON.World.prototype.set_broadphase });
@@ -703,7 +713,7 @@ var wrapCANNON = function(CANNON) {
     Object.defineProperty(CANNON.Body.prototype, 'collisionFilterGroup', { get: CANNON.Body.prototype.get_collisionFilterGroup, set: CANNON.Body.prototype.set_collisionFilterGroup });
     Object.defineProperty(CANNON.Body.prototype, 'collisionFilterMask', { get: CANNON.Body.prototype.get_collisionFilterMask, set: CANNON.Body.prototype.set_collisionFilterMask });
     Object.defineProperty(CANNON.Body.prototype, 'aabb', { get: CANNON.Body.prototype.get_aabb });
-    Object.defineProperty(CANNON.Body.prototype, 'aabbNeedsUpdate', { get: CANNON.Body.prototype.get_aabbNeedsUpdate });
+    Object.defineProperty(CANNON.Body.prototype, 'aabbNeedsUpdate', { get: CANNON.Body.prototype.get_aabbNeedsUpdate, set: CANNON.Body.prototype.set_aabbNeedsUpdate });
 
     Object.defineProperty(CANNON.Shape.prototype, 'id', { get: CANNON.Shape.prototype.get_id });
     Object.defineProperty(CANNON.Shape.prototype, 'type', { get: CANNON.Shape.prototype.type });
@@ -795,6 +805,22 @@ var wrapCANNON = function(CANNON) {
         target.x = this.x + v.x;
         target.y = this.y + v.y;
         target.z = this.z + v.z;
+        return target;
+    }
+
+    CANNON.Vec3.prototype.vsub = function(v, target) {
+        target = target || new CANNON.Vec3();
+        target.x = this.x - v.x;
+        target.y = this.y - v.y;
+        target.z = this.z - v.z;
+        return target;
+    }
+
+    CANNON.Vec3.prototype.clone = function() {
+        let target = new CANNON.Vec3();
+        target.x = this.x;
+        target.y = this.y;
+        target.z = this.z;
         return target;
     }
 

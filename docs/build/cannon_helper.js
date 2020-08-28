@@ -69,16 +69,33 @@ let addScript = function(url) {
     document.appendChild(script);
 }
 
-window.runDemo = function(startFn) {
+runDemo = function(startFn) {
 
     CANNON().then(function(CANNON) {
         console.warn('wasm cannon init ' + CANNON.World);
-        window.WASM_CANNON = wrapCANNON(CANNON);
-        window.CANNON = window.WASM_CANNON;
-        console.warn('world.wasm cannon = ' + window.WASM_CANNON.World);
+        // window.WASM_CANNON = wrapCANNON(CANNON);
+        // window.CANNON = window.WASM_CANNON;
+        // console.warn('world.wasm cannon = ' + window.WASM_CANNON.World);
+
+        console.warn('window = ' + typeof(window) + ' , self = ' + typeof(self));
+        if (typeof(window) !== 'undefined') {
+            window.WASM_CANNON = wrapCANNON(CANNON);
+            window.CANNON = window.WASM_CANNON;
+            console.warn('world.wasm cannon = ' + window.WASM_CANNON.World);
+        }
+        else if (typeof(self) !== 'undefined') {
+            self.WASM_CANNON = wrapCANNON(CANNON);
+            self.CANNON = self.WASM_CANNON;
+            console.warn('world.wasm cannon = ' + self.WASM_CANNON.World);
+        }
         
     }).then( function () {
-          return loadJsListModules(jsList)
+        if (typeof(window) !== 'undefined') {
+            return loadJsListModules(jsList);
+        }
+        else {
+            return true;
+        }
         }).then(function(){
 
           startFn();
