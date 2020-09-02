@@ -1,9 +1,11 @@
 var class_contact_equation =
 [
-    [ "ContactEquation", "class_contact_equation.html#ac539308ace13430480a1eec52f89e669", null ],
+    [ "ContactEquation", "class_contact_equation.html#ab7482c5114c81b499b0cec4efaef5cb6", null ],
     [ "~ContactEquation", "class_contact_equation.html#a98ee615a843986e183135bd2047b4081", null ],
     [ "computeB", "class_contact_equation.html#abadbad7039dfc135a55328f8e441d50b", null ],
+    [ "create", "class_contact_equation.html#aae5a7aa3696fbdeb88994729546eac6b", null ],
     [ "getImpactVelocityAlongNormal", "class_contact_equation.html#a9cdb30d7a0a81d012769cfd81eb36df2", null ],
+    [ "init", "class_contact_equation.html#ad97fece5630159198dfd6efc0da8b0b1", null ],
     [ "ni", "class_contact_equation.html#a1dc3c804cf221828dfdb29e2f1b4ed2b", null ],
     [ "ni", "class_contact_equation.html#a0957b2ac8ed4cf7172280a48aafbb98f", null ],
     [ "reInit", "class_contact_equation.html#a5ce249175c459ee6ebd25e161cebdb10", null ],

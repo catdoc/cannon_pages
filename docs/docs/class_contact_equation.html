@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('class_contact_equation.html',''); init
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_contact_equation-members.html">List of all members</a>  </div>
@@ -109,9 +110,6 @@ Inheritance diagram for ContactEquation:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac539308ace13430480a1eec52f89e669"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact_equation.html#ac539308ace13430480a1eec52f89e669">ContactEquation</a> (int <a class="el" href="class_equation.html#a2b12b9d4d6dd37049b48e4042c9706c1">id</a>, <a class="el" href="class_body.html">Body</a> *bodyA, <a class="el" href="class_body.html">Body</a> *bodyB, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_equation.html#aad78f3b0d822f802fe61454b60286c6d">maxForce</a>=1e6)</td></tr>
-<tr class="memdesc:ac539308ace13430480a1eec52f89e669"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor of <a class="el" href="class_contact_equation.html" title="Contact/non-penetration constraint equation.">ContactEquation</a>.  <a href="class_contact_equation.html#ac539308ace13430480a1eec52f89e669">More...</a><br /></td></tr>
-<tr class="separator:ac539308ace13430480a1eec52f89e669"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ce249175c459ee6ebd25e161cebdb10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact_equation.html#a5ce249175c459ee6ebd25e161cebdb10">reInit</a> (<a class="el" href="class_body.html">Body</a> *bodyA, <a class="el" href="class_body.html">Body</a> *bodyB, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_equation.html#aad78f3b0d822f802fe61454b60286c6d">maxForce</a>=1e6)</td></tr>
 <tr class="separator:a5ce249175c459ee6ebd25e161cebdb10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cdb30d7a0a81d012769cfd81eb36df2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact_equation.html#a9cdb30d7a0a81d012769cfd81eb36df2">getImpactVelocityAlongNormal</a> ()</td></tr>
@@ -150,11 +148,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a26bbd941a8c92f658cab36c3f1e222db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact_equation.html#a26bbd941a8c92f658cab36c3f1e222db">setRestitution</a> (<a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> value)</td></tr>
 <tr class="separator:a26bbd941a8c92f658cab36c3f1e222db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_equation"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_equation')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_equation.html">Equation</a></td></tr>
-<tr class="memitem:aef0a5eb31cb9002de9ce8a95ca856189 inherit pub_methods_class_equation"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equation.html#aef0a5eb31cb9002de9ce8a95ca856189">CANNON_DECLARE_ALIGNED_ALLOCATOR</a> ()</td></tr>
-<tr class="separator:aef0a5eb31cb9002de9ce8a95ca856189 inherit pub_methods_class_equation"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23ef96ccd44723dd981070df8ab18ecb inherit pub_methods_class_equation"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equation.html#a23ef96ccd44723dd981070df8ab18ecb">Equation</a> (int <a class="el" href="class_equation.html#a2b12b9d4d6dd37049b48e4042c9706c1">id</a>, <a class="el" href="class_body.html">Body</a> *<a class="el" href="class_equation.html#af748a218fb99e45dc4e7446dee9df796">bi</a>, <a class="el" href="class_body.html">Body</a> *<a class="el" href="class_equation.html#a113df35b88aeb9681fb36005977f5f7c">bj</a>, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_equation.html#add8d14a6fd4e9c56711d0135234119ab">minForce</a>=-1e6, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_equation.html#aad78f3b0d822f802fe61454b60286c6d">maxForce</a>=1e6)</td></tr>
-<tr class="memdesc:a23ef96ccd44723dd981070df8ab18ecb inherit pub_methods_class_equation"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor of <a class="el" href="class_equation.html" title="Equation base class.">Equation</a>.  <a href="class_equation.html#a23ef96ccd44723dd981070df8ab18ecb">More...</a><br /></td></tr>
-<tr class="separator:a23ef96ccd44723dd981070df8ab18ecb inherit pub_methods_class_equation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9dbac97e698fcba1cd37528f1ec30af inherit pub_methods_class_equation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equation.html#ac9dbac97e698fcba1cd37528f1ec30af">reInit</a> (<a class="el" href="class_body.html">Body</a> *<a class="el" href="class_equation.html#af748a218fb99e45dc4e7446dee9df796">bi</a>, <a class="el" href="class_body.html">Body</a> *<a class="el" href="class_equation.html#a113df35b88aeb9681fb36005977f5f7c">bj</a>, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_equation.html#add8d14a6fd4e9c56711d0135234119ab">minForce</a>, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_equation.html#aad78f3b0d822f802fe61454b60286c6d">maxForce</a>)</td></tr>
 <tr class="separator:ac9dbac97e698fcba1cd37528f1ec30af inherit pub_methods_class_equation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a590e7a648954e25280cef6f85b293086 inherit pub_methods_class_equation"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equation.html#a590e7a648954e25280cef6f85b293086">setSpookParams</a> (<a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> stiffness, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> relaxation, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> timeStep)</td></tr>
@@ -221,13 +214,34 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2f2cbd9e777f339586f161b2f6467f21 inherit pub_methods_class_ref"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reference count of this object.  <a href="class_ref.html#a2f2cbd9e777f339586f161b2f6467f21">More...</a><br /></td></tr>
 <tr class="separator:a2f2cbd9e777f339586f161b2f6467f21 inherit pub_methods_class_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aae5a7aa3696fbdeb88994729546eac6b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_contact_equation.html">ContactEquation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact_equation.html#aae5a7aa3696fbdeb88994729546eac6b">create</a> (int <a class="el" href="class_equation.html#a2b12b9d4d6dd37049b48e4042c9706c1">id</a>, <a class="el" href="class_body.html">Body</a> *bodyA, <a class="el" href="class_body.html">Body</a> *bodyB, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_equation.html#aad78f3b0d822f802fe61454b60286c6d">maxForce</a>=1e6)</td></tr>
+<tr class="memdesc:aae5a7aa3696fbdeb88994729546eac6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The create function of <a class="el" href="class_contact_equation.html" title="Contact/non-penetration constraint equation.">ContactEquation</a>.  <a href="class_contact_equation.html#aae5a7aa3696fbdeb88994729546eac6b">More...</a><br /></td></tr>
+<tr class="separator:aae5a7aa3696fbdeb88994729546eac6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_equation"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_equation')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="class_equation.html">Equation</a></td></tr>
+<tr class="memitem:ad210f4a4ec377c8443a6f4b963e94a3f inherit pub_static_methods_class_equation"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_equation.html">Equation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equation.html#ad210f4a4ec377c8443a6f4b963e94a3f">create</a> (int <a class="el" href="class_equation.html#a2b12b9d4d6dd37049b48e4042c9706c1">id</a>, <a class="el" href="class_body.html">Body</a> *<a class="el" href="class_equation.html#af748a218fb99e45dc4e7446dee9df796">bi</a>, <a class="el" href="class_body.html">Body</a> *<a class="el" href="class_equation.html#a113df35b88aeb9681fb36005977f5f7c">bj</a>, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_equation.html#add8d14a6fd4e9c56711d0135234119ab">minForce</a>, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_equation.html#aad78f3b0d822f802fe61454b60286c6d">maxForce</a>)</td></tr>
+<tr class="separator:ad210f4a4ec377c8443a6f4b963e94a3f inherit pub_static_methods_class_equation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:ab7482c5114c81b499b0cec4efaef5cb6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact_equation.html#ab7482c5114c81b499b0cec4efaef5cb6">ContactEquation</a> ()</td></tr>
+<tr class="memdesc:ab7482c5114c81b499b0cec4efaef5cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor of <a class="el" href="class_contact_equation.html" title="Contact/non-penetration constraint equation.">ContactEquation</a>.  <a href="class_contact_equation.html#ab7482c5114c81b499b0cec4efaef5cb6">More...</a><br /></td></tr>
+<tr class="separator:ab7482c5114c81b499b0cec4efaef5cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98ee615a843986e183135bd2047b4081"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact_equation.html#a98ee615a843986e183135bd2047b4081">~ContactEquation</a> ()</td></tr>
 <tr class="separator:a98ee615a843986e183135bd2047b4081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad97fece5630159198dfd6efc0da8b0b1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_contact_equation.html#ad97fece5630159198dfd6efc0da8b0b1">init</a> (int <a class="el" href="class_equation.html#a2b12b9d4d6dd37049b48e4042c9706c1">id</a>, <a class="el" href="class_body.html">Body</a> *bodyA, <a class="el" href="class_body.html">Body</a> *bodyB, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_equation.html#aad78f3b0d822f802fe61454b60286c6d">maxForce</a>=1e6)</td></tr>
+<tr class="memdesc:ad97fece5630159198dfd6efc0da8b0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init this contactEquation.  <a href="class_contact_equation.html#ad97fece5630159198dfd6efc0da8b0b1">More...</a><br /></td></tr>
+<tr class="separator:ad97fece5630159198dfd6efc0da8b0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_equation"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_equation')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_equation.html">Equation</a></td></tr>
+<tr class="memitem:a68511fc719250ed80f86c50de9136733 inherit pro_methods_class_equation"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equation.html#a68511fc719250ed80f86c50de9136733">Equation</a> ()</td></tr>
+<tr class="memdesc:a68511fc719250ed80f86c50de9136733 inherit pro_methods_class_equation"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor of <a class="el" href="class_equation.html" title="Equation base class.">Equation</a>.  <a href="class_equation.html#a68511fc719250ed80f86c50de9136733">More...</a><br /></td></tr>
+<tr class="separator:a68511fc719250ed80f86c50de9136733 inherit pro_methods_class_equation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a097243d0dfd608330fc91f115a0d15bb inherit pro_methods_class_equation"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equation.html#a097243d0dfd608330fc91f115a0d15bb">~Equation</a> ()</td></tr>
 <tr class="separator:a097243d0dfd608330fc91f115a0d15bb inherit pro_methods_class_equation"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04bf8421d53d54f082e2d5e345820691 inherit pro_methods_class_equation"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_equation.html#a04bf8421d53d54f082e2d5e345820691">init</a> (int <a class="el" href="class_equation.html#a2b12b9d4d6dd37049b48e4042c9706c1">id</a>, <a class="el" href="class_body.html">Body</a> *<a class="el" href="class_equation.html#af748a218fb99e45dc4e7446dee9df796">bi</a>, <a class="el" href="class_body.html">Body</a> *<a class="el" href="class_equation.html#a113df35b88aeb9681fb36005977f5f7c">bj</a>, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_equation.html#add8d14a6fd4e9c56711d0135234119ab">minForce</a>, <a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> <a class="el" href="class_equation.html#aad78f3b0d822f802fe61454b60286c6d">maxForce</a>)</td></tr>
+<tr class="memdesc:a04bf8421d53d54f082e2d5e345820691 inherit pro_methods_class_equation"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init this equation.  <a href="class_equation.html#a04bf8421d53d54f082e2d5e345820691">More...</a><br /></td></tr>
+<tr class="separator:a04bf8421d53d54f082e2d5e345820691 inherit pro_methods_class_equation"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_ref')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_ref.html">Ref</a></td></tr>
 <tr class="memitem:a1c3c3986014151251b39041e2556d2e3 inherit pro_methods_class_ref"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ref.html#a1c3c3986014151251b39041e2556d2e3">~Ref</a> ()</td></tr>
 <tr class="separator:a1c3c3986014151251b39041e2556d2e3 inherit pro_methods_class_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -296,54 +310,30 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contact/non-penetration constraint equation. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ac539308ace13430480a1eec52f89e669"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac539308ace13430480a1eec52f89e669">&#9670;&nbsp;</a></span>ContactEquation()</h2>
+<a id="ab7482c5114c81b499b0cec4efaef5cb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7482c5114c81b499b0cec4efaef5cb6">&#9670;&nbsp;</a></span>ContactEquation()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">ContactEquation::ContactEquation </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_body.html">Body</a> *&#160;</td>
-          <td class="paramname"><em>bodyA</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_body.html">Body</a> *&#160;</td>
-          <td class="paramname"><em>bodyB</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a>&#160;</td>
-          <td class="paramname"><em>maxForce</em> = <code>1e6</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>The constructor of <a class="el" href="class_contact_equation.html" title="Contact/non-penetration constraint equation.">ContactEquation</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td>The ID of equation. </td></tr>
-    <tr><td class="paramname">bodyA</td><td>A related body. </td></tr>
-    <tr><td class="paramname">bodyB</td><td>Another related body. </td></tr>
-    <tr><td class="paramname">maxForce</td><td>maxForce force to be applied by the constraint. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -401,6 +391,65 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="aae5a7aa3696fbdeb88994729546eac6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae5a7aa3696fbdeb88994729546eac6b">&#9670;&nbsp;</a></span>create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_contact_equation.html">ContactEquation</a> * ContactEquation::create </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_body.html">Body</a> *&#160;</td>
+          <td class="paramname"><em>bodyA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_body.html">Body</a> *&#160;</td>
+          <td class="paramname"><em>bodyB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a>&#160;</td>
+          <td class="paramname"><em>maxForce</em> = <code>1e6</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The create function of <a class="el" href="class_contact_equation.html" title="Contact/non-penetration constraint equation.">ContactEquation</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of equation. </td></tr>
+    <tr><td class="paramname">bodyA</td><td>A related body. </td></tr>
+    <tr><td class="paramname">bodyB</td><td>Another related body. </td></tr>
+    <tr><td class="paramname">maxForce</td><td>maxForce force to be applied by the constraint. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a9cdb30d7a0a81d012769cfd81eb36df2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9cdb30d7a0a81d012769cfd81eb36df2">&#9670;&nbsp;</a></span>getImpactVelocityAlongNormal()</h2>
 
@@ -418,6 +467,65 @@ Protected Attributes</h2></td></tr>
 
 <p>Get the current relative velocity in the contact point. </p>
 <dl class="section return"><dt>Returns</dt><dd>The current relative velocity in the contact point. </dd></dl>
+
+</div>
+</div>
+<a id="ad97fece5630159198dfd6efc0da8b0b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad97fece5630159198dfd6efc0da8b0b1">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ContactEquation::init </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_body.html">Body</a> *&#160;</td>
+          <td class="paramname"><em>bodyA</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_body.html">Body</a> *&#160;</td>
+          <td class="paramname"><em>bodyB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a>&#160;</td>
+          <td class="paramname"><em>maxForce</em> = <code>1e6</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Init this contactEquation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>The ID of equation. </td></tr>
+    <tr><td class="paramname">bodyA</td><td>A related body. </td></tr>
+    <tr><td class="paramname">bodyB</td><td>Another related body. </td></tr>
+    <tr><td class="paramname">maxForce</td><td>maxForce force to be applied by the constraint. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

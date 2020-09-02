@@ -146,9 +146,9 @@ Macros</h2></td></tr>
 <tr class="separator:a0aa6c3e6573a6cc750a9af3e2a7a5962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13df246f55d05cf5c78dfc758d53ce2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_defines_8h.html#a13df246f55d05cf5c78dfc758d53ce2d">DEFINE_CANNON_GEN_ID_FUN</a>(clsName)</td></tr>
 <tr class="separator:a13df246f55d05cf5c78dfc758d53ce2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad74b902ecffef69e3a89119c96e94c6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_defines_8h.html#ad74b902ecffef69e3a89119c96e94c6a">CANNON_MAX</a>(a,  b)&#160;&#160;&#160;(((a) &gt; (b)) ? (a) : (b))</td></tr>
+<tr class="memitem:ad74b902ecffef69e3a89119c96e94c6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_defines_8h.html#ad74b902ecffef69e3a89119c96e94c6a">CANNON_MAX</a>(a,  b)&#160;&#160;&#160;(((a) &lt; (b)) ? (b) : (a))</td></tr>
 <tr class="separator:ad74b902ecffef69e3a89119c96e94c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a826393c8525c95c55fd46fcea8e43ff5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_defines_8h.html#a826393c8525c95c55fd46fcea8e43ff5">CANNON_MIN</a>(a,  b)&#160;&#160;&#160;(((a) &lt; (b)) ? (a) : (b))</td></tr>
+<tr class="memitem:a826393c8525c95c55fd46fcea8e43ff5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_defines_8h.html#a826393c8525c95c55fd46fcea8e43ff5">CANNON_MIN</a>(a,  b)&#160;&#160;&#160;(((a) &gt; (b)) ? (b) : (a))</td></tr>
 <tr class="separator:a826393c8525c95c55fd46fcea8e43ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37b9a66b089ee14f1974aab790309ddd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_defines_8h.html#a37b9a66b089ee14f1974aab790309ddd">CANNON_IS_ZERO</a>(v)&#160;&#160;&#160;(std::abs((v)) &lt;= <a class="el" href="_defines_8h.html#adae2f7f5b9abc545065d3eeb5c5701d6">CANNON_EPSILON</a>)</td></tr>
 <tr class="separator:a37b9a66b089ee14f1974aab790309ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,7 +172,7 @@ Macros</h2></td></tr>
 <tr class="separator:a8f3a0f0e739421808f42f584843dd415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a432c8182843f8521633b313f36acfbac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_defines_8h.html#a432c8182843f8521633b313f36acfbac">CANNON_API</a>&#160;&#160;&#160;<a class="el" href="_defines_8h.html#a8f3a0f0e739421808f42f584843dd415">CANNON_VISIBILITY</a></td></tr>
 <tr class="separator:a432c8182843f8521633b313f36acfbac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada35c2bb0692effe0371335f0dda068a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a>&#160;&#160;&#160;inline __attribute__((always_inline))</td></tr>
+<tr class="memitem:ada35c2bb0692effe0371335f0dda068a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a>&#160;&#160;&#160;inline</td></tr>
 <tr class="separator:ada35c2bb0692effe0371335f0dda068a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e4a4d5ee6a7e5b2bac4a5d333329b87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_defines_8h.html#a4e4a4d5ee6a7e5b2bac4a5d333329b87">CANNON_ATTRIBUTE_ALIGNED16</a>(a)&#160;&#160;&#160;a __attribute__((aligned(16)))</td></tr>
 <tr class="separator:a4e4a4d5ee6a7e5b2bac4a5d333329b87"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,6 +210,12 @@ Macros</h2></td></tr>
 <tr class="separator:af4fb79d9580a2a30df14bef5210fb77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76be04efd45494dfeeed38599f766f2b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_defines_8h.html#a76be04efd45494dfeeed38599f766f2b">CANNON_DEFINE_REF_FUNC_IMPL</a>(clsName)</td></tr>
 <tr class="separator:a76be04efd45494dfeeed38599f766f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b6ce539a3f811aaede50491042c2f47"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_defines_8h.html#a1b6ce539a3f811aaede50491042c2f47">CANNON_SAFE_RELEASE</a>(p)&#160;&#160;&#160;do { if(p) { (p)-&gt;release(); } } while(0)</td></tr>
+<tr class="separator:a1b6ce539a3f811aaede50491042c2f47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdc0f2c0dd1790cbde290c1d86c79444"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_defines_8h.html#acdc0f2c0dd1790cbde290c1d86c79444">CANNON_SAFE_RELEASE_NULL</a>(p)&#160;&#160;&#160;do { if(p) { (p)-&gt;release(); (p) = nullptr; } } while(0)</td></tr>
+<tr class="separator:acdc0f2c0dd1790cbde290c1d86c79444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f89fd470171a3750f06f27a5eec74a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_defines_8h.html#a6f89fd470171a3750f06f27a5eec74a0">CANNON_SAFE_RETAIN</a>(p)&#160;&#160;&#160;do { if(p) { (p)-&gt;retain(); } } while(0)</td></tr>
+<tr class="separator:a6f89fd470171a3750f06f27a5eec74a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1816ce40815dc2bd16d2366e35d3e016"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_defines_8h.html#a1816ce40815dc2bd16d2366e35d3e016">CANNON_DECLARE_ALIGNED_ALLOCATOR</a>()</td></tr>
 <tr class="separator:a1816ce40815dc2bd16d2366e35d3e016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac4c25ca399575ad650eb45a1984a577c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_defines_8h.html#ac4c25ca399575ad650eb45a1984a577c">CANNON_IMPLEMENT_ALIGNED_ALLOCATOR</a>(cls)</td></tr>
@@ -994,7 +1000,7 @@ Enumerations</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define CANNON_FORCE_INLINE&#160;&#160;&#160;inline __attribute__((always_inline))</td>
+          <td class="memname">#define CANNON_FORCE_INLINE&#160;&#160;&#160;inline</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1175,7 +1181,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((a) &gt; (b)) ? (a) : (b))</td>
+          <td></td><td>&#160;&#160;&#160;(((a) &lt; (b)) ? (b) : (a))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1203,7 +1209,7 @@ Enumerations</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((a) &lt; (b)) ? (a) : (b))</td>
+          <td></td><td>&#160;&#160;&#160;(((a) &gt; (b)) ? (b) : (a))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1302,6 +1308,60 @@ Enumerations</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define CANNON_PI&#160;&#160;&#160;3.141592653589793</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b6ce539a3f811aaede50491042c2f47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b6ce539a3f811aaede50491042c2f47">&#9670;&nbsp;</a></span>CANNON_SAFE_RELEASE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CANNON_SAFE_RELEASE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p</td><td>)</td>
+          <td>&#160;&#160;&#160;do { if(p) { (p)-&gt;release(); } } while(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acdc0f2c0dd1790cbde290c1d86c79444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdc0f2c0dd1790cbde290c1d86c79444">&#9670;&nbsp;</a></span>CANNON_SAFE_RELEASE_NULL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CANNON_SAFE_RELEASE_NULL</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p</td><td>)</td>
+          <td>&#160;&#160;&#160;do { if(p) { (p)-&gt;release(); (p) = nullptr; } } while(0)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f89fd470171a3750f06f27a5eec74a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f89fd470171a3750f06f27a5eec74a0">&#9670;&nbsp;</a></span>CANNON_SAFE_RETAIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CANNON_SAFE_RETAIN</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p</td><td>)</td>
+          <td>&#160;&#160;&#160;do { if(p) { (p)-&gt;retain(); } } while(0)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1457,10 +1517,10 @@ Enumerations</h2></td></tr>
 <div class="ttc" id="a_defines_8h_html_aaea3229b1f4c8c19e6b11903fc4af7ca"><div class="ttname"><a href="_defines_8h.html#aaea3229b1f4c8c19e6b11903fc4af7ca">CANNON_IS_VEC3_EQUALS</a></div><div class="ttdeci">#define CANNON_IS_VEC3_EQUALS(v1, v2)</div><div class="ttdef"><b>Definition:</b> Defines.h:107</div></div>
 <div class="ttc" id="aclass_block_allocator_html_a093b2c879b8876ffc78ac1eb917a8997"><div class="ttname"><a href="class_block_allocator.html#a093b2c879b8876ffc78ac1eb917a8997">BlockAllocator::allocateMem</a></div><div class="ttdeci">void * allocateMem(int size)</div><div class="ttdoc">Allocate memory. This will use alloc if the size is larger than MAX_BLOCK_SIZE.</div><div class="ttdef"><b>Definition:</b> BlockAllocator.cpp:102</div></div>
 <div class="ttc" id="aclass_block_allocator_html_a8e7fa0b3f7fbd4596cdbdfa19656dfd4"><div class="ttname"><a href="class_block_allocator.html#a8e7fa0b3f7fbd4596cdbdfa19656dfd4">BlockAllocator::freeMem</a></div><div class="ttdeci">void freeMem(void *p, int size)</div><div class="ttdoc">Free memory. This will use free if the size is larger than MAX_BLOCK_SIZE.</div><div class="ttdef"><b>Definition:</b> BlockAllocator.cpp:160</div></div>
-<div class="ttc" id="aclass_world_html_ac7e8d5335fce3dd77700e8010d2b64aa"><div class="ttname"><a href="class_world.html#ac7e8d5335fce3dd77700e8010d2b64aa">World::get_blockAllocator</a></div><div class="ttdeci">BlockAllocator * get_blockAllocator()</div><div class="ttdoc">Get the block allocator.</div><div class="ttdef"><b>Definition:</b> World.h:419</div></div>
-<div class="ttc" id="a_defines_8h_html_ada35c2bb0692effe0371335f0dda068a"><div class="ttname"><a href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a></div><div class="ttdeci">#define CANNON_FORCE_INLINE</div><div class="ttdef"><b>Definition:</b> Defines.h:155</div></div>
+<div class="ttc" id="aclass_world_html_ac7e8d5335fce3dd77700e8010d2b64aa"><div class="ttname"><a href="class_world.html#ac7e8d5335fce3dd77700e8010d2b64aa">World::get_blockAllocator</a></div><div class="ttdeci">BlockAllocator * get_blockAllocator()</div><div class="ttdoc">Get the block allocator.</div><div class="ttdef"><b>Definition:</b> World.h:435</div></div>
+<div class="ttc" id="a_defines_8h_html_ada35c2bb0692effe0371335f0dda068a"><div class="ttname"><a href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a></div><div class="ttdeci">#define CANNON_FORCE_INLINE</div><div class="ttdef"><b>Definition:</b> Defines.h:181</div></div>
 <div class="ttc" id="a_defines_8h_html_a37b9a66b089ee14f1974aab790309ddd"><div class="ttname"><a href="_defines_8h.html#a37b9a66b089ee14f1974aab790309ddd">CANNON_IS_ZERO</a></div><div class="ttdeci">#define CANNON_IS_ZERO(v)</div><div class="ttdef"><b>Definition:</b> Defines.h:105</div></div>
-<div class="ttc" id="aclass_world_html_a1319e588099777efd61f63e542174aed"><div class="ttname"><a href="class_world.html#a1319e588099777efd61f63e542174aed">World::getCurrent</a></div><div class="ttdeci">static World * getCurrent()</div><div class="ttdoc">Get the current physics world.</div><div class="ttdef"><b>Definition:</b> World.cpp:61</div></div>
+<div class="ttc" id="aclass_world_html_a1319e588099777efd61f63e542174aed"><div class="ttname"><a href="class_world.html#a1319e588099777efd61f63e542174aed">World::getCurrent</a></div><div class="ttdeci">static World * getCurrent()</div><div class="ttdoc">Get the current physics world.</div><div class="ttdef"><b>Definition:</b> World.cpp:75</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -1,11 +1,13 @@
 var class_hinge_constraint =
 [
-    [ "HingeConstraint", "class_hinge_constraint.html#a343bc814942e7903d377062472dd5579", null ],
+    [ "HingeConstraint", "class_hinge_constraint.html#a35a346562b0c25f17ee8b4e3870423e8", null ],
     [ "~HingeConstraint", "class_hinge_constraint.html#ae4c2db8466a8029b8306e0f82fbf09ae", null ],
     [ "axisA", "class_hinge_constraint.html#a9b6511778fe2a36d23d4019b76076419", null ],
     [ "axisB", "class_hinge_constraint.html#a00e49f456b75422a4ad206de85b8d7c5", null ],
+    [ "create", "class_hinge_constraint.html#a8840dedd0968118fc43f734d21e573df", null ],
     [ "disableMotor", "class_hinge_constraint.html#a1fbf70c916422c4ee0906ee364898f4d", null ],
     [ "enableMotor", "class_hinge_constraint.html#ad1a53dfb183f1b24d1dbe582e8e9837e", null ],
+    [ "init", "class_hinge_constraint.html#ab7e8ba94a1daa45dcb2698b7e6e25858", null ],
     [ "motorEquation", "class_hinge_constraint.html#a465da83154a7429ed30fd4260b461993", null ],
     [ "setAxisA", "class_hinge_constraint.html#acd94f3f40b391986d904136d953cfa32", null ],
     [ "setAxisB", "class_hinge_constraint.html#a937fedeb6b70a24d1cf19c142ee3ba85", null ],

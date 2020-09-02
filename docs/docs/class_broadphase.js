@@ -7,6 +7,7 @@ var class_broadphase =
     [ "dirty", "class_broadphase.html#a813f0e42cf1404eec985e6b1136cb634", null ],
     [ "doBoundingBoxBroadphase", "class_broadphase.html#aa7f0e679fe9bcc3f37963d925d798dbb", null ],
     [ "doBoundingSphereBroadphase", "class_broadphase.html#ae6374ae5b7320a665e79e13ee7b793fe", null ],
+    [ "init", "class_broadphase.html#a3b848f7c128865add202fefd81ffbd76", null ],
     [ "intersectionTest", "class_broadphase.html#af7c42b72d3d685accbc4e60bfb5e14a8", null ],
     [ "makePairsUnique", "class_broadphase.html#a33b81b3c28d511d1e25b0b76dde0d74d", null ],
     [ "needBroadphaseCollision", "class_broadphase.html#adeb161e2bb922d13bcb1e3fc736dfb04", null ],

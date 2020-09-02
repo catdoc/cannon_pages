@@ -1,14 +1,16 @@
 var class_box =
 [
-    [ "Box", "class_box.html#a63d0913efda29e4d4c0d6207f1d9a31c", null ],
+    [ "Box", "class_box.html#aca78d7db44972bfa78d46b7bbc8796f6", null ],
     [ "~Box", "class_box.html#a6a5e09398e85d602a046b429062fb9c2", null ],
     [ "calculateInertia", "class_box.html#a26fc8664c47f40b119616a64623ef7a8", null ],
     [ "calculateLocalInertia", "class_box.html#ae27c975b87b40f5ccde78cc314f1c33c", null ],
     [ "calculateWorldAABB", "class_box.html#a13262fe4a761d31aff575825b6a94caf", null ],
     [ "convexPolyhedronRepresentation", "class_box.html#a524465dd1d402465d027277a5627542a", null ],
+    [ "create", "class_box.html#a1a630d8212cf2f3b100ade3ef6135350", null ],
     [ "forEachWorldCorner", "class_box.html#a63357d62d7cbd70b89e7bb44020919eb", null ],
     [ "getSideNormals", "class_box.html#aa1366c28ff4394e258c24cf363b63add", null ],
     [ "halfExtents", "class_box.html#a1d499029a6506042fb0e6a4ae60226bc", null ],
+    [ "init", "class_box.html#a44e73a0d1e63e28f49a66cd6152176c6", null ],
     [ "updateBoundingSphereRadius", "class_box.html#a7f89616ff891e264534455a29a79cd00", null ],
     [ "updateConvexPolyhedronRepresentation", "class_box.html#afc69f67267d25f6dce90de07b7b3b5b6", null ],
     [ "volume", "class_box.html#a3937f232019523dbf502b6798d84f165", null ],

@@ -1,7 +1,7 @@
 var class_wheel_info =
 [
     [ "WheelOptions", "struct_wheel_info_1_1_wheel_options.html", "struct_wheel_info_1_1_wheel_options" ],
-    [ "WheelInfo", "class_wheel_info.html#a77b564d968a9a6c73ed67a11208689e5", null ],
+    [ "WheelInfo", "class_wheel_info.html#ac1b28c2e09803496ef91493601ee59e6", null ],
     [ "~WheelInfo", "class_wheel_info.html#af0082f158b675cad6bbdc07ad0058591", null ],
     [ "axleLocal", "class_wheel_info.html#a3636323ffcd554a2b46ec9520fa9e03a", null ],
     [ "axleWorld", "class_wheel_info.html#ad8c8c81916bb7b4fb1eec427df1b42b8", null ],
@@ -9,7 +9,7 @@ var class_wheel_info =
     [ "chassisConnectionPointLocal", "class_wheel_info.html#ad0f4e960009db77b80c268c56351a1ea", null ],
     [ "chassisConnectionPointWorld", "class_wheel_info.html#a36111e1359227f51920028248508e857", null ],
     [ "clippedInvContactDotSuspension", "class_wheel_info.html#a76ddf810c26c6870a5785296513da727", null ],
-    [ "createRef", "class_wheel_info.html#a9d99c06cead8d403936150ce4e158b84", null ],
+    [ "create", "class_wheel_info.html#afbd6f944e02ea7f55ea3599566e39d37", null ],
     [ "customSlidingRotationalSpeed", "class_wheel_info.html#a6b5a19fc8cfee4856222bd7fcb81b07f", null ],
     [ "dampingCompression", "class_wheel_info.html#ae53da84d5e647d3f9cb669ab03a36f9e", null ],
     [ "dampingRelaxation", "class_wheel_info.html#ab759426829ee14952abb35c993ad6271", null ],
@@ -19,6 +19,7 @@ var class_wheel_info =
     [ "engineForce", "class_wheel_info.html#a96de432887836358fcb308ad74ac5d28", null ],
     [ "forwardImpulse", "class_wheel_info.html#afaf72251fd6cd5e0669a6783dc288cb8", null ],
     [ "frictionSlip", "class_wheel_info.html#a198c46873e93a5101910bde829932e23", null ],
+    [ "init", "class_wheel_info.html#aa76ac5c135576e71ab8381117fc682e8", null ],
     [ "isInContact", "class_wheel_info.html#a27e43804ea278a7088ef8c599bbbf3f7", null ],
     [ "maxSuspensionForce", "class_wheel_info.html#a062b75d23cd6d1876020634ae2a201b5", null ],
     [ "maxSuspensionTravel", "class_wheel_info.html#a063f0ce96820ce747584106fdd5a990e", null ],

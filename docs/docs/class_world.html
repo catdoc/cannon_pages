@@ -87,6 +87,7 @@ $(document).ready(function(){initNavTree('class_world.html',''); initResizable()
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_world-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -110,12 +111,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a90b5a7952619fd7214d83ae5e25aa6f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a90b5a7952619fd7214d83ae5e25aa6f2">World</a> (const <a class="el" href="struct_world_1_1_world_options.html">WorldOptions</a> &amp;options=<a class="el" href="struct_world_1_1_world_options.html">WorldOptions</a>())</td></tr>
-<tr class="memdesc:a90b5a7952619fd7214d83ae5e25aa6f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor of the physics world.  <a href="class_world.html#a90b5a7952619fd7214d83ae5e25aa6f2">More...</a><br /></td></tr>
-<tr class="separator:a90b5a7952619fd7214d83ae5e25aa6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c73fba541a5817fff65147ba47cd827"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a8c73fba541a5817fff65147ba47cd827">~World</a> ()</td></tr>
-<tr class="memdesc:a8c73fba541a5817fff65147ba47cd827"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor of the physics world.  <a href="class_world.html#a8c73fba541a5817fff65147ba47cd827">More...</a><br /></td></tr>
-<tr class="separator:a8c73fba541a5817fff65147ba47cd827"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c72f223824f6c80ceee23514c43e8cd"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a2c72f223824f6c80ceee23514c43e8cd">bodies</a> ()</td></tr>
 <tr class="memdesc:a2c72f223824f6c80ceee23514c43e8cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get All bodies of the world.  <a href="class_world.html#a2c72f223824f6c80ceee23514c43e8cd">More...</a><br /></td></tr>
 <tr class="separator:a2c72f223824f6c80ceee23514c43e8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -134,6 +129,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0f4f7446c6e2eaa2e67c4730d66e6b1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a0f4f7446c6e2eaa2e67c4730d66e6b1c">removeBody</a> (<a class="el" href="class_body.html">Body</a> *body)</td></tr>
 <tr class="memdesc:a0f4f7446c6e2eaa2e67c4730d66e6b1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a rigid body from the simulation.  <a href="class_world.html#a0f4f7446c6e2eaa2e67c4730d66e6b1c">More...</a><br /></td></tr>
 <tr class="separator:a0f4f7446c6e2eaa2e67c4730d66e6b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8eb7dea4500af1fb593ab16a50ff592"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_body.html">Body</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ab8eb7dea4500af1fb593ab16a50ff592">getBody</a> (int index)</td></tr>
+<tr class="separator:ab8eb7dea4500af1fb593ab16a50ff592"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a381e9d06003c1b4cf5445fe15cd42196"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a381e9d06003c1b4cf5445fe15cd42196">addConstraint</a> (<a class="el" href="class_constraint.html">Constraint</a> *c)</td></tr>
 <tr class="memdesc:a381e9d06003c1b4cf5445fe15cd42196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a constraint to the simulation.  <a href="class_world.html#a381e9d06003c1b4cf5445fe15cd42196">More...</a><br /></td></tr>
 <tr class="separator:a381e9d06003c1b4cf5445fe15cd42196"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,6 +140,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a564276c39ef3b6d15dd4d3ca36c36723"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a564276c39ef3b6d15dd4d3ca36c36723">removeAllConstraints</a> ()</td></tr>
 <tr class="memdesc:a564276c39ef3b6d15dd4d3ca36c36723"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes all constraints.  <a href="class_world.html#a564276c39ef3b6d15dd4d3ca36c36723">More...</a><br /></td></tr>
 <tr class="separator:a564276c39ef3b6d15dd4d3ca36c36723"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9519a4ee4bbc3aa3fc664e710521d7b9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a9519a4ee4bbc3aa3fc664e710521d7b9">getConstraintCount</a> ()</td></tr>
+<tr class="separator:a9519a4ee4bbc3aa3fc664e710521d7b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c14840c82424e0f85fe159e97a70eb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_constraint.html">Constraint</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a2c14840c82424e0f85fe159e97a70eb0">getConstraint</a> (int index)</td></tr>
+<tr class="separator:a2c14840c82424e0f85fe159e97a70eb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac35847359e44325d77532030332a39b5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ac35847359e44325d77532030332a39b5">getContactMaterialCount</a> ()</td></tr>
+<tr class="separator:ac35847359e44325d77532030332a39b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a1ce8297ee743d98d671213957f78a3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_contact_material.html">ContactMaterial</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a7a1ce8297ee743d98d671213957f78a3">getContactMaterial</a> (int index)</td></tr>
+<tr class="separator:a7a1ce8297ee743d98d671213957f78a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0636db16e92be00ad49a4501b4054c03"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a0636db16e92be00ad49a4501b4054c03">rayTest</a> (<a class="el" href="class_vec3.html">Vec3</a> &amp;from, <a class="el" href="class_vec3.html">Vec3</a> &amp;to, <a class="el" href="class_raycast_result.html">RaycastResult</a> *result)</td></tr>
 <tr class="memdesc:a0636db16e92be00ad49a4501b4054c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raycast test by raycastclosest.  <a href="class_world.html#a0636db16e92be00ad49a4501b4054c03">More...</a><br /></td></tr>
 <tr class="separator:a0636db16e92be00ad49a4501b4054c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,6 +217,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aca4a263f4dfbb93c3148aa822d1c52d3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_contact_equation.html">ContactEquation</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#aca4a263f4dfbb93c3148aa822d1c52d3">contactsResult</a> ()</td></tr>
 <tr class="memdesc:aca4a263f4dfbb93c3148aa822d1c52d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all contact equations.  <a href="class_world.html#aca4a263f4dfbb93c3148aa822d1c52d3">More...</a><br /></td></tr>
 <tr class="separator:aca4a263f4dfbb93c3148aa822d1c52d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a285c760d926ce4a4f293180670bbd7db"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a285c760d926ce4a4f293180670bbd7db">getContactCount</a> ()</td></tr>
+<tr class="separator:a285c760d926ce4a4f293180670bbd7db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cde98c99001baf2e6fdd4ac7893e4de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_contact_equation.html">ContactEquation</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a5cde98c99001baf2e6fdd4ac7893e4de">getContact</a> (int index)</td></tr>
+<tr class="separator:a5cde98c99001baf2e6fdd4ac7893e4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae52477900e8ac6bb15f6a7114532b14d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_friction_equation.html">FrictionEquation</a> * &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ae52477900e8ac6bb15f6a7114532b14d">frictionsResult</a> ()</td></tr>
 <tr class="memdesc:ae52477900e8ac6bb15f6a7114532b14d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all friction equations.  <a href="class_world.html#ae52477900e8ac6bb15f6a7114532b14d">More...</a><br /></td></tr>
 <tr class="separator:ae52477900e8ac6bb15f6a7114532b14d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -251,8 +260,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aded3354b441cceafc9a30f991abdb654"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_world.html">World</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#aded3354b441cceafc9a30f991abdb654">createRef</a> (const <a class="el" href="struct_world_1_1_world_options.html">WorldOptions</a> &amp;options)</td></tr>
-<tr class="separator:aded3354b441cceafc9a30f991abdb654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fc4b4ede5eaa52376780122c22617d6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_world.html">World</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a4fc4b4ede5eaa52376780122c22617d6">create</a> (const <a class="el" href="struct_world_1_1_world_options.html">WorldOptions</a> &amp;options=<a class="el" href="struct_world_1_1_world_options.html">WorldOptions</a>())</td></tr>
+<tr class="separator:a4fc4b4ede5eaa52376780122c22617d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1319e588099777efd61f63e542174aed"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_world.html">World</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a1319e588099777efd61f63e542174aed">getCurrent</a> ()</td></tr>
 <tr class="memdesc:a1319e588099777efd61f63e542174aed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current physics world.  <a href="class_world.html#a1319e588099777efd61f63e542174aed">More...</a><br /></td></tr>
 <tr class="separator:a1319e588099777efd61f63e542174aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -263,16 +272,28 @@ Static Public Attributes</h2></td></tr>
 <tr class="memdesc:aabbc2a65ea9f6b5789cacea970afa30e"><td class="mdescLeft">&#160;</td><td class="mdescRight">static instance of the physics world  <a href="class_world.html#aabbc2a65ea9f6b5789cacea970afa30e">More...</a><br /></td></tr>
 <tr class="separator:aabbc2a65ea9f6b5789cacea970afa30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:afa39d4e6f714a7a3691ac0c656f5e8a8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#afa39d4e6f714a7a3691ac0c656f5e8a8">World</a> ()</td></tr>
+<tr class="memdesc:afa39d4e6f714a7a3691ac0c656f5e8a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor of the physics world.  <a href="class_world.html#afa39d4e6f714a7a3691ac0c656f5e8a8">More...</a><br /></td></tr>
+<tr class="separator:afa39d4e6f714a7a3691ac0c656f5e8a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c73fba541a5817fff65147ba47cd827"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a8c73fba541a5817fff65147ba47cd827">~World</a> ()</td></tr>
+<tr class="memdesc:a8c73fba541a5817fff65147ba47cd827"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor of the physics world.  <a href="class_world.html#a8c73fba541a5817fff65147ba47cd827">More...</a><br /></td></tr>
+<tr class="separator:a8c73fba541a5817fff65147ba47cd827"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9123b1d9d1fdb3e44984b2f0b84ed7a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ae9123b1d9d1fdb3e44984b2f0b84ed7a">init</a> (const <a class="el" href="struct_world_1_1_world_options.html">WorldOptions</a> &amp;options=<a class="el" href="struct_world_1_1_world_options.html">WorldOptions</a>())</td></tr>
+<tr class="memdesc:ae9123b1d9d1fdb3e44984b2f0b84ed7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init the physics world.  <a href="class_world.html#ae9123b1d9d1fdb3e44984b2f0b84ed7a">More...</a><br /></td></tr>
+<tr class="separator:ae9123b1d9d1fdb3e44984b2f0b84ed7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a787d62b96d9a18cb5c37135fc866d5ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_block_allocator.html">BlockAllocator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a787d62b96d9a18cb5c37135fc866d5ae">_blockAllocator</a></td></tr>
-<tr class="memdesc:a787d62b96d9a18cb5c37135fc866d5ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">the block allocator  <a href="class_world.html#a787d62b96d9a18cb5c37135fc866d5ae">More...</a><br /></td></tr>
+<tr class="memdesc:a787d62b96d9a18cb5c37135fc866d5ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">The block allocator.  <a href="class_world.html#a787d62b96d9a18cb5c37135fc866d5ae">More...</a><br /></td></tr>
 <tr class="separator:a787d62b96d9a18cb5c37135fc866d5ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75c8c40b92e258e2121c3e943bfa5b5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_stack_allocator.html">StackAllocator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a75c8c40b92e258e2121c3e943bfa5b5e">_stackAllocator</a></td></tr>
-<tr class="memdesc:a75c8c40b92e258e2121c3e943bfa5b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">the stack allocator  <a href="class_world.html#a75c8c40b92e258e2121c3e943bfa5b5e">More...</a><br /></td></tr>
+<tr class="memdesc:a75c8c40b92e258e2121c3e943bfa5b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The stack allocator.  <a href="class_world.html#a75c8c40b92e258e2121c3e943bfa5b5e">More...</a><br /></td></tr>
 <tr class="separator:a75c8c40b92e258e2121c3e943bfa5b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef3edb1d08d339661d2ed8d0fa45bfa4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vec3.html">Vec3</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#aef3edb1d08d339661d2ed8d0fa45bfa4">_gravity</a> = nullptr</td></tr>
-<tr class="memdesc:aef3edb1d08d339661d2ed8d0fa45bfa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">the gravity of the world  <a href="class_world.html#aef3edb1d08d339661d2ed8d0fa45bfa4">More...</a><br /></td></tr>
+<tr class="memdesc:aef3edb1d08d339661d2ed8d0fa45bfa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The gravity of the world.  <a href="class_world.html#aef3edb1d08d339661d2ed8d0fa45bfa4">More...</a><br /></td></tr>
 <tr class="separator:aef3edb1d08d339661d2ed8d0fa45bfa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cccde546c420db703152f77c3a31128"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a4cccde546c420db703152f77c3a31128">_dt</a> = -1</td></tr>
 <tr class="memdesc:a4cccde546c420db703152f77c3a31128"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently/last used timestep. Is set to -1 if not available. This value is updated before each internal step, which means that it is "fresh" inside event callbacks.  <a href="class_world.html#a4cccde546c420db703152f77c3a31128">More...</a><br /></td></tr>
@@ -416,29 +437,30 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents the entire physical world. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a90b5a7952619fd7214d83ae5e25aa6f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90b5a7952619fd7214d83ae5e25aa6f2">&#9670;&nbsp;</a></span>World()</h2>
+<a id="afa39d4e6f714a7a3691ac0c656f5e8a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa39d4e6f714a7a3691ac0c656f5e8a8">&#9670;&nbsp;</a></span>World()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">World::World </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_world_1_1_world_options.html">WorldOptions</a> &amp;&#160;</td>
-          <td class="paramname"><em>options</em> = <code><a class="el" href="struct_world_1_1_world_options.html">WorldOptions</a>()</code></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>The constructor of the physics world. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">options</td><td>The options to create a world </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -447,6 +469,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">World::~World </td>
@@ -455,6 +480,11 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>The destructor of the physics world. </p>
@@ -744,8 +774,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aded3354b441cceafc9a30f991abdb654"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aded3354b441cceafc9a30f991abdb654">&#9670;&nbsp;</a></span>createRef()</h2>
+<a id="a4fc4b4ede5eaa52376780122c22617d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fc4b4ede5eaa52376780122c22617d6">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -754,10 +784,10 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_world.html">World</a> * World::createRef </td>
+          <td class="memname"><a class="el" href="class_world.html">World</a> * World::create </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_world_1_1_world_options.html">WorldOptions</a> &amp;&#160;</td>
-          <td class="paramname"><em>options</em></td><td>)</td>
+          <td class="paramname"><em>options</em> = <code><a class="el" href="struct_world_1_1_world_options.html">WorldOptions</a>()</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1172,8 +1202,162 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="ab8eb7dea4500af1fb593ab16a50ff592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8eb7dea4500af1fb593ab16a50ff592">&#9670;&nbsp;</a></span>getBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_body.html">Body</a>* World::getBody </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c14840c82424e0f85fe159e97a70eb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c14840c82424e0f85fe159e97a70eb0">&#9670;&nbsp;</a></span>getConstraint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_constraint.html">Constraint</a>* World::getConstraint </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9519a4ee4bbc3aa3fc664e710521d7b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9519a4ee4bbc3aa3fc664e710521d7b9">&#9670;&nbsp;</a></span>getConstraintCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int World::getConstraintCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5cde98c99001baf2e6fdd4ac7893e4de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5cde98c99001baf2e6fdd4ac7893e4de">&#9670;&nbsp;</a></span>getContact()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_contact_equation.html">ContactEquation</a>* World::getContact </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a285c760d926ce4a4f293180670bbd7db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a285c760d926ce4a4f293180670bbd7db">&#9670;&nbsp;</a></span>getContactCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int World::getContactCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a1ce8297ee743d98d671213957f78a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a1ce8297ee743d98d671213957f78a3">&#9670;&nbsp;</a></span>getContactMaterial() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_contact_material.html">ContactMaterial</a>* World::getContactMaterial </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a38c4f41a19a3ca9639c0d5002112eb9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38c4f41a19a3ca9639c0d5002112eb9c">&#9670;&nbsp;</a></span>getContactMaterial()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a38c4f41a19a3ca9639c0d5002112eb9c">&#9670;&nbsp;</a></span>getContactMaterial() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1200,6 +1384,31 @@ Protected Attributes</h2></td></tr>
 
 <p>Get <a class="el" href="class_contact_material.html" title="Defines what happens when two materials meet.">ContactMaterial</a> by two Materials. </p>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="class_contact_material.html" title="Defines what happens when two materials meet.">ContactMaterial</a> or nullptr </dd></dl>
+
+</div>
+</div>
+<a id="ac35847359e44325d77532030332a39b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac35847359e44325d77532030332a39b5">&#9670;&nbsp;</a></span>getContactMaterialCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int World::getContactMaterialCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1283,6 +1492,40 @@ Protected Attributes</h2></td></tr>
 
 <p>Get id of the world,. </p>
 <p>id of the world is fixed to 0, distinguish from the id of other objects </p><dl class="section return"><dt>Returns</dt><dd>id of the world </dd></dl>
+
+</div>
+</div>
+<a id="ae9123b1d9d1fdb3e44984b2f0b84ed7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9123b1d9d1fdb3e44984b2f0b84ed7a">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool World::init </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_world_1_1_world_options.html">WorldOptions</a> &amp;&#160;</td>
+          <td class="paramname"><em>options</em> = <code><a class="el" href="struct_world_1_1_world_options.html">WorldOptions</a>()</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Init the physics world. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">options</td><td>The options to init a world </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1930,7 +2173,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>the block allocator </p>
+<p>The block allocator. </p>
 
 </div>
 </div>
@@ -2434,7 +2677,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>the gravity of the world </p>
+<p>The gravity of the world. </p>
 
 </div>
 </div>
@@ -2698,7 +2941,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>the stack allocator </p>
+<p>The stack allocator. </p>
 
 </div>
 </div>

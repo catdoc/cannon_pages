@@ -91,18 +91,18 @@ $(document).ready(function(){initNavTree('_c_make_lists_8txt.html',''); initResi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a69d6b96d0f4a1d59b00c0a1a29c75953"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_make_lists_8txt.html#a69d6b96d0f4a1d59b00c0a1a29c75953">cmake_minimum_required</a> (VERSION 3.7) project(cannoncpp) <a class="el" href="_c_make_lists_8txt.html#a2b064139fdca3b188ea83d157f3864ef">set</a>(ROOT_PATH $</td></tr>
-<tr class="separator:a69d6b96d0f4a1d59b00c0a1a29c75953"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e53e9ab3c119f43d120f4251fc7e02c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_make_lists_8txt.html#a1e53e9ab3c119f43d120f4251fc7e02c">set</a> (CANNONCPP_PATH ${ROOT_PATH}/src) set(CMAKE_CXX_FLAGS_DEBUG &quot;$</td></tr>
-<tr class="separator:a1e53e9ab3c119f43d120f4251fc7e02c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4969cfa2f44d53d7410628fd5d76e3c4"><td class="memItemLeft" align="right" valign="top">DTINYXML2_DEBUG&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_make_lists_8txt.html#a4969cfa2f44d53d7410628fd5d76e3c4">set</a> (CMAKE_CXX_VISIBILITY_PRESET hidden) set(CMAKE_VISIBILITY_INLINES_HIDDEN 1) set(CMAKE_INCLUDE_CURRENT_DIR ON) set(CMAKE_CXX_STANDARD 11) include_directories($</td></tr>
-<tr class="separator:a4969cfa2f44d53d7410628fd5d76e3c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b064139fdca3b188ea83d157f3864ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_make_lists_8txt.html#a2b064139fdca3b188ea83d157f3864ef">set</a> (SOURCE_FILES base/Ref.cpp base/Ref.h) if(MSVC) add_definitions(-D_CRT_SECURE_NO_WARNINGS) endif(MSVC) add_library(cannoncpp <a class="el" href="_body_8h.html#af23e483cc67bbfcde605c420616a0ff2">STATIC</a> $</td></tr>
-<tr class="separator:a2b064139fdca3b188ea83d157f3864ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf386b12e96b66ea288efb0ada4c45c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_make_lists_8txt.html#adf386b12e96b66ea288efb0ada4c45c0">cmake_minimum_required</a> (VERSION 3.6) <a class="el" href="_c_make_lists_8txt.html#a413047bb72b91f19b836ace9d24a6cf0">set</a>(APP_NAME cannon) project($</td></tr>
+<tr class="separator:adf386b12e96b66ea288efb0ada4c45c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25c64d7601324369d3f94dc65cc31dd0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_make_lists_8txt.html#a25c64d7601324369d3f94dc65cc31dd0">message</a> (&quot;begin cannon&quot;) set(CANNONCPP_PATH $</td></tr>
+<tr class="separator:a25c64d7601324369d3f94dc65cc31dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db2794be8a9c8c07b42e0a709b30849"><td class="memItemLeft" align="right" valign="top">src&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_make_lists_8txt.html#a5db2794be8a9c8c07b42e0a709b30849">set</a> (CMAKE_CXX_VISIBILITY_PRESET hidden) set(CMAKE_VISIBILITY_INLINES_HIDDEN 1) set(CMAKE_INCLUDE_CURRENT_DIR ON) set(CMAKE_CXX_STANDARD 11) include_directories($</td></tr>
+<tr class="separator:a5db2794be8a9c8c07b42e0a709b30849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a413047bb72b91f19b836ace9d24a6cf0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_c_make_lists_8txt.html#a413047bb72b91f19b836ace9d24a6cf0">set</a> (GAME_SOURCE) set(GAME_HEADER) list(APPEND GAME_HEADER cannon.h Defines.h JsbDefines.h base/BlockAllocator.h base/Ref.h base/RefTracker.h base/StackAllocator.h collision/AABB.h collision/Broadphase.h collision/GridBroadphase.h collision/NaiveBroadphase.h collision/ObjectCollisionMatrix.h collision/Ray.h collision/RayCallback.h collision/RaycastResult.h collision/SAPBroadphase.h const raints/ConeTwistConstraint.h const raints/Constraint.h const raints/DistanceConstraint.h const raints/HingeConstraint.h const raints/LockConstraint.h const raints/PointToPointConstraint.h equations/ConeEquation.h equations/ContactEquation.h equations/Equation.h equations/FrictionEquation.h equations/RotationalEquation.h equations/RotationalMotorEquation.h material/ContactMaterial.h material/Material.h math/JacobianElement.h math/Mat3.h math/Quaternion.h math/Transform.h math/Vec3.h objects/Body.h objects/RaycastVehicle.h objects/RigidVehicle.h objects/ISystem.h objects/SPHSystem.h objects/Spring.h objects/WheelInfo.h shapes/Box.h shapes/ConvexPolyhedron.h shapes/Cylinder.h shapes/Heightfield.h shapes/Particle.h shapes/Plane.h shapes/Shape.h shapes/Sphere.h shapes/Trimesh.h solver/GSSolver.h solver/Solver.h solver/SplitSolver.h utils/Event.h utils/EventCallback.h utils/EventTarget.h utils/Octree.h utils/TupleDictionary.h utils/Utils.h world/Narrowphase.h world/World.h) list(APPEND GAME_SOURCE base/BlockAllocator.cpp base/Ref.cpp base/RefTracker.cpp base/StackAllocator.cpp collision/AABB.cpp collision/Broadphase.cpp collision/GridBroadphase.cpp collision/NaiveBroadphase.cpp collision/ObjectCollisionMatrix.cpp collision/Ray.cpp collision/RayCallback.cpp collision/RaycastResult.cpp collision/SAPBroadphase.cpp const raints/ConeTwistConstraint.cpp const raints/Constraint.cpp const raints/DistanceConstraint.cpp const raints/HingeConstraint.cpp const raints/LockConstraint.cpp const raints/PointToPointConstraint.cpp equations/ConeEquation.cpp equations/ContactEquation.cpp equations/Equation.cpp equations/FrictionEquation.cpp equations/RotationalEquation.cpp equations/RotationalMotorEquation.cpp material/ContactMaterial.cpp material/Material.cpp math/JacobianElement.cpp math/Mat3.cpp math/Quaternion.cpp math/Transform.cpp math/Vec3.cpp objects/Body.cpp objects/RaycastVehicle.cpp objects/RigidVehicle.cpp objects/ISystem.cpp objects/SPHSystem.cpp objects/Spring.cpp objects/WheelInfo.cpp shapes/Box.cpp shapes/ConvexPolyhedron.cpp shapes/Cylinder.cpp shapes/Heightfield.cpp shapes/Particle.cpp shapes/Plane.cpp shapes/Shape.cpp shapes/Sphere.cpp shapes/Trimesh.cpp solver/GSSolver.cpp solver/Solver.cpp solver/SplitSolver.cpp utils/Event.cpp utils/EventCallback.cpp utils/EventTarget.cpp utils/Octree.cpp utils/TupleDictionary.cpp utils/Utils.cpp world/Narrowphase.cpp world/World.cpp) add_library(cannon <a class="el" href="_body_8h.html#af23e483cc67bbfcde605c420616a0ff2">STATIC</a> $</td></tr>
+<tr class="separator:a413047bb72b91f19b836ace9d24a6cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a69d6b96d0f4a1d59b00c0a1a29c75953"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a69d6b96d0f4a1d59b00c0a1a29c75953">&#9670;&nbsp;</a></span>cmake_minimum_required()</h2>
+<a id="adf386b12e96b66ea288efb0ada4c45c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf386b12e96b66ea288efb0ada4c45c0">&#9670;&nbsp;</a></span>cmake_minimum_required()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -111,7 +111,7 @@ Functions</h2></td></tr>
           <td class="memname">cmake_minimum_required </td>
           <td>(</td>
           <td class="paramtype">VERSION 3.&#160;</td>
-          <td class="paramname"><em>7</em></td><td>)</td>
+          <td class="paramname"><em>6</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -119,17 +119,17 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1e53e9ab3c119f43d120f4251fc7e02c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e53e9ab3c119f43d120f4251fc7e02c">&#9670;&nbsp;</a></span>set() <span class="overload">[1/3]</span></h2>
+<a id="a25c64d7601324369d3f94dc65cc31dd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25c64d7601324369d3f94dc65cc31dd0">&#9670;&nbsp;</a></span>message()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">set </td>
+          <td class="memname">message </td>
           <td>(</td>
-          <td class="paramtype">CANNONCPP_PATH ${ROOT_PATH}/&#160;</td>
-          <td class="paramname"><em>src</em></td><td>)</td>
+          <td class="paramtype">&quot;begin cannon&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -137,14 +137,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a4969cfa2f44d53d7410628fd5d76e3c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4969cfa2f44d53d7410628fd5d76e3c4">&#9670;&nbsp;</a></span>set() <span class="overload">[2/3]</span></h2>
+<a id="a5db2794be8a9c8c07b42e0a709b30849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5db2794be8a9c8c07b42e0a709b30849">&#9670;&nbsp;</a></span>set() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">DTINYXML2_DEBUG set </td>
+          <td class="memname">src set </td>
           <td>(</td>
           <td class="paramtype">CMAKE_CXX_VISIBILITY_PRESET&#160;</td>
           <td class="paramname"><em>hidden</em></td><td>)</td>
@@ -155,8 +155,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a2b064139fdca3b188ea83d157f3864ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b064139fdca3b188ea83d157f3864ef">&#9670;&nbsp;</a></span>set() <span class="overload">[3/3]</span></h2>
+<a id="a413047bb72b91f19b836ace9d24a6cf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a413047bb72b91f19b836ace9d24a6cf0">&#9670;&nbsp;</a></span>set() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,9 +164,9 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">set </td>
           <td>(</td>
-          <td class="paramtype">SOURCE_FILES base/Ref.cpp base/Ref.&#160;</td>
-          <td class="paramname"><em>h</em></td><td>)</td>
-          <td></td>
+          <td class="paramtype">GAME_SOURCE&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">

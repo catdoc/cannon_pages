@@ -1,6 +1,6 @@
 var class_narrowphase =
 [
-    [ "Narrowphase", "class_narrowphase.html#a207a082e1962c4526559bb8ed22a8cef", null ],
+    [ "Narrowphase", "class_narrowphase.html#addb9da45e0376eaa2273221a3695b9ef", null ],
     [ "~Narrowphase", "class_narrowphase.html#a294930acf483482601726a8ef9d56791", null ],
     [ "boxBox", "class_narrowphase.html#a99ae4c2c09dee8eccccb921b453d2c31", null ],
     [ "boxConvex", "class_narrowphase.html#a7648dc2e946edcc35fd76059ab54f4a6", null ],
@@ -10,12 +10,14 @@ var class_narrowphase =
     [ "convexConvex", "class_narrowphase.html#ae1ba9e2c7f52eafa0114b197826654fe", null ],
     [ "convexHeightfield", "class_narrowphase.html#ada12545d48e98a7885e656203e7a01c2", null ],
     [ "convexParticle", "class_narrowphase.html#a210e3eea1948521e8ebabecbe8e26d19", null ],
+    [ "create", "class_narrowphase.html#a36cad11f54123c97838914b275a9325c", null ],
     [ "createContactEquation", "class_narrowphase.html#a684311bfa9a57e6f2e885bc94a0bb748", null ],
     [ "createFrictionEquationsFromContact", "class_narrowphase.html#a67320416f4e1303d63c651facda1bea3", null ],
     [ "createFrictionFromAverage", "class_narrowphase.html#a487d81e7eb9a4a11f5016b76821bba23", null ],
     [ "currentContactMaterial", "class_narrowphase.html#a5b5a13b1933b5b8a7e3ad2d44b41ad34", null ],
     [ "frictionsResult", "class_narrowphase.html#a6dedd1d212afbf917512d116b952c576", null ],
     [ "getContacts", "class_narrowphase.html#aa302ec265ea09e8e2d3af55f6a963bdd", null ],
+    [ "init", "class_narrowphase.html#a7de07a0af09c75d3c17e74aaf7337d97", null ],
     [ "planeBox", "class_narrowphase.html#a8cfcb9ffc85ac37a64dfd3838fda7d35", null ],
     [ "planeConvex", "class_narrowphase.html#aad198b45ef3933dc35fc27accc9bfc10", null ],
     [ "planeParticle", "class_narrowphase.html#a365210e4a898f043efd8f06a4a379782", null ],

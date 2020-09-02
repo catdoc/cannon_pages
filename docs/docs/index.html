@@ -138,9 +138,9 @@ Run in Xcode (Only support to run demos on macOS platform currently)</h3>
 Example</h2>
 <div class="fragment"><div class="line"> {c++}</div>
 <div class="line"><span class="comment">// Create a world</span></div>
-<div class="line"> <span class="keyword">auto</span> world = <span class="keyword">new</span> cannon::World();</div>
+<div class="line"> <span class="keyword">auto</span> world = cannon::World::create();</div>
 <div class="line"> </div>
-<div class="line"> <span class="keyword">auto</span> broadphase = <span class="keyword">new</span> cannon::NaiveBroadphase()</div>
+<div class="line"> <span class="keyword">auto</span> broadphase = cannon::NaiveBroadphase::create()</div>
 <div class="line"> world-&gt;set_broadphase(broadphase);</div>
 <div class="line"><span class="comment">// broadphase is retained by world, so it could be safely released here.</span></div>
 <div class="line"> broadphase-&gt;release();</div>
@@ -151,17 +151,17 @@ Example</h2>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create a ground material</span></div>
 <div class="line"> <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_material.html">Material</a>::MaterialOptions matOptions(world-&gt;genMaterialId());</div>
-<div class="line"> auto groundMaterial = new <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_material.html">Material</a>(matOptions);</div>
+<div class="line"> auto groundMaterial = <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_material.html">Material</a>::create(matOptions);</div>
 <div class="line"> groundMaterial-&gt;set_friction(0.3);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create a ground plane</span></div>
-<div class="line"> auto groundShape = new <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_plane.html">Plane</a>(world-&gt;genShapeId());</div>
+<div class="line"> auto groundShape = <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_plane.html">Plane</a>::create(world-&gt;genShapeId());</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create a ground body</span></div>
 <div class="line"> <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_body.html">Body</a>::BodyOptions groundBodyOptions(world, world-&gt;genBodyId());</div>
 <div class="line"> groundBodyOptions.mass = 0;</div>
 <div class="line"> groundBodyOptions.material = groundMaterial;</div>
-<div class="line"> auto groundBody = new <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_body.html">Body</a>(groundBodyOptions);</div>
+<div class="line"> auto groundBody = <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_body.html">Body</a>::create(groundBodyOptions);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// groundMaterial is retained by groundBody, so it could be safely released here.</span></div>
 <div class="line"> groundMaterial-&gt;release();</div>
@@ -179,18 +179,18 @@ Example</h2>
 <div class="line"><span class="comment">// Create a box shape</span></div>
 <div class="line"> <span class="keywordtype">float</span> size = 1;</div>
 <div class="line"> <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_vec3.html">Vec3</a> halfExtents(size, size, size);</div>
-<div class="line"> auto boxShape = new <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_box.html">Box</a>(world-&gt;genShapeId(), world, halfExtents);</div>
+<div class="line"> auto boxShape = <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_box.html">Box</a>::create(world-&gt;genShapeId(), world, halfExtents);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create a box body</span></div>
 <div class="line"> <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_body.html">Body</a>::BodyOptions boxBodyOptions(world, world-&gt;genBodyId());</div>
 <div class="line"> boxBodyOptions.mass = 1;</div>
-<div class="line"> auto boxBody = new <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_body.html">Body</a>(boxBodyOptions);</div>
+<div class="line"> auto boxBody = <a class="code" href="namespacecannon.html">cannon</a>::<a class="code" href="class_body.html">Body</a>::create(boxBodyOptions);</div>
 <div class="line"> boxBody-&gt;addShape(boxShape);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// boxShape is retained by boxBody, so it could be safely released here.</span></div>
 <div class="line"> boxShape-&gt;release();</div>
 <div class="line"> </div>
-<div class="line"> boxBody-&gt;get_position().<a class="code" href="_c_make_lists_8txt.html#a1e53e9ab3c119f43d120f4251fc7e02c">set</a>(0,0,5);</div>
+<div class="line"> boxBody-&gt;get_position().<a class="code" href="_c_make_lists_8txt.html#a5db2794be8a9c8c07b42e0a709b30849">set</a>(0,0,5);</div>
 <div class="line"> world-&gt;addBody(boxBody);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// boxBody is retained by world, so it could be safely released here.</span></div>
@@ -330,13 +330,13 @@ TODO:</h2>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_box_html"><div class="ttname"><a href="class_box.html">Box</a></div><div class="ttdoc">A 3d box shape.</div><div class="ttdef"><b>Definition:</b> Box.h:46</div></div>
+<div class="ttc" id="aclass_box_html"><div class="ttname"><a href="class_box.html">Box</a></div><div class="ttdoc">A 3d box shape.</div><div class="ttdef"><b>Definition:</b> Box.h:48</div></div>
 <div class="ttc" id="anamespacecannon_html"><div class="ttname"><a href="namespacecannon.html">cannon</a></div><div class="ttdef"><b>Definition:</b> Defines.h:59</div></div>
 <div class="ttc" id="aclass_material_html"><div class="ttname"><a href="class_material.html">Material</a></div><div class="ttdoc">Defines a physics material.</div><div class="ttdef"><b>Definition:</b> Material.h:37</div></div>
-<div class="ttc" id="a_c_make_lists_8txt_html_a1e53e9ab3c119f43d120f4251fc7e02c"><div class="ttname"><a href="_c_make_lists_8txt.html#a1e53e9ab3c119f43d120f4251fc7e02c">set</a></div><div class="ttdeci">set(CANNONCPP_PATH ${ROOT_PATH}/src) set(CMAKE_CXX_FLAGS_DEBUG &quot;$</div><div class="ttdef"><b>Definition:</b> CMakeLists.txt:6</div></div>
 <div class="ttc" id="aclass_vec3_html"><div class="ttname"><a href="class_vec3.html">Vec3</a></div><div class="ttdoc">3-dimensional vector</div><div class="ttdef"><b>Definition:</b> Vec3.h:54</div></div>
 <div class="ttc" id="aclass_body_html"><div class="ttname"><a href="class_body.html">Body</a></div><div class="ttdoc">A RigidBody in the physics world.</div><div class="ttdef"><b>Definition:</b> Body.h:69</div></div>
 <div class="ttc" id="aclass_plane_html"><div class="ttname"><a href="class_plane.html">Plane</a></div><div class="ttdoc">A plane, facing in the Z direction. The plane has its surface at z=0 and everything below z=0 is assu...</div><div class="ttdef"><b>Definition:</b> Plane.h:36</div></div>
+<div class="ttc" id="a_c_make_lists_8txt_html_a5db2794be8a9c8c07b42e0a709b30849"><div class="ttname"><a href="_c_make_lists_8txt.html#a5db2794be8a9c8c07b42e0a709b30849">set</a></div><div class="ttdeci">src set(CMAKE_CXX_VISIBILITY_PRESET hidden) set(CMAKE_VISIBILITY_INLINES_HIDDEN 1) set(CMAKE_INCLUDE_CURRENT_DIR ON) set(CMAKE_CXX_STANDARD 11) include_directories($</div><div class="ttdef"><b>Definition:</b> CMakeLists.txt:13</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

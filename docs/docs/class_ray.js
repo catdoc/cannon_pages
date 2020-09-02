@@ -10,7 +10,7 @@ var class_ray =
     ] ],
     [ "Ray", "class_ray.html#ae11e496ad4c6b4838a3136f34569c2de", null ],
     [ "~Ray", "class_ray.html#a8b0e575ce5df046c0c7615c32a96a46f", null ],
-    [ "createRef", "class_ray.html#aa6682168def8b0fa5e381cd7eab80b25", null ],
+    [ "create", "class_ray.html#a84c5a157ce069e44244ca7e8dc4d18d8", null ],
     [ "direction", "class_ray.html#a95d3feab454503e98ca3bfbb44a146e6", null ],
     [ "distanceFromIntersection", "class_ray.html#a3c0b3f89c8a0f4ecbe378e1ef6b05ac0", null ],
     [ "from", "class_ray.html#a7b17288a97b3b3054afbfbf6c115f31d", null ],

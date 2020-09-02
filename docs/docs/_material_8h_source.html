@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('_material_8h_source.html',''); initRes
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cannon_8h.html">cannon/cannon.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_defines_8h.html">cannon/Defines.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_ref_8h.html">cannon/base/Ref.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
@@ -141,11 +141,11 @@ $(document).ready(function(){initNavTree('_material_8h_source.html',''); initRes
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="_defines_8h.html#ab0aaa28d81b40e26ca465986a3908c32">CANNON_DEFINE_CLASS_TYPE</a>(<a class="code" href="class_material.html">Material</a>)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="_defines_8h.html#a1816ce40815dc2bd16d2366e35d3e016">CANNON_DECLARE_ALIGNED_ALLOCATOR</a>()</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="class_material.html">Material</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="class_material.html">Material</a>(const <a class="code" href="struct_material_1_1_material_options.html">MaterialOptions</a>&amp; options);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    static <a class="code" href="class_material.html">Material</a>* create(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    static <a class="code" href="class_material.html">Material</a>* create(const <a class="code" href="struct_material_1_1_material_options.html">MaterialOptions</a>&amp; options);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_material.html#aa608c9c702fee26871c1f21f7ba9ee44">   77</a></span>&#160;    <a class="code" href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a> <span class="keywordtype">int</span> <span class="keywordtype">id</span>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> _id; }</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
@@ -158,38 +158,45 @@ $(document).ready(function(){initNavTree('_material_8h_source.html',''); initRes
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="_defines_8h.html#adee8a38766b92df14c0c12d71b8a8df5">CANNON_DEFINE_GETTER_SETTER_BASE</a>(restitution, <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a>)</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    ~<a class="code" href="class_material.html">Material</a>();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_material.html#a6d714b6a7b102441f99421bcb2aaa4b8">   91</a></span>&#160;    <span class="keywordtype">int</span> _id = 0;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="class_material.html#a2e3e493b29eaede591c50450ee2b7626">   96</a></span>&#160;    <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> _friction = -1.0;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="class_material.html#a480c7f1c4d8271853e21adf46bf90c62">  101</a></span>&#160;    <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> _restitution = -1.0;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="class_material.html#a98a77badbaeb5f34b87d23e406fafd73">  103</a></span>&#160;    std::string <a class="code" href="class_material.html#a98a77badbaeb5f34b87d23e406fafd73">_name</a>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;};</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<a class="code" href="_defines_8h.html#a560b9a4b8b95b0695aa8612c3af11f0a">NS_CANNON_END</a></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="class_material.html">Material</a>();</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    ~<a class="code" href="class_material.html">Material</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;     <span class="keywordtype">bool</span> init(<span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;     <span class="keywordtype">bool</span> init(<span class="keyword">const</span> MaterialOptions&amp; options);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="class_material.html#a6d714b6a7b102441f99421bcb2aaa4b8">  109</a></span>&#160;    <span class="keywordtype">int</span> _id = 0;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="class_material.html#a2e3e493b29eaede591c50450ee2b7626">  114</a></span>&#160;    <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> _friction = -1.0;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_material.html#a480c7f1c4d8271853e21adf46bf90c62">  119</a></span>&#160;    <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> _restitution = -1.0;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="class_material.html#a98a77badbaeb5f34b87d23e406fafd73">  121</a></span>&#160;    std::string <a class="code" href="class_material.html#a98a77badbaeb5f34b87d23e406fafd73">_name</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<a class="code" href="_defines_8h.html#a560b9a4b8b95b0695aa8612c3af11f0a">NS_CANNON_END</a></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="astruct_material_1_1_material_options_html_ace9d45935bee582d074d89ced44c2445"><div class="ttname"><a href="struct_material_1_1_material_options.html#ace9d45935bee582d074d89ced44c2445">Material::MaterialOptions::MaterialOptions</a></div><div class="ttdeci">MaterialOptions(int id, const char *name, real_t friction=-1.0, real_t restitution=-1.0)</div><div class="ttdef"><b>Definition:</b> Material.h:50</div></div>
-<div class="ttc" id="acannon_8h_html"><div class="ttname"><a href="cannon_8h.html">cannon.h</a></div></div>
 <div class="ttc" id="a_ref_8h_html"><div class="ttname"><a href="_ref_8h.html">Ref.h</a></div></div>
-<div class="ttc" id="a_defines_8h_html_adee8a38766b92df14c0c12d71b8a8df5"><div class="ttname"><a href="_defines_8h.html#adee8a38766b92df14c0c12d71b8a8df5">CANNON_DEFINE_GETTER_SETTER_BASE</a></div><div class="ttdeci">#define CANNON_DEFINE_GETTER_SETTER_BASE(propName, propType)</div><div class="ttdef"><b>Definition:</b> Defines.h:182</div></div>
+<div class="ttc" id="a_defines_8h_html_adee8a38766b92df14c0c12d71b8a8df5"><div class="ttname"><a href="_defines_8h.html#adee8a38766b92df14c0c12d71b8a8df5">CANNON_DEFINE_GETTER_SETTER_BASE</a></div><div class="ttdeci">#define CANNON_DEFINE_GETTER_SETTER_BASE(propName, propType)</div><div class="ttdef"><b>Definition:</b> Defines.h:210</div></div>
+<div class="ttc" id="a_defines_8h_html"><div class="ttname"><a href="_defines_8h.html">Defines.h</a></div></div>
 <div class="ttc" id="a_defines_8h_html_a560b9a4b8b95b0695aa8612c3af11f0a"><div class="ttname"><a href="_defines_8h.html#a560b9a4b8b95b0695aa8612c3af11f0a">NS_CANNON_END</a></div><div class="ttdeci">#define NS_CANNON_END</div><div class="ttdef"><b>Definition:</b> Defines.h:28</div></div>
 <div class="ttc" id="a_defines_8h_html_a7e58e50de2558a89a5915b9234017fb5"><div class="ttname"><a href="_defines_8h.html#a7e58e50de2558a89a5915b9234017fb5">NS_CANNON_BEGIN</a></div><div class="ttdeci">#define NS_CANNON_BEGIN</div><div class="ttdef"><b>Definition:</b> Defines.h:27</div></div>
-<div class="ttc" id="aclass_material_html_a98a77badbaeb5f34b87d23e406fafd73"><div class="ttname"><a href="class_material.html#a98a77badbaeb5f34b87d23e406fafd73">Material::_name</a></div><div class="ttdeci">std::string _name</div><div class="ttdef"><b>Definition:</b> Material.h:103</div></div>
-<div class="ttc" id="a_defines_8h_html_ab0aaa28d81b40e26ca465986a3908c32"><div class="ttname"><a href="_defines_8h.html#ab0aaa28d81b40e26ca465986a3908c32">CANNON_DEFINE_CLASS_TYPE</a></div><div class="ttdeci">#define CANNON_DEFINE_CLASS_TYPE(cls)</div><div class="ttdef"><b>Definition:</b> Defines.h:158</div></div>
+<div class="ttc" id="aclass_material_html_a98a77badbaeb5f34b87d23e406fafd73"><div class="ttname"><a href="class_material.html#a98a77badbaeb5f34b87d23e406fafd73">Material::_name</a></div><div class="ttdeci">std::string _name</div><div class="ttdef"><b>Definition:</b> Material.h:121</div></div>
+<div class="ttc" id="a_defines_8h_html_ab0aaa28d81b40e26ca465986a3908c32"><div class="ttname"><a href="_defines_8h.html#ab0aaa28d81b40e26ca465986a3908c32">CANNON_DEFINE_CLASS_TYPE</a></div><div class="ttdeci">#define CANNON_DEFINE_CLASS_TYPE(cls)</div><div class="ttdef"><b>Definition:</b> Defines.h:186</div></div>
 <div class="ttc" id="aclass_material_html"><div class="ttname"><a href="class_material.html">Material</a></div><div class="ttdoc">Defines a physics material.</div><div class="ttdef"><b>Definition:</b> Material.h:37</div></div>
-<div class="ttc" id="a_defines_8h_html_ada35c2bb0692effe0371335f0dda068a"><div class="ttname"><a href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a></div><div class="ttdeci">#define CANNON_FORCE_INLINE</div><div class="ttdef"><b>Definition:</b> Defines.h:155</div></div>
+<div class="ttc" id="a_defines_8h_html_ada35c2bb0692effe0371335f0dda068a"><div class="ttname"><a href="_defines_8h.html#ada35c2bb0692effe0371335f0dda068a">CANNON_FORCE_INLINE</a></div><div class="ttdeci">#define CANNON_FORCE_INLINE</div><div class="ttdef"><b>Definition:</b> Defines.h:181</div></div>
 <div class="ttc" id="aclass_ref_html"><div class="ttname"><a href="class_ref.html">Ref</a></div><div class="ttdoc">Base Ref Counter.</div><div class="ttdef"><b>Definition:</b> Ref.h:36</div></div>
 <div class="ttc" id="a_defines_8h_html_a1924a4f6907cc3833213aba1f07fcbe9"><div class="ttname"><a href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a></div><div class="ttdeci">float real_t</div><div class="ttdef"><b>Definition:</b> Defines.h:52</div></div>
 <div class="ttc" id="aclass_material_html_ab044b6534dde12cb69ac2da8deca019a"><div class="ttname"><a href="class_material.html#ab044b6534dde12cb69ac2da8deca019a">Material::friction</a></div><div class="ttdeci">real_t friction() const</div><div class="ttdef"><b>Definition:</b> Material.h:79</div></div>
 <div class="ttc" id="astruct_material_1_1_material_options_html_a9dcc4176a0bdeff758e33df4775395e3"><div class="ttname"><a href="struct_material_1_1_material_options.html#a9dcc4176a0bdeff758e33df4775395e3">Material::MaterialOptions::MaterialOptions</a></div><div class="ttdeci">MaterialOptions()</div><div class="ttdef"><b>Definition:</b> Material.h:46</div></div>
-<div class="ttc" id="a_defines_8h_html_a1816ce40815dc2bd16d2366e35d3e016"><div class="ttname"><a href="_defines_8h.html#a1816ce40815dc2bd16d2366e35d3e016">CANNON_DECLARE_ALIGNED_ALLOCATOR</a></div><div class="ttdeci">#define CANNON_DECLARE_ALIGNED_ALLOCATOR()</div><div class="ttdef"><b>Definition:</b> Defines.h:296</div></div>
+<div class="ttc" id="a_defines_8h_html_a1816ce40815dc2bd16d2366e35d3e016"><div class="ttname"><a href="_defines_8h.html#a1816ce40815dc2bd16d2366e35d3e016">CANNON_DECLARE_ALIGNED_ALLOCATOR</a></div><div class="ttdeci">#define CANNON_DECLARE_ALIGNED_ALLOCATOR()</div><div class="ttdef"><b>Definition:</b> Defines.h:328</div></div>
 <div class="ttc" id="aclass_material_html_a054817e4c9019de7a67ccb4aba2d9d9a"><div class="ttname"><a href="class_material.html#a054817e4c9019de7a67ccb4aba2d9d9a">Material::restitution</a></div><div class="ttdeci">real_t restitution() const</div><div class="ttdef"><b>Definition:</b> Material.h:80</div></div>
-<div class="ttc" id="a_defines_8h_html_a432c8182843f8521633b313f36acfbac"><div class="ttname"><a href="_defines_8h.html#a432c8182843f8521633b313f36acfbac">CANNON_API</a></div><div class="ttdeci">#define CANNON_API</div><div class="ttdef"><b>Definition:</b> Defines.h:152</div></div>
+<div class="ttc" id="a_defines_8h_html_a432c8182843f8521633b313f36acfbac"><div class="ttname"><a href="_defines_8h.html#a432c8182843f8521633b313f36acfbac">CANNON_API</a></div><div class="ttdeci">#define CANNON_API</div><div class="ttdef"><b>Definition:</b> Defines.h:173</div></div>
 <div class="ttc" id="astruct_material_1_1_material_options_html"><div class="ttname"><a href="struct_material_1_1_material_options.html">Material::MaterialOptions</a></div><div class="ttdoc">Options to create material.</div><div class="ttdef"><b>Definition:</b> Material.h:44</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->

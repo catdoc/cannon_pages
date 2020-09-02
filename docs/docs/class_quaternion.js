@@ -8,7 +8,7 @@ var class_quaternion =
     [ "clone", "class_quaternion.html#a6f642c41cb44cd9c790589fe93b6bb59", null ],
     [ "conjugate", "class_quaternion.html#afbac8fd8798b92c903cc24acea9a1f78", null ],
     [ "copy", "class_quaternion.html#a4fc109f6050d358ff9b98c083cc19fc7", null ],
-    [ "createRef", "class_quaternion.html#a524a9c578aebb295a5c32e2f3d4586c5", null ],
+    [ "create", "class_quaternion.html#a71cae08c9ebd958dfb5e0526bcf8f1f0", null ],
     [ "integrate", "class_quaternion.html#a47edc4497f7b219dae983a2f1657fa57", null ],
     [ "inverse", "class_quaternion.html#a8324a65a68a0b78957eab744d7e413b5", null ],
     [ "mult", "class_quaternion.html#a169fa2f48d25f846a13735afb3fa605f", null ],

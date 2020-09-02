@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('_solver_8h_source.html',''); initResiz
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="cannon_8h.html">cannon/cannon.h</a>&quot;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_defines_8h.html">cannon/Defines.h</a>&quot;</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_ref_8h.html">cannon/base/Ref.h</a>&quot;</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
@@ -127,22 +127,22 @@ $(document).ready(function(){initNavTree('_solver_8h_source.html',''); initResiz
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="_defines_8h.html#ab0aaa28d81b40e26ca465986a3908c32">CANNON_DEFINE_CLASS_TYPE</a>(<a class="code" href="class_solver.html">Solver</a>)</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="_defines_8h.html#a1816ce40815dc2bd16d2366e35d3e016">CANNON_DECLARE_ALIGNED_ALLOCATOR</a>()</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_solver.html">Solver</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_solver.html#ac24071ede146af4eb35414024cf62ef0">   57</a></span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span> <a class="code" href="class_solver.html#ac24071ede146af4eb35414024cf62ef0">solve</a>(<a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> dt, std::vector&lt;Body*&gt; &amp;bodies) { <span class="keywordflow">return</span> 0; }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> addEquation(<a class="code" href="class_equation.html">Equation</a>* eq);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> removeEquation(<a class="code" href="class_equation.html">Equation</a>* eq);</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_solver.html#ac24071ede146af4eb35414024cf62ef0">   52</a></span>&#160;    virtual <span class="keywordtype">int</span> solve(<a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> dt, std::vector&lt;<a class="code" href="class_body.html">Body</a>*&gt; &amp;bodies) { <span class="keywordflow">return</span> 0; }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> addEquation(<a class="code" href="class_equation.html">Equation</a>* eq);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> removeEquation(<a class="code" href="class_equation.html">Equation</a>* eq);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> removeAllEquation();</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> removeAllEquation();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="_defines_8h.html#adee8a38766b92df14c0c12d71b8a8df5">CANNON_DEFINE_GETTER_SETTER_BASE</a>(iterations, <span class="keywordtype">int</span>)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="_defines_8h.html#adee8a38766b92df14c0c12d71b8a8df5">CANNON_DEFINE_GETTER_SETTER_BASE</a>(tolerance, <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a>)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="_defines_8h.html#adee8a38766b92df14c0c12d71b8a8df5">CANNON_DEFINE_GETTER_SETTER_BASE</a>(iterations, <span class="keywordtype">int</span>)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="_defines_8h.html#adee8a38766b92df14c0c12d71b8a8df5">CANNON_DEFINE_GETTER_SETTER_BASE</a>(tolerance, <a class="code" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a>)</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="class_solver.html">Solver</a>();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    </div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">virtual</span> ~<a class="code" href="class_solver.html">Solver</a>();</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">protected</span>:</div>
@@ -159,20 +159,19 @@ $(document).ready(function(){initNavTree('_solver_8h_source.html',''); initResiz
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_equation_html"><div class="ttname"><a href="class_equation.html">Equation</a></div><div class="ttdoc">Equation base class.</div><div class="ttdef"><b>Definition:</b> Equation.h:41</div></div>
 <div class="ttc" id="aclass_solver_html_a3c38d9b96a9bc2f13ef50cb486042e04"><div class="ttname"><a href="class_solver.html#a3c38d9b96a9bc2f13ef50cb486042e04">Solver::_equations</a></div><div class="ttdeci">std::vector&lt; Equation * &gt; _equations</div><div class="ttdoc">All equations to be solved.</div><div class="ttdef"><b>Definition:</b> Solver.h:83</div></div>
-<div class="ttc" id="acannon_8h_html"><div class="ttname"><a href="cannon_8h.html">cannon.h</a></div></div>
 <div class="ttc" id="a_ref_8h_html"><div class="ttname"><a href="_ref_8h.html">Ref.h</a></div></div>
 <div class="ttc" id="aclass_world_html"><div class="ttname"><a href="class_world.html">World</a></div><div class="ttdoc">Represents the entire physical world.</div><div class="ttdef"><b>Definition:</b> World.h:65</div></div>
-<div class="ttc" id="a_defines_8h_html_adee8a38766b92df14c0c12d71b8a8df5"><div class="ttname"><a href="_defines_8h.html#adee8a38766b92df14c0c12d71b8a8df5">CANNON_DEFINE_GETTER_SETTER_BASE</a></div><div class="ttdeci">#define CANNON_DEFINE_GETTER_SETTER_BASE(propName, propType)</div><div class="ttdef"><b>Definition:</b> Defines.h:182</div></div>
+<div class="ttc" id="a_defines_8h_html_adee8a38766b92df14c0c12d71b8a8df5"><div class="ttname"><a href="_defines_8h.html#adee8a38766b92df14c0c12d71b8a8df5">CANNON_DEFINE_GETTER_SETTER_BASE</a></div><div class="ttdeci">#define CANNON_DEFINE_GETTER_SETTER_BASE(propName, propType)</div><div class="ttdef"><b>Definition:</b> Defines.h:210</div></div>
+<div class="ttc" id="a_defines_8h_html"><div class="ttname"><a href="_defines_8h.html">Defines.h</a></div></div>
 <div class="ttc" id="a_defines_8h_html_a560b9a4b8b95b0695aa8612c3af11f0a"><div class="ttname"><a href="_defines_8h.html#a560b9a4b8b95b0695aa8612c3af11f0a">NS_CANNON_END</a></div><div class="ttdeci">#define NS_CANNON_END</div><div class="ttdef"><b>Definition:</b> Defines.h:28</div></div>
 <div class="ttc" id="a_defines_8h_html_a7e58e50de2558a89a5915b9234017fb5"><div class="ttname"><a href="_defines_8h.html#a7e58e50de2558a89a5915b9234017fb5">NS_CANNON_BEGIN</a></div><div class="ttdeci">#define NS_CANNON_BEGIN</div><div class="ttdef"><b>Definition:</b> Defines.h:27</div></div>
-<div class="ttc" id="a_defines_8h_html_ab0aaa28d81b40e26ca465986a3908c32"><div class="ttname"><a href="_defines_8h.html#ab0aaa28d81b40e26ca465986a3908c32">CANNON_DEFINE_CLASS_TYPE</a></div><div class="ttdeci">#define CANNON_DEFINE_CLASS_TYPE(cls)</div><div class="ttdef"><b>Definition:</b> Defines.h:158</div></div>
-<div class="ttc" id="aclass_solver_html_ac24071ede146af4eb35414024cf62ef0"><div class="ttname"><a href="class_solver.html#ac24071ede146af4eb35414024cf62ef0">Solver::solve</a></div><div class="ttdeci">virtual int solve(real_t dt, std::vector&lt; Body * &gt; &amp;bodies)</div><div class="ttdoc">Should be implemented in subclasses!</div><div class="ttdef"><b>Definition:</b> Solver.h:57</div></div>
+<div class="ttc" id="a_defines_8h_html_ab0aaa28d81b40e26ca465986a3908c32"><div class="ttname"><a href="_defines_8h.html#ab0aaa28d81b40e26ca465986a3908c32">CANNON_DEFINE_CLASS_TYPE</a></div><div class="ttdeci">#define CANNON_DEFINE_CLASS_TYPE(cls)</div><div class="ttdef"><b>Definition:</b> Defines.h:186</div></div>
 <div class="ttc" id="aclass_solver_html"><div class="ttname"><a href="class_solver.html">Solver</a></div><div class="ttdoc">Constraint equation solver base class.</div><div class="ttdef"><b>Definition:</b> Solver.h:41</div></div>
 <div class="ttc" id="aclass_ref_html"><div class="ttname"><a href="class_ref.html">Ref</a></div><div class="ttdoc">Base Ref Counter.</div><div class="ttdef"><b>Definition:</b> Ref.h:36</div></div>
 <div class="ttc" id="aclass_body_html"><div class="ttname"><a href="class_body.html">Body</a></div><div class="ttdoc">A RigidBody in the physics world.</div><div class="ttdef"><b>Definition:</b> Body.h:69</div></div>
 <div class="ttc" id="a_defines_8h_html_a1924a4f6907cc3833213aba1f07fcbe9"><div class="ttname"><a href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a></div><div class="ttdeci">float real_t</div><div class="ttdef"><b>Definition:</b> Defines.h:52</div></div>
-<div class="ttc" id="a_defines_8h_html_a1816ce40815dc2bd16d2366e35d3e016"><div class="ttname"><a href="_defines_8h.html#a1816ce40815dc2bd16d2366e35d3e016">CANNON_DECLARE_ALIGNED_ALLOCATOR</a></div><div class="ttdeci">#define CANNON_DECLARE_ALIGNED_ALLOCATOR()</div><div class="ttdef"><b>Definition:</b> Defines.h:296</div></div>
-<div class="ttc" id="a_defines_8h_html_a432c8182843f8521633b313f36acfbac"><div class="ttname"><a href="_defines_8h.html#a432c8182843f8521633b313f36acfbac">CANNON_API</a></div><div class="ttdeci">#define CANNON_API</div><div class="ttdef"><b>Definition:</b> Defines.h:152</div></div>
+<div class="ttc" id="a_defines_8h_html_a1816ce40815dc2bd16d2366e35d3e016"><div class="ttname"><a href="_defines_8h.html#a1816ce40815dc2bd16d2366e35d3e016">CANNON_DECLARE_ALIGNED_ALLOCATOR</a></div><div class="ttdeci">#define CANNON_DECLARE_ALIGNED_ALLOCATOR()</div><div class="ttdef"><b>Definition:</b> Defines.h:328</div></div>
+<div class="ttc" id="a_defines_8h_html_a432c8182843f8521633b313f36acfbac"><div class="ttname"><a href="_defines_8h.html#a432c8182843f8521633b313f36acfbac">CANNON_API</a></div><div class="ttdeci">#define CANNON_API</div><div class="ttdef"><b>Definition:</b> Defines.h:173</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

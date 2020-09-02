@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('class_s_a_p_broadphase.html',''); init
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
@@ -111,10 +112,6 @@ Inheritance diagram for SAPBroadphase:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abdd0a317075dca644fe971eb3c128b1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_a_p_broadphase.html#abdd0a317075dca644fe971eb3c128b1f">SAPBroadphase</a> (<a class="el" href="class_world.html">World</a> *<a class="el" href="class_s_a_p_broadphase.html#a465157e007f35f1a6a45eb630c443d4f">world</a>=nullptr)</td></tr>
-<tr class="separator:abdd0a317075dca644fe971eb3c128b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad239c794db436a593b4677e5100e31fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_a_p_broadphase.html#ad239c794db436a593b4677e5100e31fe">~SAPBroadphase</a> ()</td></tr>
-<tr class="separator:ad239c794db436a593b4677e5100e31fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6ac9982738b21afc13ae8dd5c839ee7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_a_p_broadphase.html#ae6ac9982738b21afc13ae8dd5c839ee7">collisionPairs</a> (<a class="el" href="class_world.html">World</a> *<a class="el" href="class_s_a_p_broadphase.html#a465157e007f35f1a6a45eb630c443d4f">world</a>, std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;pairs1, std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;pairs2) override</td></tr>
 <tr class="memdesc:ae6ac9982738b21afc13ae8dd5c839ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the collision pairs from the world.  <a href="class_s_a_p_broadphase.html#ae6ac9982738b21afc13ae8dd5c839ee7">More...</a><br /></td></tr>
 <tr class="separator:ae6ac9982738b21afc13ae8dd5c839ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -127,9 +124,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afc25d96ed85f906d7eea0e85a81ab489"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_a_p_broadphase.html#afc25d96ed85f906d7eea0e85a81ab489">notify</a> (<a class="el" href="struct_event.html">Event</a> &amp;e) override</td></tr>
 <tr class="separator:afc25d96ed85f906d7eea0e85a81ab489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_broadphase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_broadphase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_broadphase.html">Broadphase</a></td></tr>
-<tr class="memitem:affabc5503bd5d39b015463b51870ee2c inherit pub_methods_class_broadphase"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broadphase.html#affabc5503bd5d39b015463b51870ee2c">Broadphase</a> ()</td></tr>
-<tr class="memdesc:affabc5503bd5d39b015463b51870ee2c inherit pub_methods_class_broadphase"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_broadphase.html#affabc5503bd5d39b015463b51870ee2c">More...</a><br /></td></tr>
-<tr class="separator:affabc5503bd5d39b015463b51870ee2c inherit pub_methods_class_broadphase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeb161e2bb922d13bcb1e3fc736dfb04 inherit pub_methods_class_broadphase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broadphase.html#adeb161e2bb922d13bcb1e3fc736dfb04">needBroadphaseCollision</a> (<a class="el" href="class_body.html">Body</a> *bodyA, <a class="el" href="class_body.html">Body</a> *bodyB)</td></tr>
 <tr class="memdesc:adeb161e2bb922d13bcb1e3fc736dfb04 inherit pub_methods_class_broadphase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a body pair needs to be intersection tested at all.  <a href="class_broadphase.html#adeb161e2bb922d13bcb1e3fc736dfb04">More...</a><br /></td></tr>
 <tr class="separator:adeb161e2bb922d13bcb1e3fc736dfb04 inherit pub_methods_class_broadphase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,17 +152,28 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_class_event_callback"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_event_callback')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_event_callback.html">EventCallback</a></td></tr>
 <tr class="memitem:af2bbd2836317a24d5d6735d0dc3a29e2 inherit pub_methods_class_event_callback"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_callback.html#af2bbd2836317a24d5d6735d0dc3a29e2">~EventCallback</a> ()</td></tr>
 <tr class="separator:af2bbd2836317a24d5d6735d0dc3a29e2 inherit pub_methods_class_event_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dc0ac19198e023247ca1b8aad34f41a inherit pub_methods_class_event_callback"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_callback.html#a6dc0ac19198e023247ca1b8aad34f41a">setTarget</a> (<a class="el" href="class_ref.html">Ref</a> *<a class="el" href="class_event_callback.html#a05af210a4dcdabf78e742bcc15403b97">target</a>)</td></tr>
-<tr class="separator:a6dc0ac19198e023247ca1b8aad34f41a inherit pub_methods_class_event_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05af210a4dcdabf78e742bcc15403b97 inherit pub_methods_class_event_callback"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_callback.html#a05af210a4dcdabf78e742bcc15403b97">target</a> () const</td></tr>
-<tr class="separator:a05af210a4dcdabf78e742bcc15403b97 inherit pub_methods_class_event_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7c1005fb87bcee2c5ab4c4507d4fd59 inherit pub_methods_class_event_callback"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_callback.html#af7c1005fb87bcee2c5ab4c4507d4fd59">setTarget</a> (void *<a class="el" href="class_event_callback.html#a6b2398cb077be1c05a254f30a2716be5">target</a>)</td></tr>
+<tr class="separator:af7c1005fb87bcee2c5ab4c4507d4fd59 inherit pub_methods_class_event_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b2398cb077be1c05a254f30a2716be5 inherit pub_methods_class_event_callback"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_callback.html#a6b2398cb077be1c05a254f30a2716be5">target</a> () const</td></tr>
+<tr class="separator:a6b2398cb077be1c05a254f30a2716be5 inherit pub_methods_class_event_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d306aed10eb891a03744e0638660f8d inherit pub_methods_class_event_callback"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_callback.html#a7d306aed10eb891a03744e0638660f8d">markAsRemoved</a> ()</td></tr>
 <tr class="separator:a7d306aed10eb891a03744e0638660f8d inherit pub_methods_class_event_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5737dcbc164efdeef97bbf7d88902b9f inherit pub_methods_class_event_callback"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_callback.html#a5737dcbc164efdeef97bbf7d88902b9f">wasRemoved</a> () const</td></tr>
 <tr class="separator:a5737dcbc164efdeef97bbf7d88902b9f inherit pub_methods_class_event_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aceeb8c492971c94604727a16962744c6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_s_a_p_broadphase.html">SAPBroadphase</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_a_p_broadphase.html#aceeb8c492971c94604727a16962744c6">create</a> (<a class="el" href="class_world.html">World</a> *<a class="el" href="class_s_a_p_broadphase.html#a465157e007f35f1a6a45eb630c443d4f">world</a>)</td></tr>
+<tr class="separator:aceeb8c492971c94604727a16962744c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:a3fb9ef66b8a7ac94d7d941dd62778db1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_a_p_broadphase.html#a3fb9ef66b8a7ac94d7d941dd62778db1">SAPBroadphase</a> ()</td></tr>
+<tr class="separator:a3fb9ef66b8a7ac94d7d941dd62778db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad239c794db436a593b4677e5100e31fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_a_p_broadphase.html#ad239c794db436a593b4677e5100e31fe">~SAPBroadphase</a> ()</td></tr>
+<tr class="separator:ad239c794db436a593b4677e5100e31fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7301487a579995f5e48ecc27f3048c5"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_a_p_broadphase.html#aa7301487a579995f5e48ecc27f3048c5">init</a> (<a class="el" href="class_world.html">World</a> *<a class="el" href="class_s_a_p_broadphase.html#a465157e007f35f1a6a45eb630c443d4f">world</a>=nullptr)</td></tr>
+<tr class="separator:aa7301487a579995f5e48ecc27f3048c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af9a20c2ae6cd13d7ebfd49c3f7d46ac4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_a_p_broadphase.html#af9a20c2ae6cd13d7ebfd49c3f7d46ac4">sortList</a> ()</td></tr>
 <tr class="separator:af9a20c2ae6cd13d7ebfd49c3f7d46ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41877c8ac8bfae3549ecdad52f27a1dc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_a_p_broadphase.html#a41877c8ac8bfae3549ecdad52f27a1dc">_addBodyHandler</a> (<a class="el" href="struct_event.html">Event</a> &amp;e)</td></tr>
@@ -185,8 +190,13 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa7f0e679fe9bcc3f37963d925d798dbb inherit pro_methods_class_broadphase"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broadphase.html#aa7f0e679fe9bcc3f37963d925d798dbb">doBoundingBoxBroadphase</a> (<a class="el" href="class_body.html">Body</a> *bodyA, <a class="el" href="class_body.html">Body</a> *bodyB, std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;pairs1, std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;pairs2)</td></tr>
 <tr class="memdesc:aa7f0e679fe9bcc3f37963d925d798dbb inherit pro_methods_class_broadphase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the bounding boxes of two bodies are intersecting.  <a href="class_broadphase.html#aa7f0e679fe9bcc3f37963d925d798dbb">More...</a><br /></td></tr>
 <tr class="separator:aa7f0e679fe9bcc3f37963d925d798dbb inherit pro_methods_class_broadphase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affabc5503bd5d39b015463b51870ee2c inherit pro_methods_class_broadphase"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broadphase.html#affabc5503bd5d39b015463b51870ee2c">Broadphase</a> ()</td></tr>
+<tr class="memdesc:affabc5503bd5d39b015463b51870ee2c inherit pro_methods_class_broadphase"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_broadphase.html#affabc5503bd5d39b015463b51870ee2c">More...</a><br /></td></tr>
+<tr class="separator:affabc5503bd5d39b015463b51870ee2c inherit pro_methods_class_broadphase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a667057d931f297ef0736d226d0e53f35 inherit pro_methods_class_broadphase"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broadphase.html#a667057d931f297ef0736d226d0e53f35">~Broadphase</a> ()</td></tr>
 <tr class="separator:a667057d931f297ef0736d226d0e53f35 inherit pro_methods_class_broadphase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b848f7c128865add202fefd81ffbd76 inherit pro_methods_class_broadphase"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broadphase.html#a3b848f7c128865add202fefd81ffbd76">init</a> ()</td></tr>
+<tr class="separator:a3b848f7c128865add202fefd81ffbd76 inherit pro_methods_class_broadphase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_ref')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_ref.html">Ref</a></td></tr>
 <tr class="memitem:a1c3c3986014151251b39041e2556d2e3 inherit pro_methods_class_ref"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ref.html#a1c3c3986014151251b39041e2556d2e3">~Ref</a> ()</td></tr>
 <tr class="separator:a1c3c3986014151251b39041e2556d2e3 inherit pro_methods_class_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -235,20 +245,27 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Sweep and prune. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="abdd0a317075dca644fe971eb3c128b1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdd0a317075dca644fe971eb3c128b1f">&#9670;&nbsp;</a></span>SAPBroadphase()</h2>
+<a id="a3fb9ef66b8a7ac94d7d941dd62778db1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fb9ef66b8a7ac94d7d941dd62778db1">&#9670;&nbsp;</a></span>SAPBroadphase()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">SAPBroadphase::SAPBroadphase </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_world.html">World</a> *&#160;</td>
-          <td class="paramname"><em>world</em> = <code>nullptr</code></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -258,6 +275,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">SAPBroadphase::~SAPBroadphase </td>
@@ -266,6 +286,11 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -508,6 +533,58 @@ Protected Attributes</h2></td></tr>
 </dl>
 
 <p>Reimplemented from <a class="el" href="class_broadphase.html#acbcfee012a6e4fcb552f5ef36a2c94cb">Broadphase</a>.</p>
+
+</div>
+</div>
+<a id="aceeb8c492971c94604727a16962744c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aceeb8c492971c94604727a16962744c6">&#9670;&nbsp;</a></span>create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_s_a_p_broadphase.html">SAPBroadphase</a> * SAPBroadphase::create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_world.html">World</a> *&#160;</td>
+          <td class="paramname"><em>world</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7301487a579995f5e48ecc27f3048c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7301487a579995f5e48ecc27f3048c5">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SAPBroadphase::init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_world.html">World</a> *&#160;</td>
+          <td class="paramname"><em>world</em> = <code>nullptr</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

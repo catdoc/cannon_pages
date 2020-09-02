@@ -111,9 +111,6 @@ Inheritance diagram for Broadphase:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:affabc5503bd5d39b015463b51870ee2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broadphase.html#affabc5503bd5d39b015463b51870ee2c">Broadphase</a> ()</td></tr>
-<tr class="memdesc:affabc5503bd5d39b015463b51870ee2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_broadphase.html#affabc5503bd5d39b015463b51870ee2c">More...</a><br /></td></tr>
-<tr class="separator:affabc5503bd5d39b015463b51870ee2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbcfee012a6e4fcb552f5ef36a2c94cb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broadphase.html#acbcfee012a6e4fcb552f5ef36a2c94cb">collisionPairs</a> (<a class="el" href="class_world.html">World</a> *world, std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;pairs1, std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;pairs2)</td></tr>
 <tr class="memdesc:acbcfee012a6e4fcb552f5ef36a2c94cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the collision pairs from the world.  <a href="class_broadphase.html#acbcfee012a6e4fcb552f5ef36a2c94cb">More...</a><br /></td></tr>
 <tr class="separator:acbcfee012a6e4fcb552f5ef36a2c94cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,8 +154,13 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa7f0e679fe9bcc3f37963d925d798dbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broadphase.html#aa7f0e679fe9bcc3f37963d925d798dbb">doBoundingBoxBroadphase</a> (<a class="el" href="class_body.html">Body</a> *bodyA, <a class="el" href="class_body.html">Body</a> *bodyB, std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;pairs1, std::vector&lt; <a class="el" href="class_body.html">Body</a> * &gt; &amp;pairs2)</td></tr>
 <tr class="memdesc:aa7f0e679fe9bcc3f37963d925d798dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the bounding boxes of two bodies are intersecting.  <a href="class_broadphase.html#aa7f0e679fe9bcc3f37963d925d798dbb">More...</a><br /></td></tr>
 <tr class="separator:aa7f0e679fe9bcc3f37963d925d798dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affabc5503bd5d39b015463b51870ee2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broadphase.html#affabc5503bd5d39b015463b51870ee2c">Broadphase</a> ()</td></tr>
+<tr class="memdesc:affabc5503bd5d39b015463b51870ee2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor.  <a href="class_broadphase.html#affabc5503bd5d39b015463b51870ee2c">More...</a><br /></td></tr>
+<tr class="separator:affabc5503bd5d39b015463b51870ee2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a667057d931f297ef0736d226d0e53f35"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broadphase.html#a667057d931f297ef0736d226d0e53f35">~Broadphase</a> ()</td></tr>
 <tr class="separator:a667057d931f297ef0736d226d0e53f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b848f7c128865add202fefd81ffbd76"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_broadphase.html#a3b848f7c128865add202fefd81ffbd76">init</a> ()</td></tr>
+<tr class="separator:a3b848f7c128865add202fefd81ffbd76"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_ref')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_ref.html">Ref</a></td></tr>
 <tr class="memitem:a1c3c3986014151251b39041e2556d2e3 inherit pro_methods_class_ref"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ref.html#a1c3c3986014151251b39041e2556d2e3">~Ref</a> ()</td></tr>
 <tr class="separator:a1c3c3986014151251b39041e2556d2e3 inherit pro_methods_class_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,6 +189,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">Broadphase::Broadphase </td>
@@ -195,6 +200,11 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>The constructor. </p>
@@ -475,6 +485,33 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a3b848f7c128865add202fefd81ffbd76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b848f7c128865add202fefd81ffbd76">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Broadphase::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented in <a class="el" href="class_naive_broadphase.html#a3bbddc9ebb633880834e038f9453368c">NaiveBroadphase</a>.</p>
 
 </div>
 </div>

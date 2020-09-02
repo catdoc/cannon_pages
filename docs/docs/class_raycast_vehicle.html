@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('class_raycast_vehicle.html',''); initR
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_raycast_vehicle-members.html">List of all members</a>  </div>
@@ -109,9 +110,6 @@ Inheritance diagram for RaycastVehicle:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9c70bdc7ad1b3df61717df346ad14616"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_raycast_vehicle.html#a9c70bdc7ad1b3df61717df346ad14616">RaycastVehicle</a> (<a class="el" href="class_body.html">Body</a> *chassisBody, int indexRightAxis=1, int indexLeftAxis=0, int indexUpAxis=2)</td></tr>
-<tr class="memdesc:a9c70bdc7ad1b3df61717df346ad14616"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor of <a class="el" href="class_raycast_vehicle.html" title="Vehicle helper class that casts rays from the wheel positions towards the ground and applies forces.">RaycastVehicle</a>.  <a href="class_raycast_vehicle.html#a9c70bdc7ad1b3df61717df346ad14616">More...</a><br /></td></tr>
-<tr class="separator:a9c70bdc7ad1b3df61717df346ad14616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c3b6c297033920815f891531e347187"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_raycast_vehicle.html#a2c3b6c297033920815f891531e347187">addWheel</a> (const <a class="el" href="struct_wheel_info_1_1_wheel_options.html">WheelInfo::WheelOptions</a> &amp;options)</td></tr>
 <tr class="memdesc:a2c3b6c297033920815f891531e347187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a wheel. For information about the options, see <a class="el" href="class_wheel_info.html" title="Wheel Info of a raycast car.">WheelInfo</a>.  <a href="class_raycast_vehicle.html#a2c3b6c297033920815f891531e347187">More...</a><br /></td></tr>
 <tr class="separator:a2c3b6c297033920815f891531e347187"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,10 +157,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af68ae48a3532397a66b82af6a558cefe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_raycast_vehicle.html#af68ae48a3532397a66b82af6a558cefe">resolveSingleBilateral</a> (<a class="el" href="class_body.html">Body</a> *body1, const <a class="el" href="class_vec3.html">Vec3</a> &amp;pos1, <a class="el" href="class_body.html">Body</a> *body2, const <a class="el" href="class_vec3.html">Vec3</a> &amp;pos2, const <a class="el" href="class_vec3.html">Vec3</a> &amp;normal)</td></tr>
 <tr class="memdesc:af68ae48a3532397a66b82af6a558cefe"><td class="mdescLeft">&#160;</td><td class="mdescRight">bilateral constraint between two dynamic objects  <a href="class_raycast_vehicle.html#af68ae48a3532397a66b82af6a558cefe">More...</a><br /></td></tr>
 <tr class="separator:af68ae48a3532397a66b82af6a558cefe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09bcaecc95a1b6506881171bc2f795c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_body.html">Body</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_raycast_vehicle.html#a09bcaecc95a1b6506881171bc2f795c2">classisBody</a> () const</td></tr>
-<tr class="separator:a09bcaecc95a1b6506881171bc2f795c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0703e4d218c74d92d01d798cce218f88"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_body.html">Body</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_raycast_vehicle.html#a0703e4d218c74d92d01d798cce218f88">get_classisBody</a> () const</td></tr>
+<tr class="separator:a0703e4d218c74d92d01d798cce218f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac42db8f434b5877e41b2fe631a9fa061"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="class_wheel_info.html">WheelInfo</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_raycast_vehicle.html#ac42db8f434b5877e41b2fe631a9fa061">wheelInfos</a> ()</td></tr>
 <tr class="separator:ac42db8f434b5877e41b2fe631a9fa061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dce79b1761bd8adf5996f8c5a2b83b3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_raycast_vehicle.html#a8dce79b1761bd8adf5996f8c5a2b83b3">getWheelCount</a> ()</td></tr>
+<tr class="separator:a8dce79b1761bd8adf5996f8c5a2b83b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add6c9c590f20e61866689abbd8e5f0e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_wheel_info.html">WheelInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_raycast_vehicle.html#add6c9c590f20e61866689abbd8e5f0e1">getWheel</a> (int index)</td></tr>
+<tr class="separator:add6c9c590f20e61866689abbd8e5f0e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_ref"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_ref')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_ref.html">Ref</a></td></tr>
 <tr class="memitem:a63f1608b3c105a76e3d0ff1b77d2ae8e inherit pub_methods_class_ref"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ref.html#a63f1608b3c105a76e3d0ff1b77d2ae8e">Ref</a> ()</td></tr>
 <tr class="separator:a63f1608b3c105a76e3d0ff1b77d2ae8e inherit pub_methods_class_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,19 +180,31 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_class_event_callback"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_event_callback')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_event_callback.html">EventCallback</a></td></tr>
 <tr class="memitem:af2bbd2836317a24d5d6735d0dc3a29e2 inherit pub_methods_class_event_callback"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_callback.html#af2bbd2836317a24d5d6735d0dc3a29e2">~EventCallback</a> ()</td></tr>
 <tr class="separator:af2bbd2836317a24d5d6735d0dc3a29e2 inherit pub_methods_class_event_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6dc0ac19198e023247ca1b8aad34f41a inherit pub_methods_class_event_callback"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_callback.html#a6dc0ac19198e023247ca1b8aad34f41a">setTarget</a> (<a class="el" href="class_ref.html">Ref</a> *<a class="el" href="class_event_callback.html#a05af210a4dcdabf78e742bcc15403b97">target</a>)</td></tr>
-<tr class="separator:a6dc0ac19198e023247ca1b8aad34f41a inherit pub_methods_class_event_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05af210a4dcdabf78e742bcc15403b97 inherit pub_methods_class_event_callback"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ref.html">Ref</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_callback.html#a05af210a4dcdabf78e742bcc15403b97">target</a> () const</td></tr>
-<tr class="separator:a05af210a4dcdabf78e742bcc15403b97 inherit pub_methods_class_event_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7c1005fb87bcee2c5ab4c4507d4fd59 inherit pub_methods_class_event_callback"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_callback.html#af7c1005fb87bcee2c5ab4c4507d4fd59">setTarget</a> (void *<a class="el" href="class_event_callback.html#a6b2398cb077be1c05a254f30a2716be5">target</a>)</td></tr>
+<tr class="separator:af7c1005fb87bcee2c5ab4c4507d4fd59 inherit pub_methods_class_event_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b2398cb077be1c05a254f30a2716be5 inherit pub_methods_class_event_callback"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_callback.html#a6b2398cb077be1c05a254f30a2716be5">target</a> () const</td></tr>
+<tr class="separator:a6b2398cb077be1c05a254f30a2716be5 inherit pub_methods_class_event_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d306aed10eb891a03744e0638660f8d inherit pub_methods_class_event_callback"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_callback.html#a7d306aed10eb891a03744e0638660f8d">markAsRemoved</a> ()</td></tr>
 <tr class="separator:a7d306aed10eb891a03744e0638660f8d inherit pub_methods_class_event_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5737dcbc164efdeef97bbf7d88902b9f inherit pub_methods_class_event_callback"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_callback.html#a5737dcbc164efdeef97bbf7d88902b9f">wasRemoved</a> () const</td></tr>
 <tr class="separator:a5737dcbc164efdeef97bbf7d88902b9f inherit pub_methods_class_event_callback"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a3a27cb314cf3e197e6d3f11083f0ad78"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_raycast_vehicle.html">RaycastVehicle</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_raycast_vehicle.html#a3a27cb314cf3e197e6d3f11083f0ad78">create</a> (<a class="el" href="class_body.html">Body</a> *chassisBody, int indexRightAxis=1, int indexLeftAxis=0, int indexUpAxis=2)</td></tr>
+<tr class="memdesc:a3a27cb314cf3e197e6d3f11083f0ad78"><td class="mdescLeft">&#160;</td><td class="mdescRight">The create function of <a class="el" href="class_raycast_vehicle.html" title="Vehicle helper class that casts rays from the wheel positions towards the ground and applies forces.">RaycastVehicle</a>.  <a href="class_raycast_vehicle.html#a3a27cb314cf3e197e6d3f11083f0ad78">More...</a><br /></td></tr>
+<tr class="separator:a3a27cb314cf3e197e6d3f11083f0ad78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
+<tr class="memitem:ad75c6c91954aa7e490173f21e95c6f6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_raycast_vehicle.html#ad75c6c91954aa7e490173f21e95c6f6c">RaycastVehicle</a> ()</td></tr>
+<tr class="memdesc:ad75c6c91954aa7e490173f21e95c6f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor of <a class="el" href="class_raycast_vehicle.html" title="Vehicle helper class that casts rays from the wheel positions towards the ground and applies forces.">RaycastVehicle</a>.  <a href="class_raycast_vehicle.html#ad75c6c91954aa7e490173f21e95c6f6c">More...</a><br /></td></tr>
+<tr class="separator:ad75c6c91954aa7e490173f21e95c6f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e6a15eb393f6b244eaea658b1913e62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_raycast_vehicle.html#a0e6a15eb393f6b244eaea658b1913e62">~RaycastVehicle</a> ()</td></tr>
 <tr class="separator:a0e6a15eb393f6b244eaea658b1913e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acafdb43d5efb2edd57c68203227471f3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_raycast_vehicle.html#acafdb43d5efb2edd57c68203227471f3">init</a> (<a class="el" href="class_body.html">Body</a> *chassisBody, int indexRightAxis=1, int indexLeftAxis=0, int indexUpAxis=2)</td></tr>
+<tr class="memdesc:acafdb43d5efb2edd57c68203227471f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Init this raycastVehicle.  <a href="class_raycast_vehicle.html#acafdb43d5efb2edd57c68203227471f3">More...</a><br /></td></tr>
+<tr class="separator:acafdb43d5efb2edd57c68203227471f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_ref"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_ref')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_ref.html">Ref</a></td></tr>
 <tr class="memitem:a1c3c3986014151251b39041e2556d2e3 inherit pro_methods_class_ref"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_ref.html#a1c3c3986014151251b39041e2556d2e3">~Ref</a> ()</td></tr>
 <tr class="separator:a1c3c3986014151251b39041e2556d2e3 inherit pro_methods_class_ref"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -231,54 +245,30 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Vehicle helper class that casts rays from the wheel positions towards the ground and applies forces. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a9c70bdc7ad1b3df61717df346ad14616"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c70bdc7ad1b3df61717df346ad14616">&#9670;&nbsp;</a></span>RaycastVehicle()</h2>
+<a id="ad75c6c91954aa7e490173f21e95c6f6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad75c6c91954aa7e490173f21e95c6f6c">&#9670;&nbsp;</a></span>RaycastVehicle()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">RaycastVehicle::RaycastVehicle </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_body.html">Body</a> *&#160;</td>
-          <td class="paramname"><em>chassisBody</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>indexRightAxis</em> = <code>1</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>indexLeftAxis</em> = <code>0</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>indexUpAxis</em> = <code>2</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>The constructor of <a class="el" href="class_raycast_vehicle.html" title="Vehicle helper class that casts rays from the wheel positions towards the ground and applies forces.">RaycastVehicle</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">chassisBody</td><td>The car chassis body. </td></tr>
-    <tr><td class="paramname">indexRightAxis</td><td>Axis to use for right. x=0, y=1, z=2 </td></tr>
-    <tr><td class="paramname">indexLeftAxis</td><td>Axis to use for left. </td></tr>
-    <tr><td class="paramname">indexUpAxis</td><td>Axis to use for up. </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -353,10 +343,11 @@ Additional Inherited Members</h2></td></tr>
 <p>Add a wheel. For information about the options, see <a class="el" href="class_wheel_info.html" title="Wheel Info of a raycast car.">WheelInfo</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">options</td><td>Options to create a wheel </td></tr>
+    <tr><td class="paramname">options</td><td>Options to create a wheel. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The index of wheel. </dd></dl>
 
 </div>
 </div>
@@ -461,31 +452,6 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a09bcaecc95a1b6506881171bc2f795c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09bcaecc95a1b6506881171bc2f795c2">&#9670;&nbsp;</a></span>classisBody()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_body.html">Body</a>* RaycastVehicle::classisBody </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="aee3e23e6b63e4c7fbb63a1ba788d11ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aee3e23e6b63e4c7fbb63a1ba788d11ce">&#9670;&nbsp;</a></span>computeImpulseDenominator()</h2>
 
@@ -516,6 +482,90 @@ Additional Inherited Members</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a27cb314cf3e197e6d3f11083f0ad78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a27cb314cf3e197e6d3f11083f0ad78">&#9670;&nbsp;</a></span>create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_raycast_vehicle.html">RaycastVehicle</a> * RaycastVehicle::create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_body.html">Body</a> *&#160;</td>
+          <td class="paramname"><em>chassisBody</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indexRightAxis</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indexLeftAxis</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indexUpAxis</em> = <code>2</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The create function of <a class="el" href="class_raycast_vehicle.html" title="Vehicle helper class that casts rays from the wheel positions towards the ground and applies forces.">RaycastVehicle</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chassisBody</td><td>The car chassis body. </td></tr>
+    <tr><td class="paramname">indexRightAxis</td><td>Axis to use for right. x=0, y=1, z=2 </td></tr>
+    <tr><td class="paramname">indexLeftAxis</td><td>Axis to use for left. </td></tr>
+    <tr><td class="paramname">indexUpAxis</td><td>Axis to use for up. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0703e4d218c74d92d01d798cce218f88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0703e4d218c74d92d01d798cce218f88">&#9670;&nbsp;</a></span>get_classisBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_body.html">Body</a>* RaycastVehicle::get_classisBody </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -557,6 +607,57 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="add6c9c590f20e61866689abbd8e5f0e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add6c9c590f20e61866689abbd8e5f0e1">&#9670;&nbsp;</a></span>getWheel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_wheel_info.html">WheelInfo</a>* RaycastVehicle::getWheel </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8dce79b1761bd8adf5996f8c5a2b83b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dce79b1761bd8adf5996f8c5a2b83b3">&#9670;&nbsp;</a></span>getWheelCount()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RaycastVehicle::getWheelCount </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="affd120140be2daacb382f353aa7b1a68"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#affd120140be2daacb382f353aa7b1a68">&#9670;&nbsp;</a></span>getWheelTransformWorld()</h2>
 
@@ -581,6 +682,65 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The transform of wheel. </dd></dl>
+
+</div>
+</div>
+<a id="acafdb43d5efb2edd57c68203227471f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acafdb43d5efb2edd57c68203227471f3">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool RaycastVehicle::init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_body.html">Body</a> *&#160;</td>
+          <td class="paramname"><em>chassisBody</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indexRightAxis</em> = <code>1</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indexLeftAxis</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indexUpAxis</em> = <code>2</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Init this raycastVehicle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chassisBody</td><td>The car chassis body. </td></tr>
+    <tr><td class="paramname">indexRightAxis</td><td>Axis to use for right. x=0, y=1, z=2 </td></tr>
+    <tr><td class="paramname">indexLeftAxis</td><td>Axis to use for left. </td></tr>
+    <tr><td class="paramname">indexUpAxis</td><td>Axis to use for up. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

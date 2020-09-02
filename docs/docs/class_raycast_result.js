@@ -3,7 +3,7 @@ var class_raycast_result =
     [ "RaycastResult", "class_raycast_result.html#a95a9943d481058b8cab7e5690c1a20a9", null ],
     [ "~RaycastResult", "class_raycast_result.html#aecb19dff4ee506c3245f31dc02a5a36e", null ],
     [ "abort", "class_raycast_result.html#abbb35142658505052b0a82b83f049262", null ],
-    [ "createRef", "class_raycast_result.html#a3285a19da8e69ee8824909b507006d0b", null ],
+    [ "create", "class_raycast_result.html#a78db2307e832185ffe06b0223364fe20", null ],
     [ "get_body", "class_raycast_result.html#af199797f6a3642720bf6f4ea19a63320", null ],
     [ "get_shape", "class_raycast_result.html#addce44cd4029f9c0a10dba71340fd2b8", null ],
     [ "operator=", "class_raycast_result.html#ababb9f686845139a0f689f3dabfedc49", null ],

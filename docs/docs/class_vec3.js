@@ -9,7 +9,7 @@ var class_vec3 =
     [ "almostZero", "class_vec3.html#ac896f88bda0b4c7c6aed0c8811323c0a", null ],
     [ "clone", "class_vec3.html#a20ce6c4ab70e29fa9cfb7b3b0a7978e9", null ],
     [ "copy", "class_vec3.html#a33f7b6ac4aae600d33178fa990cff4c9", null ],
-    [ "createRef", "class_vec3.html#a9dcc1708abe686e8801cd1eb5a3f156d", null ],
+    [ "create", "class_vec3.html#a69f14b5a15ac5f3c65eb0322c8b03eb7", null ],
     [ "cross", "class_vec3.html#ac8fcd9fa3cf1dc50474e323181e7623e", null ],
     [ "crossmat", "class_vec3.html#a087bc05451350ee26f79bdec63d13234", null ],
     [ "distanceSquared", "class_vec3.html#a4634488686f36a1ca1152aa7683c4a8f", null ],

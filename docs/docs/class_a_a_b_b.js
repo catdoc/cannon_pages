@@ -6,7 +6,7 @@ var class_a_a_b_b =
     [ "clone", "class_a_a_b_b.html#aed2df5d147a76fc82b76335e982d63c7", null ],
     [ "contains", "class_a_a_b_b.html#a92ac4d5d6daaed25c6c39777a5d7cc52", null ],
     [ "copy", "class_a_a_b_b.html#adef95d9967ded421606205dc5028f411", null ],
-    [ "createRef", "class_a_a_b_b.html#af443a629da6c56354ebb19418d82b7ae", null ],
+    [ "create", "class_a_a_b_b.html#a13d91d3dee779cf2ebf42eafccaf38a7", null ],
     [ "extend", "class_a_a_b_b.html#ac8833bb3335122a9ae1bdd649010270f", null ],
     [ "getCorners", "class_a_a_b_b.html#ad0289b8d00dbf25e2d30e64cc9b6bb51", null ],
     [ "lowerBound", "class_a_a_b_b.html#a0ccecce77766392288cd932230e97f09", null ],

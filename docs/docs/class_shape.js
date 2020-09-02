@@ -1,7 +1,7 @@
 var class_shape =
 [
     [ "ShapeOptions", "struct_shape_1_1_shape_options.html", "struct_shape_1_1_shape_options" ],
-    [ "Shape", "class_shape.html#a6556b4959f74547a8e1ba2cab9924898", null ],
+    [ "Shape", "class_shape.html#aaa8d87171e65e0d8ba3c5459978992a7", null ],
     [ "~Shape", "class_shape.html#a935afc9e576015f967d90de56977167d", null ],
     [ "boundingSphereRadius", "class_shape.html#ad440e9ce0d0c649558f54acf2a4979f7", null ],
     [ "calculateLocalInertia", "class_shape.html#af7a33344a69e7b0b5371846a8a5f1e53", null ],
@@ -12,6 +12,7 @@ var class_shape =
     [ "get_body", "class_shape.html#ac15415030870a97b332eb8624e7d7cd7", null ],
     [ "get_type", "class_shape.html#af0e221fa43ccd4b054fa68e04e2ce674", null ],
     [ "id", "class_shape.html#aab8b8f4e70cb53457d4a387e7027293b", null ],
+    [ "init", "class_shape.html#aae024a75e69b7e184268f228ed720b04", null ],
     [ "material", "class_shape.html#a3ee323ec27ef3cfa6e302ba5f6285d92", null ],
     [ "set_body", "class_shape.html#a3a873cb2b398d2dfff2526620abb0206", null ],
     [ "set_type", "class_shape.html#ad0fd24ffef81c8b920ba3e85d675fa50", null ],

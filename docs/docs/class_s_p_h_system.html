@@ -85,6 +85,7 @@ $(document).ready(function(){initNavTree('class_s_p_h_system.html',''); initResi
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_s_p_h_system-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -108,10 +109,6 @@ Inheritance diagram for SPHSystem:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8e2c0601f18246feab11ff03b364438f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_p_h_system.html#a8e2c0601f18246feab11ff03b364438f">SPHSystem</a> ()</td></tr>
-<tr class="separator:a8e2c0601f18246feab11ff03b364438f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc7d21a86b5071d08660bde32dc0d209"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_p_h_system.html#abc7d21a86b5071d08660bde32dc0d209">~SPHSystem</a> ()</td></tr>
-<tr class="separator:abc7d21a86b5071d08660bde32dc0d209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30d35f32690a923c18571ac66bd03677"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_p_h_system.html#a30d35f32690a923c18571ac66bd03677">add</a> (<a class="el" href="class_body.html">Body</a> *particle)</td></tr>
 <tr class="memdesc:a30d35f32690a923c18571ac66bd03677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a particle to the system.  <a href="class_s_p_h_system.html#a30d35f32690a923c18571ac66bd03677">More...</a><br /></td></tr>
 <tr class="separator:a30d35f32690a923c18571ac66bd03677"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -132,16 +129,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8a5bd4b60583b5e5fa48531054179526"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_p_h_system.html#a8a5bd4b60583b5e5fa48531054179526">nablaw</a> (<a class="el" href="_defines_8h.html#a1924a4f6907cc3833213aba1f07fcbe9">real_t</a> r)</td></tr>
 <tr class="memdesc:a8a5bd4b60583b5e5fa48531054179526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate nabla(W)  <a href="class_s_p_h_system.html#a8a5bd4b60583b5e5fa48531054179526">More...</a><br /></td></tr>
 <tr class="separator:a8a5bd4b60583b5e5fa48531054179526"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_class_i_system"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_i_system')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_i_system.html">ISystem</a></td></tr>
-<tr class="memitem:a5221f2e86d64e39bc8e38b3f238a639b inherit pub_methods_class_i_system"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_system.html#a5221f2e86d64e39bc8e38b3f238a639b">ISystem</a> ()</td></tr>
-<tr class="separator:a5221f2e86d64e39bc8e38b3f238a639b inherit pub_methods_class_i_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ba048ff63adcea2cf3139c43491e253 inherit pub_methods_class_i_system"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_system.html#a0ba048ff63adcea2cf3139c43491e253">~ISystem</a> ()</td></tr>
-<tr class="separator:a0ba048ff63adcea2cf3139c43491e253 inherit pub_methods_class_i_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a7b077a105d31affe2d9722470f0a8270"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_s_p_h_system.html">SPHSystem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_p_h_system.html#a7b077a105d31affe2d9722470f0a8270">createRef</a> ()</td></tr>
-<tr class="separator:a7b077a105d31affe2d9722470f0a8270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ccd387282b5a037bf61fbfabf768a66"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_s_p_h_system.html">SPHSystem</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_p_h_system.html#a3ccd387282b5a037bf61fbfabf768a66">create</a> ()</td></tr>
+<tr class="separator:a3ccd387282b5a037bf61fbfabf768a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a8e2c0601f18246feab11ff03b364438f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_p_h_system.html#a8e2c0601f18246feab11ff03b364438f">SPHSystem</a> ()</td></tr>
+<tr class="separator:a8e2c0601f18246feab11ff03b364438f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc7d21a86b5071d08660bde32dc0d209"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_p_h_system.html#abc7d21a86b5071d08660bde32dc0d209">~SPHSystem</a> ()</td></tr>
+<tr class="separator:abc7d21a86b5071d08660bde32dc0d209"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd7ad5ec6d21d87394ea5b36b5459d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_s_p_h_system.html#a8cd7ad5ec6d21d87394ea5b36b5459d4">init</a> ()</td></tr>
+<tr class="separator:a8cd7ad5ec6d21d87394ea5b36b5459d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_i_system"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_i_system')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_i_system.html">ISystem</a></td></tr>
+<tr class="memitem:a5221f2e86d64e39bc8e38b3f238a639b inherit pro_methods_class_i_system"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_system.html#a5221f2e86d64e39bc8e38b3f238a639b">ISystem</a> ()</td></tr>
+<tr class="separator:a5221f2e86d64e39bc8e38b3f238a639b inherit pro_methods_class_i_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba048ff63adcea2cf3139c43491e253 inherit pro_methods_class_i_system"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_system.html#a0ba048ff63adcea2cf3139c43491e253">~ISystem</a> ()</td></tr>
+<tr class="separator:a0ba048ff63adcea2cf3139c43491e253 inherit pro_methods_class_i_system"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -177,6 +183,9 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">SPHSystem::SPHSystem </td>
@@ -185,6 +194,11 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -194,6 +208,9 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">SPHSystem::~SPHSystem </td>
@@ -202,6 +219,11 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -233,8 +255,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7b077a105d31affe2d9722470f0a8270"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b077a105d31affe2d9722470f0a8270">&#9670;&nbsp;</a></span>createRef()</h2>
+<a id="a3ccd387282b5a037bf61fbfabf768a66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ccd387282b5a037bf61fbfabf768a66">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,7 +265,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_s_p_h_system.html">SPHSystem</a> * SPHSystem::createRef </td>
+          <td class="memname"><a class="el" href="class_s_p_h_system.html">SPHSystem</a> * SPHSystem::create </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -322,6 +344,31 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>calculate gradient of the weight function </p>
+
+</div>
+</div>
+<a id="a8cd7ad5ec6d21d87394ea5b36b5459d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cd7ad5ec6d21d87394ea5b36b5459d4">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool SPHSystem::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

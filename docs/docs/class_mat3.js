@@ -5,7 +5,7 @@ var class_mat3 =
     [ "Mat3", "class_mat3.html#ab0093c9f98138afe42b0e60fa8890228", null ],
     [ "~Mat3", "class_mat3.html#a87bf8144e547d73b28847be73fc5549f", null ],
     [ "copy", "class_mat3.html#a443d2f112f8f0ee162b240746ca8f88f", null ],
-    [ "createRef", "class_mat3.html#afc9b992dc649c18035937e33b8c0f242", null ],
+    [ "create", "class_mat3.html#a808a1953dc7303b57d19c4abc49182e2", null ],
     [ "get", "class_mat3.html#ab4ff9c5e13baee26bc0a3791d12c70d1", null ],
     [ "getE", "class_mat3.html#ab67d36997abaa17b03eb07cfeccbc235", null ],
     [ "getTrace", "class_mat3.html#a003456dce0b525cfaf902002ff32042e", null ],

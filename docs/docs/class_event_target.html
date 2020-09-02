@@ -86,6 +86,7 @@ $(document).ready(function(){initNavTree('class_event_target.html',''); initResi
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_event_target-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -100,10 +101,6 @@ $(document).ready(function(){initNavTree('class_event_target.html',''); initResi
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa4526be9da6fedb0f691083761d09bf9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_target.html#aa4526be9da6fedb0f691083761d09bf9">EventTarget</a> ()</td></tr>
-<tr class="separator:aa4526be9da6fedb0f691083761d09bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85a191a259bb5a812de95583c5df2808"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_target.html#a85a191a259bb5a812de95583c5df2808">~EventTarget</a> ()</td></tr>
-<tr class="separator:a85a191a259bb5a812de95583c5df2808"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91e5a40a04b2e3d7b9522e9e7d45624e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_target.html#a91e5a40a04b2e3d7b9522e9e7d45624e">addEventListener</a> (<a class="el" href="_event_8h.html#a0bb83d4fc949ffe034e5cff910dd4666">EventType</a> type, <a class="el" href="_event_callback_8h.html#a3ab84f021a5faf785930ea9fc01b9c98">EventListener</a> listener)</td></tr>
 <tr class="separator:a91e5a40a04b2e3d7b9522e9e7d45624e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ae3397567d0ef11131038ebd0c871e0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_target.html#a1ae3397567d0ef11131038ebd0c871e0">hasEventListener</a> (<a class="el" href="_event_8h.html#a0bb83d4fc949ffe034e5cff910dd4666">EventType</a> type, <a class="el" href="_event_callback_8h.html#a3ab84f021a5faf785930ea9fc01b9c98">EventListener</a> listener)</td></tr>
@@ -117,21 +114,30 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aeacff40da2a4af6e1c506ee0e2f3939f"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_event_target.html">EventTarget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_target.html#aeacff40da2a4af6e1c506ee0e2f3939f">createRef</a> ()</td></tr>
-<tr class="separator:aeacff40da2a4af6e1c506ee0e2f3939f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab40b372759437cdd64c582e04ca8ed66"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_event_target.html">EventTarget</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_target.html#ab40b372759437cdd64c582e04ca8ed66">create</a> ()</td></tr>
+<tr class="separator:ab40b372759437cdd64c582e04ca8ed66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
 Protected Types</h2></td></tr>
-<tr class="memitem:a7bb08ed319eb857d89284c104363aad1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_target.html#a7bb08ed319eb857d89284c104363aad1">TargetMap</a> = std::map&lt; <a class="el" href="class_ref.html">Ref</a> *, std::vector&lt; <a class="el" href="_event_callback_8h.html#a3ab84f021a5faf785930ea9fc01b9c98">EventListener</a> &gt; &gt;</td></tr>
-<tr class="separator:a7bb08ed319eb857d89284c104363aad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acebc55589fa56bbc54d26e2121a1610a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_target.html#acebc55589fa56bbc54d26e2121a1610a">ListenerMap</a> = std::map&lt; <a class="el" href="_event_8h.html#a0bb83d4fc949ffe034e5cff910dd4666">EventType</a>, <a class="el" href="class_event_target.html#a7bb08ed319eb857d89284c104363aad1">TargetMap</a> &gt;</td></tr>
+<tr class="memitem:a40cd1ab1f5cdc01620583630053963d2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_target.html#a40cd1ab1f5cdc01620583630053963d2">TargetMap</a> = std::map&lt; void *, std::vector&lt; <a class="el" href="_event_callback_8h.html#a3ab84f021a5faf785930ea9fc01b9c98">EventListener</a> &gt; &gt;</td></tr>
+<tr class="separator:a40cd1ab1f5cdc01620583630053963d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acebc55589fa56bbc54d26e2121a1610a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_target.html#acebc55589fa56bbc54d26e2121a1610a">ListenerMap</a> = std::map&lt; <a class="el" href="_event_8h.html#a0bb83d4fc949ffe034e5cff910dd4666">EventType</a>, <a class="el" href="class_event_target.html#a40cd1ab1f5cdc01620583630053963d2">TargetMap</a> &gt;</td></tr>
 <tr class="separator:acebc55589fa56bbc54d26e2121a1610a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:aa4526be9da6fedb0f691083761d09bf9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_target.html#aa4526be9da6fedb0f691083761d09bf9">EventTarget</a> ()</td></tr>
+<tr class="separator:aa4526be9da6fedb0f691083761d09bf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85a191a259bb5a812de95583c5df2808"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_target.html#a85a191a259bb5a812de95583c5df2808">~EventTarget</a> ()</td></tr>
+<tr class="separator:a85a191a259bb5a812de95583c5df2808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03fe320c80347fdc24006e5ec81685a5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_target.html#a03fe320c80347fdc24006e5ec81685a5">init</a> ()</td></tr>
+<tr class="separator:a03fe320c80347fdc24006e5ec81685a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a734473d466547a7f66ca70d7681947e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_event_target.html#acebc55589fa56bbc54d26e2121a1610a">ListenerMap</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_target.html#a734473d466547a7f66ca70d7681947e0">_listeners</a></td></tr>
 <tr class="separator:a734473d466547a7f66ca70d7681947e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5eaf57b0558c594be9d3ea33b0f6d9c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_lists_8txt.html#a2b064139fdca3b188ea83d157f3864ef">std::set</a>&lt; <a class="el" href="_event_8h.html#a0bb83d4fc949ffe034e5cff910dd4666">EventType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_target.html#a5eaf57b0558c594be9d3ea33b0f6d9c1">_removedListenerTypeSet</a></td></tr>
+<tr class="memitem:a5eaf57b0558c594be9d3ea33b0f6d9c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_c_make_lists_8txt.html#a413047bb72b91f19b836ace9d24a6cf0">std::set</a>&lt; <a class="el" href="_event_8h.html#a0bb83d4fc949ffe034e5cff910dd4666">EventType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_target.html#a5eaf57b0558c594be9d3ea33b0f6d9c1">_removedListenerTypeSet</a></td></tr>
 <tr class="separator:a5eaf57b0558c594be9d3ea33b0f6d9c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac430df3478e520cfa068560e06fef3e1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_event_target.html#ac430df3478e520cfa068560e06fef3e1">_dispatchCount</a> = 0</td></tr>
 <tr class="separator:ac430df3478e520cfa068560e06fef3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,7 +155,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="class_event_target.html#acebc55589fa56bbc54d26e2121a1610a">EventTarget::ListenerMap</a> =  std::map&lt;<a class="el" href="_event_8h.html#a0bb83d4fc949ffe034e5cff910dd4666">EventType</a>, <a class="el" href="class_event_target.html#a7bb08ed319eb857d89284c104363aad1">TargetMap</a>&gt;</td>
+          <td class="memname">using <a class="el" href="class_event_target.html#acebc55589fa56bbc54d26e2121a1610a">EventTarget::ListenerMap</a> =  std::map&lt;<a class="el" href="_event_8h.html#a0bb83d4fc949ffe034e5cff910dd4666">EventType</a>, <a class="el" href="class_event_target.html#a40cd1ab1f5cdc01620583630053963d2">TargetMap</a>&gt;</td>
         </tr>
       </table>
   </td>
@@ -161,8 +167,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="a7bb08ed319eb857d89284c104363aad1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bb08ed319eb857d89284c104363aad1">&#9670;&nbsp;</a></span>TargetMap</h2>
+<a id="a40cd1ab1f5cdc01620583630053963d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40cd1ab1f5cdc01620583630053963d2">&#9670;&nbsp;</a></span>TargetMap</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -171,7 +177,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="class_event_target.html#a7bb08ed319eb857d89284c104363aad1">EventTarget::TargetMap</a> =  std::map&lt;<a class="el" href="class_ref.html">Ref</a>*, std::vector&lt;<a class="el" href="_event_callback_8h.html#a3ab84f021a5faf785930ea9fc01b9c98">EventListener</a>&gt; &gt;</td>
+          <td class="memname">using <a class="el" href="class_event_target.html#a40cd1ab1f5cdc01620583630053963d2">EventTarget::TargetMap</a> =  std::map&lt;void*, std::vector&lt;<a class="el" href="_event_callback_8h.html#a3ab84f021a5faf785930ea9fc01b9c98">EventListener</a>&gt; &gt;</td>
         </tr>
       </table>
   </td>
@@ -189,6 +195,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">EventTarget::EventTarget </td>
@@ -197,6 +206,11 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -206,6 +220,9 @@ Protected Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">EventTarget::~EventTarget </td>
@@ -214,6 +231,11 @@ Protected Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -247,8 +269,8 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="aeacff40da2a4af6e1c506ee0e2f3939f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeacff40da2a4af6e1c506ee0e2f3939f">&#9670;&nbsp;</a></span>createRef()</h2>
+<a id="ab40b372759437cdd64c582e04ca8ed66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab40b372759437cdd64c582e04ca8ed66">&#9670;&nbsp;</a></span>create()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -257,7 +279,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_event_target.html">EventTarget</a> * EventTarget::createRef </td>
+          <td class="memname"><a class="el" href="class_event_target.html">EventTarget</a> * EventTarget::create </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -332,6 +354,31 @@ Protected Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03fe320c80347fdc24006e5ec81685a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03fe320c80347fdc24006e5ec81685a5">&#9670;&nbsp;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EventTarget::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -419,7 +466,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="_c_make_lists_8txt.html#a2b064139fdca3b188ea83d157f3864ef">std::set</a>&lt;<a class="el" href="_event_8h.html#a0bb83d4fc949ffe034e5cff910dd4666">EventType</a>&gt; EventTarget::_removedListenerTypeSet</td>
+          <td class="memname"><a class="el" href="_c_make_lists_8txt.html#a413047bb72b91f19b836ace9d24a6cf0">std::set</a>&lt;<a class="el" href="_event_8h.html#a0bb83d4fc949ffe034e5cff910dd4666">EventType</a>&gt; EventTarget::_removedListenerTypeSet</td>
         </tr>
       </table>
   </td>
